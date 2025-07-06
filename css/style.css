@@ -1,0 +1,149 @@
+/* ----- estilo del proyecto ----- */
+
+/* Esto quita los márgenes y espacios por defecto de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Hace que el ancho y alto incluyan el padding y borde */
+}
+
+/* Esto es el fondo de toda la página */
+body {
+    display: flex;                 /* Acomoda las cosas con flexbox (como cajitas) */
+    flex-direction: column;       /* Las cajitas se acomodan una debajo de otra */
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y bonita para el texto */
+
+    /* Fondo con una imagen de yoga oscurecida para que el texto se vea bien */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../img/imagen_de_yoga_2.jpg);
+    background-repeat: no-repeat;      /* Que no se repita la imagen */
+    background-position: center;      /* Que se vea centrada */
+    background-size: cover;            /* Que cubra toda la pantalla */
+}
+
+/* ---------- ENCABEZADO (PARTE DE ARRIBA) ---------- */
+
+/* Caja principal del encabezado (parte superior fija con menú) */
+.main_header {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between; /* Un lado el logo, al otro lado el menú */
+    align-items: center;            /* Centrado verticalmente */
+    padding: 15px 40px;             /* Espacio interno alrededor */
+    background-color: #29291f;      /* Color de fondo oscuro */
+    width: 100%;                    /* Ocupa todo el ancho */
+    height: 8%;                     /* Altura pequeña */
+    position: fixed;                /* Se queda pegado arriba aunque hagas scroll */
+    top: 0;
+    left: 0;
+    z-index: 1000;                  /* Aparece por encima de todo */
+}
+
+/* Estilo del loguito y nombre "Flor de loto" */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;         /* Tamaño del texto */
+    font-weight: 500;          /* Texto más grueso */
+    color: #f3f1c4;            /* Color clarito */
+}
+
+/* Estilo del menú de navegación (Inicio, Productos, etc.) */
+.main_nav, ol {
+    list-style: none;          /* Quita los punticos de las listas */
+    display: flex;             /* Acomoda las opciones en fila */
+}
+
+.main_nav, li {
+    padding: 5px;              /* Espacio entre las palabras */
+}
+
+.main_nav, a {
+    text-decoration: none;     /* Quita el subrayado del texto */
+    color: #f3f1c4;            /* Mismo color clarito */
+}
+
+/* ---------- CUERPO DE LA PÁGINA ---------- */
+
+/* Caja grande donde va el contenido principal */
+.main_body {
+    width: 80%;
+    margin: auto;
+    
+    margin-top: 100px;         /* Espacio arriba para que no tape el encabezado */
+    background-color: #29291fa1; /* Color de fondo oscuro con algo de transparencia */
+    text-align: center;        /* Todo centrado */
+    color: #f3f1c4;            /* Letras claritas */
+
+    display: flex;
+    flex-wrap: wrap;           /* Si no cabe, se baja a la siguiente línea */
+    gap: 10px;                 /* Espacio entre elementos */
+    flex-direction: column;    /* Todo en columna, de arriba hacia abajo */
+}
+
+/* Contenido dentro del cuerpo principal */
+.body_contenido {
+    padding: 10px;             /* Espacio interno alrededor del contenido */
+}
+
+/* ---------- CINTA DE TEXTO QUE SE MUEVE (MARQUEE) ---------- */
+
+/* Caja de la cinta */
+.bienestar-marquee {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0;
+
+    overflow: hidden;           /* Oculta el texto que se sale por los lados */
+    background: #2e2e1e;        /* Fondo oscuro */
+    color: #eee6c0;             /* Texto clarito como amarillo claro */
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    font-size: 1rem;            /* Tamaño del texto */
+    padding: 8px 0;             /* Espacio arriba y abajo del texto */
+}
+
+/* Pista donde el texto se mueve (como si fuera una banda) */
+.bienestar-contenido {
+    display: flex;              /* Acomoda los textos en fila horizontal */
+    width: max-content;         /* El ancho es lo que mide el contenido */
+    animation: scroll 18s linear infinite; /* Aplica la animación que se llama "scroll":
+                                            dura 18 segundos, va a velocidad constante,
+                                            y nunca se detiene */
+}
+
+/* Estilo para que el texto no se divida en varias líneas */
+.bienestar-contenido span {
+    white-space: nowrap;        /* Todo el texto en una sola línea */
+}
+
+/* Animación que mueve el texto de derecha a izquierda */
+@keyframes scroll {
+    0%   { transform: translateX(0); }         /* Empieza desde su posición original */
+    100% { transform: translateX(-50%); }      /* Se mueve la mitad de su largo hacia la izquierda */
+}
+
+
+/*--  Esto es el estilo del botón que dice: "Explora tu mundo" --*/
+#explorar_ahora {
+    border: 1px solid transparent;  /* Le ponemos un borde invisible (al principio no se ve) */
+    border-radius: 20px;            /* Bordes redondeados como una pastilla o cápsula */
+    width: 8em;                     /* Ancho del botón (em = tamaño del texto) */
+    margin: auto;                   /* Lo centramos horizontalmente */
+    background-color: #f3f1c4;      /* Fondo amarillo claro, bonito */
+    color: #29291f;                 /* Texto en color oscuro (para que se lea bien) */
+    padding: 10px;                  /* Espacio interno (para que no se vea apretado) */
+    margin-bottom: 15px;            /* Espacio hacia abajo (para que no choque con lo de abajo) */
+}
+
+/*--  Esto es lo que pasa cuando pasas el mouse por encima del botón --*/
+#explorar_ahora:hover {
+    border: 1px solid #f3f1c4;      /* Ahora sí aparece el borde (color amarillo claro) */
+    border-radius: 20px;            /* Sigue con los bordes redonditos */
+    background-color: transparent; /* El fondo se vuelve transparente (invisible) */
+    color: #f3f1c4;                 /* El texto se vuelve amarillo claro */
+}
+
+/*-----  Esto es para el título grande que está en el centro -----*/
+h1 {
+    font: 5em serif;                /* Tamaño muy grande (5 veces el tamaño normal) y letra elegante */
+}
