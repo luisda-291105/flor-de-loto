@@ -13,13 +13,18 @@ body {
     flex-direction: column;       /* Las cajitas se acomodan una debajo de otra */
     font-family: 'Montserrat', sans-serif; /* Fuente moderna y bonita para el texto */
 
-    /* Fondo con una imagen de yoga oscurecida para que el texto se vea bien */
+}
+
+.main_section {
+    padding: 25px;
+      /* Fondo con una imagen de yoga oscurecida para que el texto se vea bien */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url(../img/imagen_de_yoga_2.jpg);
     background-repeat: no-repeat;      /* Que no se repita la imagen */
     background-position: center;      /* Que se vea centrada */
     background-size: cover;            /* Que cubra toda la pantalla */
 }
+
 
 /* ---------- ENCABEZADO (PARTE DE ARRIBA) ---------- */
 
@@ -79,6 +84,11 @@ body {
     flex-wrap: wrap;           /* Si no cabe, se baja a la siguiente línea */
     gap: 10px;                 /* Espacio entre elementos */
     flex-direction: column;    /* Todo en columna, de arriba hacia abajo */
+}
+
+/*-----  Esto es para el título grande que está en el centro -----*/
+h1 {
+    font: 5em serif;                /* Tamaño muy grande (5 veces el tamaño normal) y letra elegante */
 }
 
 /* Contenido dentro del cuerpo principal */
@@ -143,7 +153,63 @@ body {
     color: #f3f1c4;                 /* El texto se vuelve amarillo claro */
 }
 
-/*-----  Esto es para el título grande que está en el centro -----*/
-h1 {
-    font: 5em serif;                /* Tamaño muy grande (5 veces el tamaño normal) y letra elegante */
+/* ------------- SECCIÓN DE PRODUCTOS ------------- */
+
+/* Contenedor general de la sección “productos”.
+    Le damos un fondo oscuro para destacar los ítems */
+.productos {
+    background-color: #29291f;   /* gris‑verdoso muy oscuro */
 }
+
+/* Lista flex que agrupa todas las tarjetas de producto.
+    - flex‑wrap: wrap permite que los ítems bajen a la fila siguiente
+    cuando no caben horizontalmente. */
+.product_list {
+    display: flex;               /* coloca los hijos en línea (flexbox) */
+    flex-wrap: wrap;             /* permite saltar de línea si se llena */
+}
+
+/* Título de la sección.
+    Centramos el texto, lo escribimos en mayúsculas y
+    le damos un tamaño grande y un color que combine. */
+.titulo_productos {
+    padding: 20px;               /* espacio alrededor del texto */
+    text-align: center;          /* centra el texto horizontalmente */
+    margin: auto;                /* centra el bloque dentro de su contenedor */
+    color: #f3f1c4;              /* amarillo suave (hace contraste con fondo) */
+    text-transform: uppercase;   /* fuerza MAYÚSCULAS */
+    font: 4em serif;             /* tamaño grande (4 × el tamaño base) */
+}
+
+/* Tarjeta individual de producto.
+    - width fijo para que todas tengan el mismo tamaño
+    - border claro para separarlas visualmente del fondo oscuro */
+.product_item {
+    border: #eee6c0 1px solid;   /* borde fino color crema */
+    width: 250px;                /* ancho constante de cada tarjeta */
+    color: #f3f1c4;              /* texto en amarillo suave */
+    text-align: center;          /* centra títulos y textos dentro de la tarjeta */
+    margin: 5px;                 /* hueco entre tarjetas */
+}
+
+/* Imagen dentro de la tarjeta.
+    width: 100 % hace que ocupe todo el ancho disponible
+    height: auto mantiene la proporción para que no se deforme. */
+.product_item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Nombre del producto.
+    Separamos con padding y aumentamos el tamaño de letra. */
+.product_item h3{
+    padding: 10px;
+    font-size: 1.5em;            /* 1,5 × el tamaño base */
+}
+
+/* Descripción o precio del producto (párrafo).
+    Solo añadimos espacio interior para respirar. */
+.product_item p{
+    padding: 10px;
+}
+
