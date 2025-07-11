@@ -27,7 +27,6 @@ body {
     min-height: 100vh;
 }
 
-
 /* ---------- ENCABEZADO (PARTE DE ARRIBA) ---------- */
 
 /* Caja principal del encabezado (parte superior fija con menú) */
@@ -76,9 +75,8 @@ body {
 
 /* Caja grande donde va el contenido principal */
 .main_body {
-    width: 80%;
-    height: 95%;
-
+    width: 95.5%;
+    height: 70vh;
     margin: auto;
     
     margin-top: 100px;         /* Espacio arriba para que no tape el encabezado */
@@ -99,14 +97,41 @@ h1 {
 
 /* Contenido dentro del cuerpo principal */
 .body_contenido {
-    padding: 10px;             /* Espacio interno alrededor del contenido */
+    padding: 10px;
+    margin: auto;
 }
+
+
+/*----------------  BOTON EXPLORAR----------------*/
+
+/*--  Esto es el estilo del botón que dice: "Explora tu mundo" --*/
+#explorar_ahora {
+    border: 1px solid transparent;  /* Le ponemos un borde invisible (al principio no se ve) */
+    border-radius: 20px;            /* Bordes redondeados como una pastilla o cápsula */
+    width: 10em;                     /* Ancho del botón (em = tamaño del texto) */
+    height: auto;
+    margin: auto;                   /* Lo centramos horizontalmente */
+    background-color: #f3f1c4;      /* Fondo amarillo claro, bonito */
+    color: #29291f;                 /* Texto en color oscuro (para que se lea bien) */
+    padding: 10px;                  /* Espacio interno (para que no se vea apretado) */
+    margin-bottom: 45px;            /* Espacio hacia abajo (para que no choque con lo de abajo) */
+    font-size: 1.2em ;              /* Tamaño del texto grande y elegante */
+}
+
+/*--  Esto es lo que pasa cuando pasas el mouse por encima del botón --*/
+#explorar_ahora:hover {
+    border: 1px solid #f3f1c4;      /* Ahora sí aparece el borde (color amarillo claro) */
+    border-radius: 20px;            /* Sigue con los bordes redonditos */
+    background-color: transparent; /* El fondo se vuelve transparente (invisible) */
+    color: #f3f1c4;                 /* El texto se vuelve amarillo claro */
+}
+
 
 /* ---------- CINTA DE TEXTO QUE SE MUEVE (MARQUEE) ---------- */
 
 /* Caja de la cinta */
 .bienestar-marquee {
-    width: 80%;
+    width: 95.5%;
     margin: auto;
     margin-bottom: 0;
 
@@ -139,25 +164,6 @@ h1 {
 }
 
 
-/*--  Esto es el estilo del botón que dice: "Explora tu mundo" --*/
-#explorar_ahora {
-    border: 1px solid transparent;  /* Le ponemos un borde invisible (al principio no se ve) */
-    border-radius: 20px;            /* Bordes redondeados como una pastilla o cápsula */
-    width: 9em;                     /* Ancho del botón (em = tamaño del texto) */
-    margin: auto;                   /* Lo centramos horizontalmente */
-    background-color: #f3f1c4;      /* Fondo amarillo claro, bonito */
-    color: #29291f;                 /* Texto en color oscuro (para que se lea bien) */
-    padding: 10px;                  /* Espacio interno (para que no se vea apretado) */
-    margin-bottom: 15px;            /* Espacio hacia abajo (para que no choque con lo de abajo) */
-}
-
-/*--  Esto es lo que pasa cuando pasas el mouse por encima del botón --*/
-#explorar_ahora:hover {
-    border: 1px solid #f3f1c4;      /* Ahora sí aparece el borde (color amarillo claro) */
-    border-radius: 20px;            /* Sigue con los bordes redonditos */
-    background-color: transparent; /* El fondo se vuelve transparente (invisible) */
-    color: #f3f1c4;                 /* El texto se vuelve amarillo claro */
-}
 
 /* ------------- SECCIÓN DE PRODUCTOS ------------- */
 
@@ -165,6 +171,7 @@ h1 {
 .productos {
     background-color: #29291f;   /* gris‑verdoso muy oscuro */
     /* height: 95vh; */
+    padding:0 10px 70px 20px ;          /* espacio arriba y abajo, centrado horizontalmente */;
 }
 
 /* Lista flex que agrupa todas las tarjetas de producto*/
@@ -229,3 +236,108 @@ h1 {
     transform: scale(1.2);
 }
 
+/*----------------- Estilos generales de la sección de servicios -----------------*/
+
+/* Define la sección de servicios */
+.servicios {
+    width: 100vw;
+    height: auto;
+    background-color: #444432;
+    color: #f3f1c4;
+    box-sizing: border-box;
+    padding: 10px 0 50px 0;
+}
+
+/* Título principal de los servicios */
+.titulo_servicios {
+    text-transform: uppercase;
+    font-size: 5em;
+    font-family: serif;
+    margin: 20px auto 30px auto;
+    padding: 0;
+    text-align: center; 
+    font-weight: 100;
+}
+
+/* Contenedor de cada servicio (imagen + texto) */
+.contener_servicios {
+    border: #f3f1c4 1px solid;
+    width: 85.50%;
+    height: 45vh;
+    display: flex;
+    overflow: hidden;      
+    margin: 30px auto ;
+}
+
+/* Imagen dentro del contenedor de servicios */
+.contener_servicios img {
+    width: 50%;
+    height: auto;
+    object-fit: cover; 
+}
+
+/* Texto descriptivo del servicio */
+.descripcion_servicio {
+    width: 50%;
+    padding: 55px;
+    margin: auto;
+    font-size: 1.5em;
+    line-height: 2.5em;
+}
+
+/* Botón/enlace dentro de la descripción */
+.descripcion_servicio a {
+    border: 1px solid #f3f1c4;
+    background-color: #f3f1c4;
+    color: #29291f;
+    padding: 6px;
+}
+
+/* Efecto al pasar el mouse por el enlace */
+.descripcion_servicio a:hover {
+    background-color: transparent;
+    color: #f3f1c4;
+    border: 1px solid #f3f1c4;
+    text-decoration: underline;
+}
+
+/* ---------------- Sección "Nosotros" ---------------- */
+
+/* Sección "nosotros" */
+.nosotros {
+    width: 100vw;
+    height: auto;
+    background-image: url(../img/cuarto_yoga.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Contenido interno de la sección "nosotros" */
+.contenido_nosotros {
+    width: 40vw;
+    height: auto;
+    margin: 80px auto 90px auto;
+    letter-spacing: 1.5px;
+    background-color: #444432;
+    color: #f3f1c4;
+    padding: 5px 50px 50px 50px;
+}
+
+/* Título de la sección "nosotros" */
+.titulo_nosotros {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: serif;
+    margin-bottom: 25.9px;
+    padding: 0;
+    font-weight: 100;
+}
+
+/* Párrafo dentro de la sección "nosotros" */
+.contenido_nosotros p {
+    font-size: 1.5em;
+    line-height: 1em;
+}
