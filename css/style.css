@@ -27,6 +27,8 @@ body {
     min-height: 100vh;
 }
 
+
+
 /* ---------- ENCABEZADO (PARTE DE ARRIBA) ---------- */
 
 /* Caja principal del encabezado (parte superior fija con menú) */
@@ -39,7 +41,7 @@ body {
     background-color: #29291f;      /* Color de fondo oscuro */
     width: 100%;                    /* Ocupa todo el ancho */
     height: 8%;                     /* Altura pequeña */
-    position: fixed;                /* Se queda pegado arriba aunque hagas scroll */
+    position: relative;                /* Se queda pegado arriba aunque hagas scroll */
     top: 0;
     left: 0;
     z-index: 1000;                  /* Aparece por encima de todo */
@@ -70,6 +72,8 @@ body {
     text-decoration: none;     
     color: #f3f1c4;           
 }
+
+
 
 /* ---------- CUERPO DE LA PÁGINA ---------- */
 
@@ -102,6 +106,7 @@ h1 {
 }
 
 
+
 /*----------------  BOTON EXPLORAR----------------*/
 
 /*--  Esto es el estilo del botón que dice: "Explora tu mundo" --*/
@@ -125,6 +130,7 @@ h1 {
     background-color: transparent; /* El fondo se vuelve transparente (invisible) */
     color: #f3f1c4;                 /* El texto se vuelve amarillo claro */
 }
+
 
 
 /* ---------- CINTA DE TEXTO QUE SE MUEVE (MARQUEE) ---------- */
@@ -212,6 +218,8 @@ h1 {
     padding: 10px;
 }
 
+
+
 /*---- efecto al pasar el mause por encima de la imagen ------*/
 
 /* tamaño del contenedor de la imagen*/
@@ -235,6 +243,8 @@ h1 {
 .product_item img:hover {
     transform: scale(1.2);
 }
+
+
 
 /*----------------- Estilos generales de la sección de servicios -----------------*/
 
@@ -301,6 +311,8 @@ h1 {
     text-decoration: underline;
 }
 
+
+
 /* ---------------- Sección "Nosotros" ---------------- */
 
 /* Sección "nosotros" */
@@ -341,6 +353,8 @@ h1 {
     font-size: 1.5em;
     line-height: 1em;
 }
+
+
 
 /* ---------------- TESTIMONIOS ---------------- */
 
@@ -385,15 +399,16 @@ h1 {
 }
 
 
+
 /* ---------------- PIE DE PÁGINA ---------------- */
 
 .main_footer {
-    
+
     background-color: #29291f; 
     color: #f3f1c4;    
     padding: 20px ;
     font-size: 0.8em;
-    height: 50vh;
+    height: auto;
     width: 100vw;
     box-sizing: border-box;
 
@@ -405,6 +420,7 @@ h1 {
     margin: 30px;
     display: flex;
     padding: 20px;
+    height: auto;
 }
 
 .footer_container {
@@ -413,8 +429,8 @@ h1 {
 
 .footer_title {
     padding-top: 10px;
-    width: 50vw;
-    height: 25vh;
+    width: auto;
+    height: auto;
     margin: 30px 30px 30px 0;
     
 }
@@ -423,8 +439,8 @@ h1 {
     display: flex;
     
     margin: 30px 30px 30px 0;
-    width: 50vw;
-    height: 25vh;
+    width: auto;
+    height: auto;
     
     font-size: 2em;
     padding: 30px 10px 30px 0;
@@ -462,5 +478,91 @@ h1 {
 .contact_address > h4 {
     padding: 0  10px ;
     margin: auto;
+}
+
+
+/*------------- registros ----------------*/
+
+.registro {
+    display: block;
+    width: 100vw;
+    height: auto;
+    background-color: #29291f;
+    text-align: center;
+    color: #f3f1c4;
+    transition: all 1s ease-in-out;
+}
+
+.main_registro {
+    margin: auto;
+    padding: 100px;
+}
+
+.main_registro > img {
+    width: 10em;
+    margin: 0;
+}
+
+.r_txt {
+    padding: 10px 0 50px 0;
+}
+
+.r_txt > h2 {
+    padding: 10px;
+    font-size: 2.5em ;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+.r_txt > p {
+    font-family: monospace;
+    font-size: 2em;
+}
+
+.r_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.r_input > label {
+    padding-bottom: 10px;
+    font-size: 1.3em;
+
+}
+
+
+.r_input > input {
+    text-align: center;
+    background-color: #13130c;
+    color: #999696;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 10px;
+}
+
+.r_input > button {
+    text-align: center;
+    background-color: #13130c;
+    color: #f3f1c4;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 7px;
+    margin:auto ;
+    width: 20em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main_registro > a{
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+
+}
+
+a:hover {
+
+    text-decoration: underline;
 }
 
