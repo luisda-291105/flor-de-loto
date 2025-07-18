@@ -34,17 +34,18 @@ body {
 /* Caja principal del encabezado (parte superior fija con menú) */
 .main_header {
     font-size: 17px;
+    font-family: serif;
     display: flex;
-    justify-content: space-between; /* Un lado el logo, al otro lado el menú */
-    align-items: center;            /* Centrado verticalmente */
-    padding: 15px 40px;             /* Espacio interno alrededor */
-    background-color: #29291f;      /* Color de fondo oscuro */
-    width: 100%;                    /* Ocupa todo el ancho */
-    height: 8%;                     /* Altura pequeña */
-    position: relative;                /* Se queda pegado arriba aunque hagas scroll */
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 15px 40px;             
+    background-color: #29291f;      
+    width: 100%;                    
+    height: 8%;                     
+    position: relative;                
     top: 0;
     left: 0;
-    z-index: 1000;                  /* Aparece por encima de todo */
+    z-index: 1000;                  
 }
 
 /* Estilo del loguito y nombre "Flor de loto" */
@@ -64,7 +65,8 @@ body {
 
 /* Espacio entre link del header*/
 .main_nav, li {
-    padding: 5px;             
+    padding-left: 40px; 
+
 }
 
 /*estilo de los link*/
@@ -552,6 +554,12 @@ h1 {
     width: 20em;
     margin-bottom: 20px;
     margin-top: 20px;
+    transition: all 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #59594a;
+    color: #13130c;
 }
 
 .main_registro > a{
@@ -562,7 +570,7 @@ h1 {
 }
 
 a:hover {
-
+    text-transform: uppercase;
     text-decoration: underline;
 }
 
