@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registros.css">
+    <link rel="icon" href="../img/logo_claro-removebg-preview.png"  type="image/png" > 
+
+</head>
+<body>
+    <!-- Esta parte es la CABECERA de la página, es decir, la parte de arriba donde está el logo y el menú -->
+    <header class="main_header">
+
+        <!--  Aquí está el logo del sitio: una flor y el nombre "flor de loto" -->
+        <div class="logo">
+            <!-- La flor que acompaña al texto -->
+            <span class="logo_icon">❀</span>
+            <!-- El texto del logo: "flor de loto" -->
+            <span class="main_text">Flor de loto</span>
+        </div>
+
+        <!-- Este es el menú de navegación, como una lista de botones para moverse por la página -->
+        <nav class="main_nav">
+            <ol>
+                <!-- Cada <li> es un botón que puedes apretar -->
+                <li><a href="registro_admin.html">Iniciar secion</a></li>                                       
+            </ol>
+        </nav>
+    </header>
+
+    <section class="registro">
+        <div class="main_registro">
+            <img src="../img/logo_sin_fondo.png" alt="es la flor de loto">
+            <div class="r_txt">
+                <h2>registro</h2>
+                <p>ingresa los datos que se piden en el sigiente formulario</p>
+            </div>
+        
+    
+            <div class="suscribe">
+                <div class="personales"><!-- datos personales del cliente -->
+                    <h2>Datos personales</h2>
+                    <label for="name">Nombre completo</label>
+                    <input type="text" name="name" id="name" placeholder="luis daniel">
+
+                    <label for="age">Edad</label>
+                    <input type="number" name="age" id="age" placeholder=" 19">
+
+                    <label for="phone_number">Numero de telefono</label>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="+57 310 737 8636">
+
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="luisdaperezpinedo@gmail.com">
+
+                    <label for="address">Direccion</label>
+                    <input type="text" name="address" id="address" placeholder="cra 27 #58-19">
+                </div>
+                <div class="salud"><!-- Información de salud o antecedentes (opcional pero recomendable) -->
+                    <h2>Antecedentes medicos</h2>
+                    <div>
+                        <label for="condicion_medica">¿Tiene alguna condición médica? (lesiones, problemas de espalda, presión alta, etc.)</label>
+                        <input type="radio" name="condicion_medica" id="condicion_medica_si" ><span>si</span>
+                        <input type="radio" name="condicion_medica" id="condicion_medica_no" ><span>no</span>
+                    </div><div>
+                        <label for="tomado_medicamento">¿Está tomando algún medicamento?</label>
+                        <input type="radio" name="tomado_medicamento" id="tomado_medicamento_si" ><span>si</span>
+                        <input type="radio" name="tomado_medicamento" id="tomado_medicamento_no"><span>no</span>
+                    </div><div>
+                        <label for="ha_practicado_yoga">¿Ha practicado yoga antes?</label>
+                        <input type="radio" name="ha_practicado_yoga" id="ha_practicado_yoga_si" ><span>si</span>
+                        <input type="radio" name="ha_practicado_yoga" id="ha_practicado_yoga_no" ><span>no</span>
+                    </div>
+                </div>    
+                <button>Enviar</button>
+            </div>
+        </div>        
+    </section>       
+
+    <!-- Pie de página, donde se muestra información de contacto y redes sociales -->
+    <footer class="main_footer">
+        <!-- Contenedor del pie de página -->
+        <section class="footer_section">
+            <div class="footer_container">
+
+                <div class="footer_title">
+                    <h2>flor de loto</h2>
+                    <h1>conectate con sosotros</h1>
+                    <hr>
+                    <div class="sus">
+                        <div class="input_suscripcion">
+                            <input type="checkbox" name="suscripciones" id="suscripciones" class="suscripciones" required>
+                            <label for="suscripciones">si, suscribeme a tu voletin informativo.*</label>
+                        </div>
+                        <button class="suscribirse">suscribirse</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact_address">
+
+                <h4>contacto</h4>
+                <hr>
+
+                <div class="contact_info">
+                    <p>Teléfono: 123-456-7890</p>
+                    <p>direccion: medellin</p>
+                    <p>correo: email@ejemplo.com</p>
+                </div>
+            </div>  
+        </section>  
+    </footer>
+</body>
+</html>

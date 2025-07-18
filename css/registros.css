@@ -1,0 +1,85 @@
+.personales  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.personales > h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.8em;
+}
+
+.personales > input {
+    margin-bottom:10px ;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #13130c;
+    color: #999696;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+
+}
+
+.salud  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.salud > h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.8em;
+}
+
+.suscribe > button{
+    text-align: center;
+    background-color: #13130c;
+    color: #f3f1c4;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 7px;
+    margin:auto ;
+    width: 20em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #59594a;
+    color: #13130c;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.personales > label {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.suscribe {
+    letter-spacing: 1px;
+}
+
+.main_nav > a:hover {
+    text-transform: none;
+    border: 1px solid #59594a;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+}
