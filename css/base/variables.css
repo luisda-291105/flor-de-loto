@@ -1,0 +1,178 @@
+:root  /* colores */{
+    
+    /* 🎨 Paleta de colores */
+    --color-fondo-principal: #29291f;      /* Verde oscuro */
+    --color-fondo-secundario: #444432;     /* Verde oliva */
+    --color-marquee: #2e2e1e;
+    --color-texto-claro: #f3f1c4;
+    --color-texto-neutro: #eee6c0;
+    --color-overlay-oscuro: #13130c;
+    --color-overlay-claro: #999696;
+    --color-transpatente: rgba(0, 0, 0, 0);
+
+    /* 🔁 Mapear por sección */
+    --bg-header: var(--color-fondo-principal);
+    --bg-services: var(--color-fondo-secundario);
+    --bg-products: var(--color-fondo-principal);
+    --bg-testimonials: var(--color-fondo-secundario);
+    --bg-footer: var(--color-fondo-principal);
+    --bg-buttons: var(--color-texto-claro);
+    --text-buttons: var(--color-fondo-principal);
+}
+
+:root /* fotos */ {
+
+    /* fondos */
+    --img-fondo-primario: url(../../img/chared/imagen_de_yoga_2.jpg);
+    --img-fondo-secundario: url(../../img/chared/images_de_yoga.jpg);
+
+    /* servicios */
+    --img-services-cuarto: url(../../img/chared/cuarto_yoga.jpg);
+    --img-services-clases: url(../../img/gallery/clases_yoga.jpg);
+
+    /* productos */
+    --img-productos-bloque: url(../../img/products/bloque_yoga.jpg);
+    --img-productos-rodillo: url(../../img/products/rodillo_yoga.webp);
+    --img-productos-colchoneta: url(../../img/products/colchoneta_yoga.jpg);
+
+    /* logos */
+    --img-logos-gris: url(../../img/logos/logo1florLotoGris.png);
+    --img-logos-sinFondo: url(../../img/logos/logo_sin_fondo.png);
+    --img-logos-claro: url(../../img/logos/logo_claro-removebg-preview.png);
+    --icon-logos-sinFondo: url(../../img/favicons/logo2_sin_fondo.ico);
+
+
+    /* opacidad de fotos */
+    --foto-oscura: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); 
+}
+
+:root /* fuentes */ {
+
+    --font-size-grande: clamp(2rem, 4vw, 5em);
+    --font-size-normal: clamp(1rem, 2.5vw, 3rem);
+    --font-size-subtitulo: clamp(1rem, 2vw, 2rem);
+    --font-size-base: clamp(0.875rem, 1.5vw, 1.5rem);
+    --font-size-pequena: clamp(0.75rem, 1vw, 1.2rem);
+    --font-size-muy-pequena: clamp(0.5rem, 0.8vw, 0.8rem);
+
+
+
+    /* espacio de letra */
+    --letter-spacing-1px: 0.0625rem; 
+    --letter-spacing-1_5px: 0.09375rem;
+    --letter-spacing-2px: 0.125rem;
+
+    /* altura de filas */
+    --line-height-1: 1;                  /* 16px */
+}
+
+:root /* box Model */ {
+
+    /* Padding responsive */
+    --p-0px: clamp(0rem, 0vw, 0rem);
+    --p-5px: clamp(0.25rem, 0.5vw, 0.3125rem);
+    --p-8px: clamp(0.4rem, 0.8vw, 0.5rem);
+    --p-10px: clamp(0.5rem, 1vw, 0.625rem);
+    --p-20px: clamp(0.75rem, 2vw, 1.25rem);
+    --p-30px: clamp(1.25rem, 3vw, 1.875rem);
+    --p-35px: clamp(1.5rem, 3.5vw, 2.1875rem);
+    --p-40px: clamp(1.75rem, 4vw, 2.5rem);
+    --p-45px: clamp(2rem, 4.5vw, 2.8125rem);
+    --p-50px: clamp(2.25rem, 5vw, 3.125rem);
+    --p-60px: clamp(2.5rem, 6vw, 3.75rem);
+    --p-70px: clamp(2.75rem, 7vw, 4.375rem);
+    --p-80px: clamp(3rem, 8vw, 5rem);
+    --p-90px: clamp(3.5rem, 9vw, 5.625rem);
+    --p-100px: clamp(4rem, 10vw, 6.25rem);
+
+    /* Margin responsive */
+    --m-0px: clamp(0rem, 0vw, 0rem);
+    --m-5px: clamp(0.25rem, 0.5vw, 0.3125rem);
+    --m-10px: clamp(0.5rem, 1vw, 0.625rem);
+    --m-20px: clamp(0.75rem, 2vw, 1.25rem);
+    --m-25px: clamp(1rem, 2.5vw, 1.5625rem);
+    --m-30px: clamp(1.25rem, 3vw, 1.875rem);
+    --m-40px: clamp(1.75rem, 4vw, 2.5rem);
+    --m-50px: clamp(2.25rem, 5vw, 3.125rem);
+    --m-60px: clamp(2.5rem, 6vw, 3.75rem);
+    --m-70px: clamp(2.75rem, 7vw, 4.375rem);
+    --m-80px: clamp(3rem, 8vw, 5rem);
+    --m-90px: clamp(3.5rem, 9vw, 5.625rem);
+    --m-100px: clamp(4rem, 10vw, 6.25rem);
+}
+
+:root /* bordes */{
+    --border-secundario: 1px solid var(--color-texto-neutro);
+    --border-principal: 1px solid var(--color-texto-claro);
+    --border-hover: 1px solid var(--color-fondo-secundario);
+    --border-trasparente: 1px solid var(--color-transpatente);
+    --border-color-testimonio: 1px solid var(--bg-testimonials);
+
+    
+    /* border-radius */
+
+    --border-radius: clamp(0.3125rem, 1vw, 0.625rem);
+
+}
+
+:root /* dimenciones */ {
+    /* Width (anchos fluidos con clamp para medidas fijas) */
+    --width-40: clamp(2rem, 4vw, 2.5rem);
+    --width-100: clamp(4rem, 8vw, 6.25rem);
+    --width-150: clamp(6rem, 12vw, 9.375rem);
+    --width-160: clamp(6.5rem, 13vw, 10rem);
+    --width-200: clamp(8rem, 16vw, 12.5rem);
+
+    /* Height (altos fluidos con clamp para medidas fijas) */
+    --height-40: clamp(2rem, 4vw, 2.5rem);
+
+    /* Width (valores fluidos no necesitan clamp) */
+    --width-100vw: 100vw;
+    --width-95_5vw: 95.5vw;
+    --width-80vw: 80vw;
+    --width-70vw: 70vw;
+    --width-50vw: 50vw;
+    --width-40vw: 40vw;
+    --width-30vw: 30vw;
+    --width-20vw: 20vw;
+    --width-10vw: 10vw;
+    --width-auto: auto;
+
+    /* Height (valores fluidos no necesitan clamp) */
+    --height-100vh: 100vh;
+    --height-95_5vh: 95.5vh;
+    --height-90vh: 90vh;
+    --height-80vh: 80vh;
+    --height-70vh: 70vh;
+    --height-60vh: 60vh;
+    --height-50vh: 50vh;
+    --height-40vh: 40vh;
+    --height-30vh: 30vh;
+    --height-20vh: 20vh;
+    --height-10vh: 10vh;
+    --height-auto: auto;
+}
+
+:root /* pociciones */ {
+    
+    /* Distancias comunes */
+    --position-0: 0;
+    --position-5px: 0.313rem; 
+    --position-10px: 0.625rem;
+    --position-20px: 1.25rem;
+    --position-50px: 3.125rem;
+    --pocicion-60px: 3.75rem;
+
+
+    --position-center: 50%;
+    --pocicion-absolute: absolute;
+    --pocicion-relative: relative;
+
+    /* z-index */
+    --z-base: 1;
+    --z-modal: 10;
+    --z-overlay: 1000;
+}
+
+
+

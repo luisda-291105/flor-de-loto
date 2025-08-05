@@ -4,52 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/logo_claro-removebg-preview.png"  type="image/png" > 
+    <script type="module" src="../../js/components/footer.js"></script>
+    <script type="module" src="../../js/components/nav.js"></script>
+    <script type="module" src="../../js/components/header.js"></script>
+    <style>
+        @media screen and (max-width:768px) {
+            header{
+                
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Esta parte es la CABECERA de la página, es decir, la parte de arriba donde está el logo y el menú -->
-<header class="main_header">
-    
-    <!--  Aquí está el logo del sitio: una flor y el nombre "flor de loto" -->
-    <div class="logo">
-        <!-- La flor que acompaña al texto -->
-        <span class="logo_icon">❀</span>
-        <!-- El texto del logo: "flor de loto" -->
-        <span class="main_text">flor de loto</span>
-    </div>
+    <Main-Header></Main-Header>
 
-    <!-- Este es el menú de navegación, como una lista de botones para moverse por la página -->
-    <nav class="main_nav">
-        <ol>              
-            <li><a href="">Registrarme</a></li>  
-        </ol>
-    </nav>
-</header>
 
+<main>
 <section class="registro">
     <div class="main_registro">
-        <img src="../img/logo_sin_fondo.png" alt="">
+        <img src="../../img/logos/logo_sin_fondo.png" alt="">
         <div class="r_txt">
-            <h2>administrador</h2>
+            <h2>registro</h2>
             <p>Bienvenid@ </p>
         </div>
         <div class="r_input">
             <label for="username">Username</label>
-            <input type="email tel" name="username" id="username" placeholder="Flor de loto">
+            <input type="email" name="username" id="username" placeholder="Flor de loto">
 
             <label for="userpassword">Password</label>
             <input type="password" name="userpassword" id="userpassword" placeholder="Descubre Nuestro Mundo">
 
+            <a href="">olvide mi contraseña</a>
             <button >Enviar</button>
         </div>
-        <a href="">olvide mi contraseña</a>
     </div>
 </section>
+</main>
 
-<!-- Pie de página, donde se muestra información de contacto y redes sociales -->
-<footer class="main_footer">
-    <!-- Contenedor del pie de página -->
+<footer-component 
+    company="Flor de Loto" 
+    phone="+57 321 654 9870" 
+    address="Cra 123 #45-67" 
+    email="contacto@flordeloto.com">
+</footer-component>
+
+</body>
+</html>
+
+<!-- <header class="main_header">
+    <div class="logo">
+        <span class="logo_icon">❀</span>
+        <span class="main_text">Flor de loto</span>
+    </div>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+</header> -->
+
+<!-- <footer class="main_footer">
     <section class="footer_section">
         <div class="footer_container">
 
@@ -79,6 +99,4 @@
             </div>
         </div>  
     </section>  
-</footer>
-</body>
-</html>
+</footer> -->

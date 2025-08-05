@@ -1,0 +1,27 @@
+/* Define la sección de servicios */
+.main_post {
+    width: 100vw;
+    height: auto;
+    background-color: #444432;
+    color: #f3f1c4;
+    box-sizing: border-box;
+    padding: 10px 0 50px 0;
+    text-align: center;
+    
+}
+
+.article_post {
+    display: flex;
+    gap: 10pz;
+    align-items: center;
+    transform: translatey(50px)  ;
+    transform:translatex(100px) ;
+}
+
+.title_post {
+    margin: 30px;
+}
+
+
+
+

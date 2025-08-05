@@ -1,0 +1,15 @@
+git commit -m "Inicio de reestructuración de la página web: nueva arquitectura de carpetgias y conexión inicial de imágenes
+
+Detalles del commit:
+
+- Se reorganizó completamente la estructura del proyecto:
+    • CSS modular dividido en: base/, components/, layout/, pages/, utilities/
+    • HTML clasificado por propósito: auth/, products/, subscribers/, testimonials/
+    • Imágenes distribuidas en: chared/, gallery/, logos/, products/, favicons/
+- Eliminados archivos CSS antiguos: style.css y registros.css
+- Agregados archivos para futura funcionalidad JS, aún vacíos
+- Únicamente están conectadas las imágenes; aún se están definiendo las variables CSS
+- Añadida documentación visual y textual en docs/ (diagramas e ideas)
+- index.html parcialmente adaptado a la nueva estructur
+Este commit marca el inicio de la nueva arquitectura del sitio web.
+En próximas etapas se completará la conexión de estilos y se implementará JS funcional

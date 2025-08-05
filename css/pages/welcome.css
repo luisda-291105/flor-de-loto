@@ -1,0 +1,94 @@
+
+
+/* ---------- CUERPO DE LA PÁGINA ---------- */
+
+/* Caja grande donde va el contenido principal */
+.main_body {
+    text-align: center;        
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;          
+    flex-direction: column;     
+    gap: var(--m-10px);                 
+
+    width: var(--width-95_5vw);
+    height: var(--height-70vh);
+    margin-top: var(--m-100px);         
+    background-color: var(--bg-header);
+    color: var(--bg-buttons);            
+}
+
+/*-----  Esto es para el título grande que está en el centro -----*/
+h1 {
+    font: var(--font-titulo-grande-5rem) serif;                
+}
+
+/* Contenido dentro del cuerpo principal */
+.body_contenido {
+    padding: var(--p-10px);
+    margin: auto;
+}
+
+
+
+/*----------------  BOTON EXPLORAR----------------*/
+
+/*--  Esto es el estilo del botón que dice: "Explora tu mundo" --*/
+#explorar_ahora {
+    margin: auto;                  
+    border: var(--border-trasparente);  
+    border-radius: var(--p-20px);          
+    width: var(--width-160px);                    
+    height: var(--height-auto);
+    background-color: var(--bg-buttons);    
+    color: var(--bg-header);                
+    padding: var(--p-10px);                 
+    margin-bottom: var(--p-45px);           
+    font-size: var(--font-subtitulo) ;              
+}
+
+/*--  Esto es lo que pasa cuando pasas el mouse por encima del botón --*/
+#explorar_ahora:hover {
+    border: var(--border-principal);                
+    border-radius: var(--p-20px);                        
+    background-color: var(--color-transpatente);              
+    color: var(--bg-buttons);                   
+}
+
+
+
+/* ---------- CINTA DE TEXTO QUE SE MUEVE (MARQUEE) ---------- */
+
+/* Caja de la cinta */
+.bienestar-marquee {
+    margin: auto;
+    overflow: hidden;          
+    font-family: 'Georgia', serif;
+    
+    font-size: var(--font-base);           
+    margin-bottom: var(--m-0px);
+    width: var(--width-95_5vw);
+    background: var(--color-dark-tertiary);       
+    color:var(--text-buttons);             
+    padding: var(--p-8px) var(--p-0px);            
+}
+
+/* Pista donde el texto se mueve (como si fuera una banda) */
+.bienestar-contenido {
+    display: flex;              
+    width: max-content;         
+    animation: scroll 20s linear infinite; 
+
+}
+
+/* Estilo para que el texto no se divida en varias líneas */
+.bienestar-contenido span {
+    white-space: nowrap;       
+}
+
+/* Animación que mueve el texto de derecha a izquierda */
+@keyframes scroll {
+    0%   { transform: translateX(0); }         
+    100% { transform: translateX(-50%); }      
+}
+

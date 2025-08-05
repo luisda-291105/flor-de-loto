@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/logo_claro-removebg-preview.png"  type="image/png" > 
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="icon" href="../1-b0ea81f2 - copia.icou"  type="image/x-icon" > 
 </head>
-
 <body>
     <!-- Esta parte es la CABECERA de la página, es decir, la parte de arriba donde está el logo y el menú -->
-<header class="main_header">
+    <header class="main_header">
     
     <!--  Aquí está el logo del sitio: una flor y el nombre "flor de loto" -->
     <div class="logo">
@@ -22,35 +22,34 @@
 
     <!-- Este es el menú de navegación, como una lista de botones para moverse por la página -->
     <nav class="main_nav">
-        <ol>              
-            <li><a href="">ir al inicio</a></li>  
-            <li><a href="">Registrarme</a></li>  
+        <ol>
+            <!-- Cada <li> es un botón que puedes apretar -->
+            <li><a href="registro_admin.html">Iniciar secion</a></li>                                  
+            <li><a href="">Registrarme</a></li>      
         </ol>
     </nav>
-</header>
+    </header>
 
-<section class="registro">
-    <div class="main_registro">
-        <img src="../img/logo_sin_fondo.png" alt="">
-        <div class="r_txt">
-            <h2>registro</h2>
-            <p>Bienvenid@ </p>
+    <section class="main_post">
+        <div class="title_post">
+            <h1>testimoios</h1>
+            <h5>lo que a nuestros alumnos dicen</h5>
+            <p>Nuestros alumnos comparten sus experiencias 
+                en Flor de Loto  y cómo el yoga ha transformado 
+                sus vidas, brindándoles equilibrio, bienestar 
+                y paz interior.</p>
         </div>
-        <div class="r_input">
-            <label for="username">Username</label>
-            <input type="email" name="username" id="username" placeholder="Flor de loto">
-
-            <label for="userpassword">Password</label>
-            <input type="password" name="userpassword" id="userpassword" placeholder="Descubre Nuestro Mundo">
-
-            <a href="">olvide mi contraseña</a>
-            <button >Enviar</button>
-        </div>
-    </div>
-</section>
-
-<!-- Pie de página, donde se muestra información de contacto y redes sociales -->
-<footer class="main_footer">
+        <article class="article_post">
+            <img src="../img/images_de_yoga.jpg" alt="">
+            <div class="post_txt">
+            <h2>Ana Pérez</h2>
+            <hr>
+            <p>El ambiente en Flor de Loto es mágico. Cada clase me llena de energía positiva y calma interior.</p>
+            </div>
+        </article>
+    </section>
+    <!-- Pie de página, donde se muestra información de contacto y redes sociales -->
+    <footer class="main_footer">
     <!-- Contenedor del pie de página -->
     <section class="footer_section">
         <div class="footer_container">
@@ -81,6 +80,6 @@
             </div>
         </div>  
     </section>  
-</footer>
+    </footer>
 </body>
 </html>

@@ -4,52 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flor de loto</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/registered.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/welcome.css">
+    <link rel="stylesheet" href="/css/service.css">
+    <link rel="stylesheet" href="/css/testimony.css">
+    <link rel="stylesheet" href="/css/we.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
     <link rel="icon" href="../img/logo_claro-removebg-preview.png"  type="image/png" > 
 </head>
 <body>
-<!-- Esta parte es la CABECERA de la página, es decir, la parte de arriba donde está el logo y el menú -->
 <header class="main_header">
-    
-    <!--  Aquí está el logo del sitio: una flor y el nombre "flor de loto" -->
     <div class="logo">
-        <!-- La flor que acompaña al texto -->
         <span class="logo_icon">❀</span>
-        <!-- El texto del logo: "flor de loto" -->
         <span class="main_text">Flor de loto</span>
     </div>
-
-    <!-- Este es el menú de navegación, como una lista de botones para moverse por la página -->
-    <nav class="main_nav">
-        <ol>
-            <!-- Cada <li> es un botón que puedes apretar -->
-            <li><a href="registro_admin.html">Iniciar secion</a></li>                                  
-            <li><a href="">Registrarme</a></li>      
-        </ol>
-    </nav>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
 </header>
-
-<!--  Esta parte es el CUERPO PRINCIPAL, donde está el contenido principal que la gente ve primero -->
+<main>
 <section class="main_section">
     
 <div class="main_body">
-
-    <!--  Un mensaje para saludar a los visitantes -->
-    <!--  Aquí se repite class, y eso está mal: solo debe tener una vez class con varias clases separadas por espacio -->
     <p class="body_contenido ">Bienvenidos a Nuestro Espacio de <br> yoga</p>
-
-    <!--  Un título grande que invita a explorar -->
     <h1 class="body_contenido ">Descubre <br> Nuestro Mundo</h1>
-
-    <!--  Un botón para que el visitante haga clic y explore -->
     <a  href="#servicio" class="body_contenido" id="explorar_ahora">Explora Ahora</a>
-
 </div>
 
-<!--  Esta es una CINTA que se mueve sola y muestra el texto "Bienestar Integral" una y otra vez -->
 <div class="bienestar-marquee">
     <div class="bienestar-contenido">
-        <!--  Aquí ponemos dos veces el mismo texto para que se vea como una cinta que no se acaba -->
         <span>
             Bienestar Integral • Bienestar Integral • Bienestar Integral • Bienestar Integral • Bienestar Integral • Bienestar Integral
         </span>
@@ -60,13 +52,11 @@
 </div>
 </section>
 
-<!-- esta es la cetion de los productos-->
 <section class="productos">
 
     <h2 class="titulo_productos">productos</h2>
 
     <div class="product_list">
-        <!-- aqui van todos los productos , cada uno con sus imagenes y nombre-->
         <div class="product_item">
             <div class="img_box">
             <img src="../img/colchoneta_yoga.jpg" alt="" class="imagen"></img>
@@ -90,36 +80,21 @@
     </div>
 </section>
 
-<!-- Sección que muestra los servicios disponibles -->
 <section class="servicios" id="servicio">
-
-    <!-- Título principal de la sección -->
     <h2 class="titulo_servicios">servicios</h2>
 
-    <!-- Primer servicio: clases de yoga -->
     <div class="contener_servicios">
-
-        <!-- Imagen representativa del servicio -->
         <img src="../img/clases_yoga.jpg" alt="">
-
-        <!-- Descripción y precio del servicio -->
         <div class="descripcion_servicio">
             <p>clases de yoga</p>
             <hr>
             <p>100 $</p>
-
-            <!-- Enlace para reservar -->
             <a href="suscribete.html">suscribirse</a>
         </div>
     </div>
 
-    <!-- Segundo servicio: bloque de yoga (producto o accesorio) -->
     <div class="contener_servicios">
-
-        <!-- Imagen del producto o servicio -->
         <img src="../img/bloque_yoga.jpg" alt="">
-
-        <!-- Descripción, precio y botón de reserva -->
         <div class="descripcion_servicio">
             <p>clases de yoga</p>
             <hr>
@@ -130,17 +105,9 @@
     
 </section>
 
-
-<!-- Sección "Nosotros", describe quiénes son -->
 <section class="nosotros">
-
-    <!-- Contenedor del contenido textual de la sección -->
     <div class="contenido_nosotros">
-
-        <!-- Título principal de la sección -->
         <h2 class="titulo_nosotros">Acerca de <br>Nosotros</h2>
-
-        <!-- Párrafo con la descripción del estudio de yoga -->
         <p class="descripcion_nosotros">
             Flor de Loto es un estudio de yoga comprometido con brindar bienestar integral a través de
             clases de yoga enriquecedoras, productos especializados y un 
@@ -149,11 +116,9 @@
             conexión con tu ser interior, en un espacio que promueve la paz 
             y la serenidad.
         </p>
-
     </div>
 </section>
 
-<!-- Sección de testimonios, donde los alumnos comparten sus experiencias -->
 <section class="testimonios">
     <!-- Título y subtítulo de la sección de testimonios -->
     <div class=" title_testimonios">
@@ -179,10 +144,8 @@
         </div>    
     </div>
 </section>
-
-<!-- Pie de página, donde se muestra información de contacto y redes sociales -->
+</main>
 <footer class="main_footer">
-    <!-- Contenedor del pie de página -->
     <section class="footer_section">
         <div class="footer_container">
 
