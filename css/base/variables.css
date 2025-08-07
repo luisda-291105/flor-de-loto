@@ -67,38 +67,75 @@
 }
 
 :root /* box Model */ {
+    --spacing-0: clamp(0rem, 0vw, 0rem);
+    --spacing-5: clamp(0.25rem, 0.5vw, 0.3125rem);
+    --spacing-10: clamp(0.5rem, 1vw, 0.625rem);
+    --spacing-15: clamp(0.625rem, 1.5vw, 0.9375rem);
+    --spacing-20: clamp(0.75rem, 2vw, 1.25rem);
+    --spacing-25: clamp(1rem, 2.5vw, 1.5625rem);
+    --spacing-30: clamp(1.25rem, 3vw, 1.875rem);
+    --spacing-35: clamp(1.5rem, 3.5vw, 2.1875rem);
+    --spacing-40: clamp(1.75rem, 4vw, 2.5rem);
+    --spacing-45: clamp(2rem, 4.5vw, 2.8125rem);
+    --spacing-50: clamp(2.25rem, 5vw, 3.125rem);
+    --spacing-55: clamp(2.375rem, 5.5vw, 3.4375rem);
+    --spacing-60: clamp(2.5rem, 6vw, 3.75rem);
+    --spacing-65: clamp(2.625rem, 6.5vw, 4rem);
+    --spacing-70: clamp(2.75rem, 7vw, 4.375rem);
+    --spacing-75: clamp(2.875rem, 7.5vw, 4.6875rem);
+    --spacing-80: clamp(3rem, 8vw, 5rem);
+    --spacing-85: clamp(3.125rem, 8.5vw, 5.3125rem);
+    --spacing-90: clamp(3.5rem, 9vw, 5.625rem);
+    --spacing-95: clamp(3.75rem, 9.5vw, 5.9375rem);
+    --spacing-100: clamp(4rem, 10vw, 6.25rem);
+
+
 
     /* Padding responsive */
-    --p-0px: clamp(0rem, 0vw, 0rem);
-    --p-5px: clamp(0.25rem, 0.5vw, 0.3125rem);
-    --p-8px: clamp(0.4rem, 0.8vw, 0.5rem);
-    --p-10px: clamp(0.5rem, 1vw, 0.625rem);
-    --p-20px: clamp(0.75rem, 2vw, 1.25rem);
-    --p-30px: clamp(1.25rem, 3vw, 1.875rem);
-    --p-35px: clamp(1.5rem, 3.5vw, 2.1875rem);
-    --p-40px: clamp(1.75rem, 4vw, 2.5rem);
-    --p-45px: clamp(2rem, 4.5vw, 2.8125rem);
-    --p-50px: clamp(2.25rem, 5vw, 3.125rem);
-    --p-60px: clamp(2.5rem, 6vw, 3.75rem);
-    --p-70px: clamp(2.75rem, 7vw, 4.375rem);
-    --p-80px: clamp(3rem, 8vw, 5rem);
-    --p-90px: clamp(3.5rem, 9vw, 5.625rem);
-    --p-100px: clamp(4rem, 10vw, 6.25rem);
+    --p-0: var(--spacing-0);
+    --p-5: var(--spacing-5);
+    --p-10: var(--spacing-10) ;
+    --p-15: var(--spacing-15) ;
+    --p-20: var(--spacing-20) ;
+    --p-25: var(--spacing-25) ;
+    --p-30: var(--spacing-30) ;
+    --p-35: var(--spacing-35) ;
+    --p-40: var(--spacing-40) ;
+    --p-45: var(--spacing-45) ;
+    --p-50: var(--spacing-50) ;
+    --p-55: var(--spacing-55) ;
+    --p-60: var(--spacing-60) ;
+    --p-65: var(--spacing-65) ;
+    --p-70: var(--spacing-70) ;
+    --p-75: var(--spacing-75) ;
+    --p-80: var(--spacing-80) ;
+    --p-85: var(--spacing-85) ;
+    --p-90: var(--spacing-90) ;
+    --p-95: var(--spacing-95) ;
+    --p-100: var(--spacing-100);
 
     /* Margin responsive */
-    --m-0px: clamp(0rem, 0vw, 0rem);
-    --m-5px: clamp(0.25rem, 0.5vw, 0.3125rem);
-    --m-10px: clamp(0.5rem, 1vw, 0.625rem);
-    --m-20px: clamp(0.75rem, 2vw, 1.25rem);
-    --m-25px: clamp(1rem, 2.5vw, 1.5625rem);
-    --m-30px: clamp(1.25rem, 3vw, 1.875rem);
-    --m-40px: clamp(1.75rem, 4vw, 2.5rem);
-    --m-50px: clamp(2.25rem, 5vw, 3.125rem);
-    --m-60px: clamp(2.5rem, 6vw, 3.75rem);
-    --m-70px: clamp(2.75rem, 7vw, 4.375rem);
-    --m-80px: clamp(3rem, 8vw, 5rem);
-    --m-90px: clamp(3.5rem, 9vw, 5.625rem);
-    --m-100px: clamp(4rem, 10vw, 6.25rem);
+    --m-0:  var(--spacing-0) ;
+    --m-5:  var(--spacing-5) ;
+    --m-10: var(--spacing-10) ;
+    --m-15: var(--spacing-15) ;
+    --m-20: var(--spacing-20) ;
+    --m-25: var(--spacing-25) ;
+    --m-30: var(--spacing-30) ;
+    --m-35: var(--spacing-35) ;
+    --m-40: var(--spacing-40) ;
+    --m-45: var(--spacing-45) ;
+    --m-50: var(--spacing-50) ;
+    --m-55: var(--spacing-55) ;
+    --m-60: var(--spacing-60) ;
+    --m-65: var(--spacing-65) ;
+    --m-70: var(--spacing-70) ;
+    --m-75: var(--spacing-75) ;
+    --m-80: var(--spacing-80) ;
+    --m-85: var(--spacing-85) ;
+    --m-90: var(--spacing-90) ;
+    --m-95: var(--spacing-95) ;
+    --m-100:var(--spacing-100) ;
 }
 
 :root /* bordes */{
@@ -116,19 +153,16 @@
 }
 
 :root /* dimenciones */ {
-    /* Width (anchos fluidos con clamp para medidas fijas) */
-    --width-40: clamp(2rem, 4vw, 2.5rem);
-    --width-100: clamp(4rem, 8vw, 6.25rem);
-    --width-150: clamp(6rem, 12vw, 9.375rem);
-    --width-160: clamp(6.5rem, 13vw, 10rem);
-    --width-200: clamp(8rem, 16vw, 12.5rem);
-
-    /* Height (altos fluidos con clamp para medidas fijas) */
-    --height-40: clamp(2rem, 4vw, 2.5rem);
+    --w-full: 100%;
+    --w-screen: 100vw;
+    --w-half: 50%;
+    --h-screen: 100vh;
+    --h-auto: auto;
+    --width-auto: auto;
 
     /* Width (valores fluidos no necesitan clamp) */
-    --width-100vw: 100vw;
-    --width-95_5vw: 95.5vw;
+
+    --width-95_5vw: 90vw;
     --width-80vw: 80vw;
     --width-70vw: 70vw;
     --width-50vw: 50vw;
@@ -136,11 +170,9 @@
     --width-30vw: 30vw;
     --width-20vw: 20vw;
     --width-10vw: 10vw;
-    --width-auto: auto;
+
 
     /* Height (valores fluidos no necesitan clamp) */
-    --height-100vh: 100vh;
-    --height-95_5vh: 95.5vh;
     --height-90vh: 90vh;
     --height-80vh: 80vh;
     --height-70vh: 70vh;
@@ -150,18 +182,16 @@
     --height-30vh: 30vh;
     --height-20vh: 20vh;
     --height-10vh: 10vh;
-    --height-auto: auto;
 }
 
-:root /* pociciones */ {
+:root /* posiciones */ {
     
-    /* Distancias comunes */
     --position-0: 0;
-    --position-5px: 0.313rem; 
-    --position-10px: 0.625rem;
-    --position-20px: 1.25rem;
-    --position-50px: 3.125rem;
-    --pocicion-60px: 3.75rem;
+    --position-5: 0.313rem; 
+    --position-10: 0.625rem;
+    --position-20: 1.25rem;
+    --position-50: 3.125rem;
+    --pocicion-60: 3.75rem;
 
 
     --position-center: 50%;
@@ -171,7 +201,6 @@
     /* z-index */
     --z-base: 1;
     --z-modal: 10;
-    --z-overlay: 1000;
 }
 
 
