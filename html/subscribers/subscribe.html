@@ -1,111 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/registros.css">
-    <link rel="icon" href="../img/logo_claro-removebg-preview.png"  type="image/png" > 
-
 </head>
 <body>
-<header class="main_header">
-    <div class="logo">
-        <span class="logo_icon">❀</span>
-        <span class="main_text">Flor de loto</span>
-    </div>
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="boton-menu">☰</label>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-</header>
-
+<main>
     <section class="registro">
-        <div class="main_registro">
-            <img src="../img/logo_sin_fondo.png" alt="es la flor de loto">
-            <div class="r_txt">
-                <h2>registro</h2>
-                <p>ingresa los datos que se piden en el sigiente formulario</p>
-            </div>
-        
-    
-            <div class="suscribe">
-                <div class="personales"><!-- datos personales del cliente -->
-                    <h2>Datos personales</h2>
+        <article class="suscribe-info">
+            <img class="main-img" src="../img/logo_sin_fondo.png" alt="flor de loto logo">
+            <h1 class="main-title">Suscribete</h1>
+            <p class="txt-main">Si quieres recibir información sobre nuestras clases, horarios y eventos, por favor completa el siguiente formulario.</p>
+            <p class="txt-main">Si tienes alguna pregunta, no dudes en contactarnos.</p>
+        </article>
+
+        <form action="#" method="post" class="suscribe-form">
+                <fieldset class="personal-data">
+                    <legend class="from-title">Datos personales</legend>
                     <label for="name">Nombre completo</label>
-                    <input type="text" name="name" id="name" placeholder="luis daniel">
+                    <input type="text" name="name" id="name" placeholder="luis daniel" required>
 
                     <label for="age">Edad</label>
-                    <input type="number" name="age" id="age" placeholder=" 19">
+                    <input type="number" name="age" id="age" placeholder="19" required>
 
                     <label for="phone_number">Numero de telefono</label>
-                    <input type="tel" name="phone_number" id="phone_number" placeholder="+57 310 737 8636">
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="+57 310 737 8636" required>
 
                     <label for="email">Correo</label>
-                    <input type="email" name="email" id="email" placeholder="luisdaperezpinedo@gmail.com">
+                    <input type="email" name="email" id="email" placeholder="luisdaperezpinedo@gmail.com" required>
 
                     <label for="address">Direccion</label>
-                    <input type="text" name="address" id="address" placeholder="cra 27 #58-19">
-                </div>
-                <div class="salud"><!-- Información de salud o antecedentes (opcional pero recomendable) -->
-                    <h2>Antecedentes medicos</h2>
-                    <div>
-                        <label for="condicion_medica">¿Tiene alguna condición médica? (lesiones, problemas de espalda, presión alta, etc.)</label>
-                        <input type="radio" name="condicion_medica" id="condicion_medica_si" ><span>si</span>
-                        <input type="radio" name="condicion_medica" id="condicion_medica_no" ><span>no</span>
-                    </div><div>
-                        <label for="tomado_medicamento">¿Está tomando algún medicamento?</label>
-                        <input type="radio" name="tomado_medicamento" id="tomado_medicamento_si" ><span>si</span>
-                        <input type="radio" name="tomado_medicamento" id="tomado_medicamento_no"><span>no</span>
-                    </div><div>
-                        <label for="ha_practicado_yoga">¿Ha practicado yoga antes?</label>
-                        <input type="radio" name="ha_practicado_yoga" id="ha_practicado_yoga_si" ><span>si</span>
-                        <input type="radio" name="ha_practicado_yoga" id="ha_practicado_yoga_no" ><span>no</span>
+                    <input type="text" name="address" id="address" placeholder="cra 27 #58-19" required>
+                </fieldset>
+
+                <fieldset class="salud-data">
+                    <legend class="title-producto">Datos de salud</legend>
+                    <div class="condicion-medica">
+                        <p>¿Tiene alguna condición  médica? (lesiones, problemas de espalda, presión alta, etc.)</p>
+                        <input type="radio" name="condicion_medica" id="condicion_medica_si" value="si">
+                        <label for="condicion_medica_si">si</label>
+
+                        <input type="radio" name="condicion_medica" id="condicion_medica_no" value="no">
+                        <label for="condicion_medica_no">no</label>
                     </div>
-                </div>    
-                <button>Enviar</button>
-            </div>
-        </div>        
-    </section>       
 
-    <!-- Pie de página, donde se muestra información de contacto y redes sociales -->
-    <footer class="main_footer">
-        <!-- Contenedor del pie de página -->
-        <section class="footer_section">
-            <div class="footer_container">
+                    <div class="tomado-medicamento">
+                        <p>¿Está tomando algún medicamento?</p>
+                        <input type="radio" name="tomado_medicamento" id="tomado_medicamento_si" value="si">
+                        <label for="tomado_medicamento_si">si</label>
 
-                <div class="footer_title">
-                    <h2>flor de loto</h2>
-                    <h1>conectate con sosotros</h1>
-                    <hr>
-                    <div class="sus">
-                        <div class="input_suscripcion">
-                            <input type="checkbox" name="suscripciones" id="suscripciones" class="suscripciones" required>
-                            <label for="suscripciones">si, suscribeme a tu voletin informativo.*</label>
-                        </div>
-                        <button class="suscribirse">suscribirse</button>
+                        <input type="radio" name="tomado_medicamento" id="tomado_medicamento_no" value="no">
+                        <label for="tomado_medicamento_no">no</label>
                     </div>
-                </div>
-            </div>
 
-            <div class="contact_address">
+                    <div class="ha_practicado_yoga">
+                        <p>¿Ha practicado yoga antes?</p>
+                        <input type="radio" name="ha_practicado_yoga" id="ha_practicado_yoga_si" value="si">
+                        <label for="ha_practicado_yoga_si">si</label>
 
-                <h4>contacto</h4>
-                <hr>
-
-                <div class="contact_info">
-                    <p>Teléfono: 123-456-7890</p>
-                    <p>direccion: medellin</p>
-                    <p>correo: email@ejemplo.com</p>
-                </div>
-            </div>  
-        </section>  
-    </footer>
+                        <input type="radio" name="ha_practicado_yoga" id="ha_practicado_yoga_no" value="no">
+                        <label for="ha_practicado_yoga_no">no</label>
+                    </div>
+                </fieldset>       
+                <button type="submit" class="btn-send" >Enviar</button>
+                <button type="reset"  class="btn-clear">limpiar</button>
+        </form>         
+    </section>  
+</main>         
 </body>
 </html>
