@@ -1,6 +1,6 @@
 /* ============== contenido principal ================ */
 
-.main-content {
+main {
     background-color: var(--color-fondo-secundario);
     transition: var(--transition);
 
