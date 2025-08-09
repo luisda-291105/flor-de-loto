@@ -1,168 +1,76 @@
-.personales  {
-    padding: var(--p-20px);
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
+/* ============== login ============= */
 
-.personales > h2 {
-    text-align: center;
-    margin: var(--m-20px);
-    font-size: var(--font-titulo-grande-1_8rem);
-}
-
-.personales > input {
-    margin-bottom:var(--m-10px) ;
-    border: none;
-    border-radius: var(--border-radius-5px);
-    padding: var(--p-10px);
-    background-color: var(--color-overlay-oscuro);
-    color: var(--color-overlay-claro);
-    letter-spacing: var(--letter-spacing-1px);
-    margin-bottom: var(--m-30px);
-
-}
-
-.salud  {
-    padding: var(--p-20px);
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
-    text-align: left;
-    flex-wrap: wrap;
-    gap: var(--p-10px);
-}
-
-.salud > h2 {
-    text-align: center;
-    margin: var(--m-20px);
-    font-size: var(--font-titulo-grande-1_8rem);
-}
-
-.suscribe > button{
-    text-align: center;
-    background-color: var(--color-overlay-oscuro);
-    color: var(--color-texto-claro);
-    border: var(--border-trasparente);
-    border-radius: var(--border-radius-10px);
-    padding: var(--p-8px);
-    margin:auto ;
-    width: var(--width-20vw);
-    margin-bottom: var(--m-20px);
-    margin-top: var(--m-20px);
-    transition: all 1s ease-in-out;
-}
-
-button:hover {
-    background-color: var(--color-fondo-secundario);
-    color: var(--color-overlay-oscuro);
-}
-
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.personales > label {
-    padding: var(--p-10px);
-    margin-left: var(--m-20px);
-}
-
-.suscribe {
-    letter-spacing: var(--letter-spacing-1px);
-}
-
-.main_nav > a:hover {
-    text-transform: none;
-    border:var(--border-color-testimonio);
-    padding: var(--p-5px);
-    letter-spacing: var(--letter-spacing-1px);
-    background-color: var(--color-transpatente);
-    border-radius: var(--border-radius-10px);
-    transition: 0.3s all ease;
-}
-
-/* ------------------------------- */
-
-
-/*------------- registros ----------------*/
-
-.registro {
-    display: block;
-    width: var(--width-100vw);
-    height: var(--height-auto);
-    background-color: var(--bg-header);
-    text-align: center;
-    color: var(--bg-buttons);
-    transition: all 1s ease-in-out;
-}
-
-.main_registro {
+.main-login > img {
+    width: var(--w-30);
+    padding: var(--p-10);
     margin: auto;
-    padding: var(--p-100px);
+
 }
 
-.main_registro > img {
-    width: var(--width-10vw);
-    margin: var(--m-0px);
-}
-
-.r_txt {
-    padding: var(--p-10px) var(--p-10px) var(--p-0px) var(--p-50px) var(--p-0px);
-}
-
-.r_txt > h2 {
-    padding: var(--p-10px);
-    font-size: var(--font-titulo-grande-2rem) ;
-    font-family: serif;
-    text-transform: uppercase;
-}
-
-.r_txt > p {
-    font-family: monospace;
-    font-size: var(--font-titulo-grande-2rem);
-}
-
-.r_input {
+.main-login {
     display: flex;
     flex-direction: column;
+    gap: var(--g-10);
 }
 
-.r_input > label {
-    padding-bottom: 10px;
-    font-size: var(--font-subtitulo);
+.main-login > h1 {
+    font-size: var(--font-size-grande);
+    margin-bottom: var(--m-30);
+}
+
+/* formulario */
+
+.form_login {
+    height: var(--h-w-auto);
+}
+
+.form_fieldset {
+
+    display: flex;
+    flex-direction: column;
+    padding: var(--p-10);
+    gap: var(--g-5);
+    border-radius: var(--border-radius);
+}
+
+.form_fieldset > legend {
+    text-align: left;
+    font-size: var(--font-size-normal);
+}
+
+.form_fieldset > label {
+    margin: var(--m-10);
 
 }
 
-.r_input > input {
-    text-align: center;
-    background-color: var(--color-dark-backdrop);
-    color: var(--color-light-backdrop);
-    border: var(--border-trasparente);
-    border-radius: var(--border-radius-10px);
-    padding: var(--p-8px);
-    margin: var(--m-10px);
+.form_fieldset > input {
+    padding: var(--p-5);
+    padding-left: var(--p-10);
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none ;
+    background-color: var(--color-input-claro);
 }
 
-.r_input > button {
-    text-align: center;
-    background-color: var(--color-dark-backdrop);
-    color: var(--bg-buttons);
-    border: var(--border-trasparente);
-    border-radius: var(--border-radius-10px);
-    padding: var(--p-8px);
-    margin:auto ;
-    width: var(--width-20vw);
-    margin-bottom: var(--m-20px);
-    margin-top: var(--m-20px);
-    transition: all 1s ease-in-out;
+.btn {
+    margin: var(--m-20);
+    padding: var(--p-5);
+
+    color: var(--color-texto-secundario);
+    border-radius: var(--border-radius);
+
+    text-decoration: none;
+    border: none;
 }
 
-.main_registro > a{
-    flex-direction: row;
-    padding: var(--m-20px);
-    text-align: center;
+.btn-envia {
+    background-color: var(--color-input-claro);
 
 }
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+
+

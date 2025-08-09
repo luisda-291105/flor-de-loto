@@ -35,3 +35,18 @@
 .contact_info {
     margin: auto;
 }
+
+.suscribirse {
+    outline: none;
+    padding: var(--p-5);
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+}
+
+.suscribirse:hover {
+    color: var(--color-texto-principal);
+    background-color: var(--color-transpatente);
+    border: var(--border-secundario);
+    
+    
+}

@@ -1,27 +1,24 @@
-/* Define la sección de servicios */
-.main_post {
-    width: 100vw;
-    height: auto;
-    background-color: #444432;
-    color: #f3f1c4;
-    box-sizing: border-box;
-    padding: 10px 0 50px 0;
+/* ============== contenido principal ================ */
+
+.main-content {
+    background-color: var(--color-fondo-secundario);
+    transition: var(--transition);
+
+    height: var(--w-full);
+    width: var(--w-full);
+
+    padding: var(--p-100);
     text-align: center;
-    
 }
 
-.article_post {
-    display: flex;
-    gap: 10pz;
-    align-items: center;
-    transform: translatey(50px)  ;
-    transform:translatex(100px) ;
+.hover {
+    border: var(--border-trasparente);
 }
 
-.title_post {
-    margin: 30px;
+.hover:hover {
+    background-color: var(--color-transpatente);
+    border: var(--border-principal);
 }
-
 
 
 

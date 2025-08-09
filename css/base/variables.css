@@ -1,23 +1,30 @@
-:root  /* colores */{
+:root /* 🎨 Paleta de colores */{
+    /* fondo */
+    --color-fondo-principal: #29291f;      
+    --color-fondo-secundario: #f3f1c4;
     
-    /* 🎨 Paleta de colores */
-    --color-fondo-principal: #29291f;      /* Verde oscuro */
-    --color-fondo-secundario: #444432;     /* Verde oliva */
-    --color-marquee: #2e2e1e;
-    --color-texto-claro: #f3f1c4;
-    --color-texto-neutro: #eee6c0;
+    /* texto */
+    --color-texto-principal: #f3f1c4;
+    --color-texto-secundario: #29291f;
+
+    /* color zombra */
+    --color-shadow-principal: #29291fa6;
+    --color-shadow-secundario: #f3f1c4a6;
+
+    /* color de input */
+    --color-input-claro: #fffaef ;
+
+
+/*     esto era un carrucel infinito
+    --color-marquee: #2e2e1e; */
+    
+    /* color en efectos */
     --color-overlay-oscuro: #13130c;
-    --color-overlay-claro: #999696;
+    --color-overlay-claro: #fffaef;
+
+    /* color trasparente */
     --color-transpatente: rgba(0, 0, 0, 0);
 
-    /* 🔁 Mapear por sección */
-    --bg-header: var(--color-fondo-principal);
-    --bg-services: var(--color-fondo-secundario);
-    --bg-products: var(--color-fondo-principal);
-    --bg-testimonials: var(--color-fondo-secundario);
-    --bg-footer: var(--color-fondo-principal);
-    --bg-buttons: var(--color-texto-claro);
-    --text-buttons: var(--color-fondo-principal);
 }
 
 :root /* fotos */ {
@@ -64,6 +71,7 @@
 
     /* altura de filas */
     --line-height-1: 1;                  /* 16px */
+    --line-heigth-1_5: 1.5;
 }
 
 :root /* box Model */ {
@@ -88,7 +96,7 @@
     --spacing-90: clamp(3.5rem, 9vw, 5.625rem);
     --spacing-95: clamp(3.75rem, 9.5vw, 5.9375rem);
     --spacing-100: clamp(4rem, 10vw, 6.25rem);
-
+    --spacing-auto: auto;
 
 
     /* Padding responsive */
@@ -139,11 +147,12 @@
 }
 
 :root /* bordes */{
-    --border-secundario: 1px solid var(--color-texto-neutro);
-    --border-principal: 1px solid var(--color-texto-claro);
+
+    --border-principal: 1px solid var(--color-overlay-oscuro);
+    --border-secundario: 1px solid var(--color-overlay-claro);
     --border-hover: 1px solid var(--color-fondo-secundario);
     --border-trasparente: 1px solid var(--color-transpatente);
-    --border-color-testimonio: 1px solid var(--bg-testimonials);
+
 
     
     /* border-radius */
@@ -152,36 +161,38 @@
 
 }
 
-:root /* dimenciones */ {
+:root /* width and heihgt */ {
     --w-full: 100%;
     --w-screen: 100vw;
     --w-half: 50%;
     --h-screen: 100vh;
-    --h-auto: auto;
-    --width-auto: auto;
+    --h-w-auto: auto;
+    --max-w-h: 75rem;
+    --max-w-h: 60rem;
+    --min-w-h: 20rem;
+    --min-w-h: 15rem;
 
     /* Width (valores fluidos no necesitan clamp) */
-
-    --width-95_5vw: 90vw;
-    --width-80vw: 80vw;
-    --width-70vw: 70vw;
-    --width-50vw: 50vw;
-    --width-40vw: 40vw;
-    --width-30vw: 30vw;
-    --width-20vw: 20vw;
-    --width-10vw: 10vw;
+    --w-90: 90vw;
+    --w-80: 80vw;
+    --w-70: 70vw;
+    --w-50: 50vw;
+    --w-40: 40vw;
+    --w-30: 30vw;
+    --w-20: 20vw;
+    --w-10: 10vw;
 
 
     /* Height (valores fluidos no necesitan clamp) */
-    --height-90vh: 90vh;
-    --height-80vh: 80vh;
-    --height-70vh: 70vh;
-    --height-60vh: 60vh;
-    --height-50vh: 50vh;
-    --height-40vh: 40vh;
-    --height-30vh: 30vh;
-    --height-20vh: 20vh;
-    --height-10vh: 10vh;
+    --h-90: 90vh;
+    --h-80: 80vh;
+    --h-70: 70vh;
+    --h-60: 60vh;
+    --h-50: 50vh;
+    --h-40: 40vh;
+    --h-30: 30vh;
+    --h-20: 20vh;
+    --h-10: 10vh;
 }
 
 :root /* posiciones */ {
@@ -203,5 +214,31 @@
     --z-modal: 10;
 }
 
+:root /* animaciones */ {
+    --transition: all 0.5s ease-in;
+    --transition-fast: all 0.3s ease-in;
+    --transition-slow: all 0.7s ease-in;
+    --transition-hover: all 0.2s ease-in-out;
+}
+
+:root /* sombras */ {
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+:root /*gap*/{
+    --g-0: 0;
+    --g-5: 0.313rem; 
+    --g-10: 0.625rem;
+    --g-15: 0.938rem;
+    --g-20: 1.25rem;
+    --g-25: 1.563rem;
+    --g-30: 1.875rem;
+    --g-35: 2.188rem;
+    --g-40: 2.5rem;
+    --g-45: 2.813rem;
+    --g-50: 3.125rem;
+}
 
 

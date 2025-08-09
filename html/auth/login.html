@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../css/base/variables.css">
 
     <!-- archivo principal (contiene : main ) -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/registered.css">
+    <link rel="stylesheet" href="../../css/main.css">
 
     <!-- carpeta utilities menu del header -->
     <link rel="stylesheet" href="../../css/utilities/menu.css">
@@ -39,22 +40,22 @@
     </div>
     </header> 
 
-    <main>
+    <main class="main-content container ">
         <section class="main-login">
             <img src="../../img/logos/logo_sin_fondo.png" alt="Flor de loto logo">
             <h1>Flor de loto</h1>
 
             <form action="#" method="post" class="form_login">
-                <fieldset>
+                <fieldset class="form_fieldset">
                     <legend>login</legend>
                     <label for="username">Username</label>
-                    <input type="email" name="username" id="username" placeholder="luis"  required>
+                    <input class="hover" type="email" name="username" id="username" placeholder="luis"  required>
 
                     <label for="userpassword">Password</label>
-                    <input type="password" name="userpassword" id="userpassword" placeholder="Descubre Nuestro Mundo" required>
+                    <input class="hover" type="password" name="userpassword" id="userpassword" placeholder="Descubre Nuestro Mundo" required>
 
-                    <a href="#">olvide mi contraseña</a>
-                    <button type="submit">Enviar</button>
+                    <a href="#" class="btn btn-link">olvide mi contraseña</a>
+                    <button class="hover btn btn-envia" type="submit">Enviar</button>
                 </fieldset>
             </form>
         </section>
@@ -74,8 +75,8 @@
                         <div class="input_suscripcion">
                             <input type="checkbox" name="suscripciones" id="suscripciones" class="suscripciones" required>
                             <label for="suscripciones">si, suscribeme a tu voletin informativo.*</label>
+                            <button class="suscribirse">suscribirse</button>
                         </div>
-                        <button class="suscribirse">suscribirse</button>
                     </div>
                 </div>
             </div>
