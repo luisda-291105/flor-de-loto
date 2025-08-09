@@ -1,0 +1,19 @@
+.main_header {
+    min-width: var(--w-full);
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-principal);
+    position: relative;
+    letter-spacing: var(--letter-spacing-1_5px);
+    transition: var(--transition);
+}
+
+.main_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heiderIten {
+    display: flex;
+    padding: var(--p-10);
+}
+
