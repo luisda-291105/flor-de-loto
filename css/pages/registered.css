@@ -1,76 +1,95 @@
-/* ============== login ============= */
+/* ==============  formulario ============= */
 
-.main-login > img {
+/* Imagen del encabezado del formulario */
+.resgistro > img {
     width: var(--w-30);
     padding: var(--p-10);
     margin: auto;
-
 }
 
-.main-login {
+/* Contenedor principal del formulario */
+.resgistro {
     display: flex;
     flex-direction: column;
     gap: var(--g-10);
 }
 
-.main-login > h1 {
+/* Título principal del formulario */
+.resgistro > h1 {
     font-size: var(--font-size-grande);
     margin-bottom: var(--m-30);
 }
 
-/* formulario */
-
+/* Contenedor <form> */
 .form_login {
     height: var(--h-w-auto);
 }
 
+/* Grupo de campos (<fieldset>) */
 .form_fieldset {
-
     display: flex;
     flex-direction: column;
     padding: var(--p-10);
     gap: var(--g-5);
     border-radius: var(--border-radius);
+    margin: var(--m-20);
 }
 
+/* Título de cada grupo (<legend>) */
 .form_fieldset > legend {
     text-align: left;
     font-size: var(--font-size-normal);
 }
 
+/* Etiquetas de los campos (<label>) */
 .form_fieldset > label {
     margin: var(--m-10);
-
 }
 
+/* Campos de entrada (<input>) */
 .form_fieldset > input {
     padding: var(--p-5);
     padding-left: var(--p-10);
     border-radius: var(--border-radius);
     outline: none;
-    border: none ;
+    border: none;
     background-color: var(--color-input-claro);
+    transition: var(--transition);
 }
 
+/* ================== Botones ================== */
+
+/* Estilo base para cualquier botón */
 .btn {
     margin: var(--m-20);
     padding: var(--p-5);
-
     color: var(--color-texto-secundario);
     border-radius: var(--border-radius);
-
     text-decoration: none;
     border: none;
 }
 
+/* Botón de envío */
 .btn-envia {
     background-color: var(--color-input-claro);
-
 }
 
+/* Botón/enlace tipo link con hover subrayado */
 .btn-link:hover {
     text-decoration: underline;
 }
 
 
+/* ==================== parrafos ==================== */
 
+.resgistro > p {
+    text-align: justify;
+    
+    margin: var(--m-10);
+}
+
+.form_fieldset > div > p {
+    text-align: justify;
+    margin: var(--m-10);
+    padding: var(--p-5);
+}
