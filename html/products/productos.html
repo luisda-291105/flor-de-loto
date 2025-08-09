@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- carpeta base (contiene todas las variables y el resct) -->
+    <link rel="stylesheet" href="../../css/base/resct.css">
+    <link rel="stylesheet" href="../../css/base/variables.css">
+
+    <!-- archivo principal (contiene : main ) -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- carpeta utilities menu del header -->
+    <link rel="stylesheet" href="../../css/utilities/menu.css">
+
+    <!-- capeta utilities (contiene las @media , heider, footer)-->
+    <link rel="stylesheet" href="../../css/utilities/header.css">
+    <link rel="stylesheet" href="../../css/utilities/footer.css">
+    <link rel="stylesheet" href="../../css/utilities/responsive.css">
+
 </head>
 <body>
+    <header class="main_header">
+    <div class="logo heiderIten">
+        <span class="logo_icon">❀</span>
+        <span class="main_text">Flor de loto</span>
+    </div>
+    <div class="mainMenu heiderIten">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header> 
+
     <main>
         <section class="box-product">
             <h1 class="main-title">Productos</h1>        
@@ -18,5 +51,37 @@
             </article>
         </section>
     </main>
+
+    <footer class="main_footer container">    
+        <section class="footer_section">
+            <div class="footer_container">
+
+                <div class="footer_title">
+                    <div class="div_txt_footer">
+                        <h5>flor de loto</h5>
+                        <h4>conectate con sosotros</h4>
+                    </div>
+                    <hr class="hr-footer">
+                    <div class="sus">
+                        <div class="input_suscripcion">
+                            <input type="checkbox" name="suscripciones" id="suscripciones" class="suscripciones" required>
+                            <label for="suscripciones">si, suscribeme a tu voletin informativo.*</label>
+                        </div>
+                        <button class="suscribirse">suscribirse</button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="hr-footer">
+            <div class="contact_address">
+                <h4>contacto</h4>
+                <div class="contact_info">
+                    <p>Teléfono: 123-456-7890</p>
+                    <p>direccion: medellin</p>
+                    <p>correo: email@ejemplo.com</p>
+                </div>
+            </div>  
+        </section>  
+    </footer> 
 </body>
 </html>

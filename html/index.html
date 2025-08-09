@@ -4,34 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flor de loto</title>
+
+    <!-- carpeta base (contiene todas las variables y el resct) -->
     <link rel="stylesheet" href="../css/base/resct.css">
     <link rel="stylesheet" href="../css/base/variables.css">
-    <link rel="stylesheet" href="../css/components/cards.css">
-    <link rel="stylesheet" href="../css/components/elements.css">
-    <link rel="stylesheet" href="../css/components/forms.css">
-    <link rel="stylesheet" href="../css/layout/header.css">
-    <link rel="stylesheet" href="../css/layout/grid-system.css">
-    <link rel="stylesheet" href="../css/layout/footer.css">
-    <link rel="stylesheet" href="../css/utilities/hepers.css">
-    <link rel="stylesheet" href="../css/utilities/responsive.css">
+
+    <!-- archivo principal (contiene : main ) -->
     <link rel="stylesheet" href="../css/main.css">
+
+    <!-- carpeta utilities menu del header -->
+    <link rel="stylesheet" href="../css/utilities/menu.css">
+
+    <!-- capeta utilities (contiene las @media , heider, footer)-->
+    <link rel="stylesheet" href="../css/utilities/header.css">
+    <link rel="stylesheet" href="../css/utilities/footer.css">
+    <link rel="stylesheet" href="../css/utilities/responsive.css">
+
+    
 </head>
-<body>
-    <header>
-        <h1 class="title-main">Bienvenido a Flor de Loto</h1>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="auth/login.html">Inicio</a></li>
-                <li><a href="products/productos.html">Productos</a></li>
-                <li><a href="subscribers/subscribe.html">Suscribirse</a></li>
-                <li><a href="testimials/post_testimonio.html">Testimonios</a></li>
+<body >
+    <header class="main_header">
+    <div class="logo heiderIten">
+        <span class="logo_icon">❀</span>
+        <span class="main_text">Flor de loto</span>
+    </div>
+    <div class="mainMenu heiderIten">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+    </header> 
 
-    <main class="main-content">
-        <h2>¡Conoce todo sobre nuestra escuela de yoga!</h2>
-        <p>Explora nuestras secciones para conocer productos, testimonios y más.</p>
+    <main class="main-content container">
+        <div class="content-text">
+            <h1>¡Conoce todo sobre nuestra escuela de yoga!</h1>
+            <p>Explora nuestras secciones para conocer productos, testimonios y más.</p>
+        </div>
     </main>
+
+    <footer class="main_footer container">    
+        <section class="footer_section">
+            <div class="footer_container">
+
+                <div class="footer_title">
+                    <div class="div_txt_footer">
+                        <h5>flor de loto</h5>
+                        <h4>conectate con sosotros</h4>
+                    </div>
+                    <hr class="hr-footer">
+                    <div class="sus">
+                        <div class="input_suscripcion">
+                            <input type="checkbox" name="suscripciones" id="suscripciones" class="suscripciones" required>
+                            <label for="suscripciones">si, suscribeme a tu voletin informativo.*</label>
+                        </div>
+                        <button class="suscribirse">suscribirse</button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="hr-footer">
+            <div class="contact_address">
+                <h4>contacto</h4>
+                <div class="contact_info">
+                    <p>Teléfono: 123-456-7890</p>
+                    <p>direccion: medellin</p>
+                    <p>correo: email@ejemplo.com</p>
+                </div>
+            </div>  
+        </section>  
+    </footer> 
+
 </body>
 </html>
