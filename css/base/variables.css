@@ -74,7 +74,7 @@
     --line-heigth-1_5: 1.5;
 }
 
-:root /* box Model */ {
+:root  /* Padding responsive */ {
     --spacing-0: clamp(0rem, 0vw, 0rem);
     --spacing-5: clamp(0.25rem, 0.5vw, 0.3125rem);
     --spacing-10: clamp(0.5rem, 1vw, 0.625rem);
@@ -98,8 +98,9 @@
     --spacing-100: clamp(4rem, 10vw, 6.25rem);
     --spacing-auto: auto;
 
+} 
 
-    /* Padding responsive */
+:root /* box Model */  {
     --p-0: var(--spacing-0);
     --p-5: var(--spacing-5);
     --p-10: var(--spacing-10) ;
@@ -169,8 +170,9 @@
     --h-w-auto: auto;
     --max-w-h: 75rem;
     --max-w-h: 60rem;
-    --min-w-h: 20rem;
-    --min-w-h: 15rem;
+    --min-w-h-20: 20rem;
+    --min-w-h-15: 15rem;
+    --min-w-h-10: 10rem;
 
     /* Width (valores fluidos no necesitan clamp) */
     --w-90: 90vw;
@@ -197,12 +199,20 @@
 
 :root /* posiciones */ {
     
-    --position-0: 0;
-    --position-5: 0.313rem; 
-    --position-10: 0.625rem;
-    --position-20: 1.25rem;
-    --position-50: 3.125rem;
-    --pocicion-60: 3.75rem;
+    --position-0: var(--spacing-0);
+    --position-5: var(--spacing-5); 
+    --position-10: var(--spacing-10);
+    --position-15: var(--spacing-15);
+    --position-20: var(--spacing-20);
+    --position-25: var(--spacing-25);
+    --position-30: var(--spacing-30);
+    --position-35: var(--spacing-35);
+    --position-40: var(--spacing-40);
+    --position-45: var(--spacing-45);
+    --position-50: var(--spacing-50);
+    --position-55: var(--spacing-55);
+    --pocicion-60: var(--spacing-60);
+
 
 
     --position-center: 50%;
@@ -222,23 +232,25 @@
 }
 
 :root /* sombras */ {
-    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-light: 2px 2px 10px rgb(165, 162, 162),
+    -2px -2px 10px rgb(165, 162, 162);
+    
     --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
     --shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 :root /*gap*/{
-    --g-0: 0;
-    --g-5: 0.313rem; 
-    --g-10: 0.625rem;
-    --g-15: 0.938rem;
-    --g-20: 1.25rem;
-    --g-25: 1.563rem;
-    --g-30: 1.875rem;
-    --g-35: 2.188rem;
-    --g-40: 2.5rem;
-    --g-45: 2.813rem;
-    --g-50: 3.125rem;
+    --g-0:  var(--spacing-0);
+    --g-5:  var(--spacing-5); 
+    --g-10: var(--spacing-10);
+    --g-15: var(--spacing-15);
+    --g-20: var(--spacing-20);
+    --g-25: var(--spacing-25);
+    --g-30: var(--spacing-30);
+    --g-35: var(--spacing-35);
+    --g-40: var(--spacing-40);
+    --g-45: var(--spacing-45);
+    --g-50: var(--spacing-50);
 }
 
 

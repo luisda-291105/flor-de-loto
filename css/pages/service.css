@@ -1,147 +1,46 @@
-
-
-/*----------------- Estilos generales de la sección de servicios -----------------*/
-
-/* Define la sección de servicios */
-.servicios {
-    width: 100vw;
-    height: auto;
-    background-color: var(--bg-services);
-    color: var(--bg-buttons);
-    box-sizing: border-box;
-    padding: 10px 0 50px 0;
-}
-
-/* Título principal de los servicios */
-.titulo_servicios {
-    text-transform: uppercase;
-    font-size: 5em;
-    font-family: serif;
-    margin: 20px auto 30px auto;
-    padding: 0;
-    text-align: center; 
-    font-weight: 100;
-}
-
-/* Contenedor de cada servicio (imagen + texto) */
-.contener_servicios {
-    border: #f3f1c4 1px solid;
-    width: 85.50%;
-    height: 45vh;
+.main-section {
+    position: relative;
     display: flex;
-    overflow: hidden;      
-    margin: 30px auto ;
-}
-
-/* Imagen dentro del contenedor de servicios */
-.contener_servicios img {
-    width: 50%;
-    height: auto;
-    object-fit: cover; 
-}
-
-/* Texto descriptivo del servicio */
-.descripcion_servicio {
-    width: 50%;
-    padding: 55px;
-    margin: auto;
-    font-size: 1.5em;
-    line-height: 2.5em;
-}
-
-/* Botón/enlace dentro de la descripción */
-.descripcion_servicio a {
-    border: 1px solid #f3f1c4;
-    background-color: var(--bg-buttons);
-    color: var(--bg-header);
-    padding: 6px;
-}
-
-/* Efecto al pasar el mouse por el enlace */
-.descripcion_servicio a:hover {
-    background-color: transparent;
-    color: var(--bg-buttons);
-    border: 1px solid #f3f1c4;
-    text-decoration: underline;
+    flex-direction: column;
 }
 
 
-
-/* ------------ */
-
-
-
-/* ------------- SECCIÓN DE PRODUCTOS ------------- */
-
-/* Contenedor general de la sección */
-.productos {
-    background-color: var(--bg-header);   
-    
-    padding:0 10px 70px 20px ;         
-}
-
-/* Lista flex que agrupa todas las tarjetas de producto*/
-.product_list {
-    display: flex;               
-    flex-wrap: wrap;             
-    align-items: center;          
-}
-
-/* Título de la sección */
-.titulo_productos {
-    padding: 50px;              
-    text-align: center;          
-    margin: auto;                
-    color: var(--bg-buttons);            
-    text-transform: uppercase;   
-    font: 4em serif;             
-}
-
-/* Tarjeta individual de producto*/
-.product_item {
-    border: #eee6c0 1px solid;   
-    width: 250px;                
-    height: 350px;
-    color: var(--bg-buttons);              
-    text-align: center;         
-    margin: 5px;                 
-}
-
-/* Imagen dentro de la tarjeta */
-.product_item img {
-    width: 100%;
-    height: auto;
-}
-
-/* Descripción o precio del producto (párrafo) */
-.product_item p{
-    padding: 10px;
-}
-
-
-
-/*---- efecto al pasar el mause por encima de la imagen ------*/
-
-/* tamaño del contenedor de la imagen*/
-.img_box {
-    aspect-ratio: 3rem;   
-    overflow: hidden;      
-    position: relative;    
+.main-section > h1  {
+    margin: var(--m-50);
+    font-size: var(--font-size-grande);
     
 }
 
-/* estilo de la imagen*/
-.img_box img { 
-    height: 100%;
-    width: 100%;
-    object-fit: cover;     
-    display: block;
-    transition: transform 0.5s ease;
+.product-item {
+    border: var(--border-trasparente);
+    background-color: var(--color-fondo-secundario);
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    box-shadow: var(--shadow-light);
+
+    position: relative;
+    margin-bottom: var(--m-25);
 }
 
-/*este permite el efecto */
-.product_item img:hover {
-    transform: scale(1.2);
+.product-item > h2  {
+    margin: var(--m-10);
 }
 
+.product-item > img {
+    min-width: 100%;
+    min-height: 100%;
+    margin-bottom: var(--m-10);
+}
 
+.product-item > p {
+    padding:  var(--p-10) var(--p-0) var(--p-10) var(--p-10) ;
+}
+
+.flechita {
+    position: absolute;
+    right: var(--position-10);
+    bottom: var(--position-0);
+}

@@ -13,7 +13,11 @@ main {
 
 .hover {
     border: var(--border-trasparente);
-}
+    padding: var(--p-5);
+    border-radius: var(--border-radius);
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+}   
 
 .hover:hover {
     background-color: var(--color-transpatente);
