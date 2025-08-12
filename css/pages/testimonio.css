@@ -1,32 +1,46 @@
+/* Contenedor principal de una publicación */
 .main_post {
     display: flex;
     flex-direction: column;
     gap: var(--g-10);
 }
 
+/* Estilo para párrafos directos dentro de .main_post */
 .main_post > p  {
     text-align: left;
     padding: var(--p-10);
 }
 
+/* Contenedor del post */
 .article-post {
     display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: var(--w-70);
+    height: var(--h-20);
     border: var(--border-principal);
     gap: var(--g-5);
     margin: var(--m-20);
-
     box-shadow: var(--shadow-light);
 }
 
+/* Imagen dentro de post */
 .article-post > img {
+    width: var(--w-half);
+    object-fit: cover;
+}
+
+.div-post {
     width: var(--w-half);
 }
 
+/* Párrafos dentro de un contenedor de texto post */
 .div-post > p {
-    padding: var(--p-15);
+    padding: var(--p-5);
     text-align: left;
-
 }
+
+
 
 
 
