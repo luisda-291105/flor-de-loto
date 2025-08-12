@@ -104,7 +104,12 @@
         color: var(--color-texto-principal);
     }
 
-    
+    /* ===== nosotros ===== */
+    .fondo-cuarto{
+        background: url(https://cdn.yogajournal.com/wp-content/uploads/2018/04/Best-Yin-Yoga-Stretches-Sleep-Reclining-Twist-scaled.jpg)
+        no-repeat center ;
+        background-size: cover;
+    }
 
     /* ===== TESTIMONIOS ===== */
 
