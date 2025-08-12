@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- carpeta base (contiene todas las variables y el resct) -->
+    <link rel="stylesheet" href="../../css/base/resct.css">
+    <link rel="stylesheet" href="../../css/base/variables.css">
+
+    <!-- archivo principal (contiene : main ) -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/welcome.css">
+    <link rel="stylesheet" href="../../css/pages/service.css">
+    <link rel="stylesheet" href="../../css/pages/we.css">
+    
+    <!-- capeta utilities (contiene las @media , heider, footer)-->
+    <link rel="stylesheet" href="../../css/utilities/menu.css">
+    <link rel="stylesheet" href="../../css/utilities/header.css">
+    <link rel="stylesheet" href="../../css/utilities/footer.css">
+    <link rel="stylesheet" href="../../css/utilities/responsive.css">
+</head>
+<body>
+    <header class="main_header">
+    <div class="logo heiderIten">
+        <span class="logo_icon">❀</span>
+        <span class="main_text">Flor de loto</span>
+    </div>
+    <div class="mainMenu heiderIten">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">☰</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header> 
+    <main>
+        <!-- ===== Sección: Acerca de Nosotros ===== -->
+    <section id="acerca-de" class="fondo-primario fondo-cuarto espacio">
+        <div class="content-text">
+            <h2>Acerca de <br>Nosotros</h2>
+            <p>
+                Flor de Loto es un estudio de yoga comprometido con brindar bienestar integral a través de clases de yoga enriquecedoras, productos especializados y un ambiente acogedor que fomenta el equilibrio y la armonía.
+                Nuestro objetivo es acompañarte en tu viaje de crecimiento personal y conexión con tu ser interior, en un espacio que promueva la paz y la serenidad.
+            </p>
+        </div>
+    </section>
+    </main>
+    <footer class="main_footer container">    
+        <section class="footer_section">
+            <div class="footer_container">
+
+                <div class="footer_title">
+                    <div class="div_txt_footer">
+                        <h5>flor de loto</h5>
+                        <h4>conectate con sosotros</h4>
+                    </div>
+                    <hr class="hr-footer">
+                    <div class="sus">
+                        <div class="input_suscripcion">
+                            <input type="checkbox" name="suscripciones" id="suscripciones" class="suscripciones" required>
+                            <label for="suscripciones">si, suscribeme a tu voletin informativo.*</label>
+                            <button class="suscribirse">suscribirse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="hr-footer">
+            <div class="contact_address">
+                <h4>contacto</h4>
+                <div class="contact_info">
+                    <p>Teléfono: 123-456-7890</p>
+                    <p>direccion: medellin</p>
+                    <p>correo: email@ejemplo.com</p>
+                </div>
+            </div>  
+        </section>  
+    </footer> 
+</body>
+</html>
