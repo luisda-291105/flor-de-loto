@@ -1,45 +1,32 @@
-
-
-/* ---------------- Sección "Nosotros" ---------------- */
-
-/* Sección "nosotros" */
-.nosotros {
-    width: var(--width-100vw);
-    height: var(--height-auto);
-    padding: var(--p-0px);
-
-    background-image: var(--img-services-cuarto);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    
+.main_post {
+    display: flex;
+    flex-direction: column;
+    gap: var(--g-10);
 }
 
-/* Contenido interno de la sección "nosotros" */
-.contenido_nosotros {
-    width: var(--width-40vw);
-    height: var(--height-auto);
-    margin: var(--m-80px) auto var(--m-90px) auto;
-    letter-spacing:var(--letter-spacing-1_5px);
-    background-color: var(--bg-services);
-    color: var(--bg-buttons);
-    padding:var(--p-5px) var(--p-50px) var(--p-50px) var(--p-50px);
+.main_post > p  {
+    text-align: left;
+    padding: var(--p-10);
 }
 
-/* Título de la sección "nosotros" */
-.titulo_nosotros {
-    text-transform: uppercase;
-    font-weight: 100;
-    font-family: serif;
+.article-post {
+    display: flex;
+    border: var(--border-principal);
+    gap: var(--g-5);
+    margin: var(--m-20);
 
-    font-size: var(--font-titulo-grande-3rem);
-    margin-bottom: var(--m-20px);
-    padding: var(--p-0px);
+    box-shadow: var(--shadow-light);
 }
 
-/* Párrafo dentro de la sección "nosotros" */
-.contenido_nosotros p {
-    font-size: var(--font-titulo);
-    line-height: var(--line-height-1);
+.article-post > img {
+    width: var(--w-half);
 }
+
+.div-post > p {
+    padding: var(--p-15);
+    text-align: left;
+
+}
+
+
+
