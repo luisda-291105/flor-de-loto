@@ -24,5 +24,10 @@ main {
     border: var(--border-principal);
 }
 
+.img-head {
+    width: var(--w-30);
+    padding: var(--p-10);
+    margin: auto;
+}
 
 
