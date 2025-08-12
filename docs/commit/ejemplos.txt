@@ -1,0 +1,148 @@
+
+restructurar
+
+"Versión mejorada respecto a la anterior, con optimización de rendimiento y usabilidad."
+
+"Se reemplazó la versión anterior por una más eficiente y escalable."
+
+"Código actualizado con una arquitectura más limpia y fácil de mantener."
+
+"Nueva versión con mejoras visuales y correcciones funcionales."
+
+
+
+Perfecto, aquí te dejo una **lista de mensajes técnicos para Git** que puedes usar en tus commits y que suenen profesionales y claros.
+Están organizados por tipo de cambio, siguiendo buenas prácticas como el estilo **Conventional Commits**.
+
+---
+
+## **📌 Tipos de mensajes y ejemplos**
+
+### **1️⃣ Nuevas funcionalidades (feat)**
+
+* `feat: agregar formulario de registro responsive`
+* `feat: implementar validación de datos en el cliente`
+* `feat: añadir soporte para modo oscuro`
+* `feat: crear sección de testimonios con slider`
+
+---
+
+### **2️⃣ Corrección de errores (fix)**
+
+* `fix: corregir error de visualización en dispositivos móviles`
+* `fix: solucionar bug en el cálculo de totales`
+* `fix: reparar enlace roto en el footer`
+* `fix: ajustar estilos para compatibilidad con Safari`
+
+---
+
+### **3️⃣ Cambios en diseño / estilos (style)**
+
+* `style: actualizar tipografía y espaciado`
+* `style: mejorar contraste de colores para accesibilidad`
+* `style: aplicar formato consistente al código CSS`
+* `style: optimizar imágenes para carga más rápida`
+
+---
+
+### **4️⃣ Mejoras internas del código (refactor)**
+
+* `refactor: reorganizar estructura de carpetas`
+* `refactor: simplificar función de validación`
+* `refactor: extraer lógica repetida en un método`
+* `refactor: limpiar código obsoleto en el header`
+
+---
+
+### **5️⃣ Archivos de configuración o herramientas (chore)**
+
+* `chore: actualizar dependencias del proyecto`
+* `chore: agregar configuración de Prettier`
+* `chore: limpiar archivos temporales`
+* `chore: eliminar archivos no utilizados`
+
+---
+
+### **6️⃣ Documentación (docs)**
+
+* `docs: agregar guía de instalación en README`
+* `docs: actualizar instrucciones de despliegue`
+* `docs: documentar API de autenticación`
+* `docs: incluir lista de colaboradores`
+
+
+Perfecto ✅
+Aquí tienes una **plantilla de commits para proyectos web** que puedes usar siempre en Git.
+Está basada en **Conventional Commits** y pensada para HTML, CSS, JavaScript y configuraciones.
+
+---
+
+## **📄 Plantilla de Commits para Proyectos Web**
+
+```
+<tipo>: <resumen breve y claro>
+
+<DESCRIPCIÓN DETALLADA>
+- Qué se hizo
+- Por qué se hizo
+- (Opcional) Cómo probarlo
+```
+
+---
+
+### **Tipos que puedes usar**
+
+| Tipo         | Uso principal                                               |
+| ------------ | ----------------------------------------------------------- |
+| **feat**     | Nueva funcionalidad                                         |
+| **fix**      | Corrección de errores                                       |
+| **style**    | Cambios de estilos (CSS, formato) sin afectar funcionalidad |
+| **refactor** | Mejora del código sin cambiar su comportamiento             |
+| **docs**     | Cambios en documentación                                    |
+| **chore**    | Cambios de configuración, dependencias o tareas internas    |
+| **perf**     | Mejoras de rendimiento                                      |
+| **test**     | Agregar o modificar pruebas                                 |
+
+---
+
+### **Ejemplos prácticos**
+
+**Commit corto:**
+
+```
+feat: agregar sección de contacto con formulario responsive
+```
+
+**Commit con detalle:**
+
+```
+fix: corregir bug en menú responsive
+
+- Se ajustó el evento de JavaScript para evitar errores en móviles
+- Se corrigió un conflicto en el CSS que causaba desplazamientos inesperados
+- Probado en Chrome, Firefox y Safari
+```
+
+**Commit para limpieza:**
+
+```
+refactor: reorganizar estructura de carpetas
+
+- Movidos archivos CSS a /assets/css
+- Separado JavaScript en /assets/js
+- Actualizadas rutas en HTML
+```
+
+---
+
+💡 **Consejo**: Guarda esta plantilla en un archivo llamado `commit-template.txt` y configúrala en Git con:
+
+```bash
+git config --global commit.template ruta/al/archivo/commit-template.txt
+```
+
+Así, cada vez que hagas `git commit`, Git abrirá esta plantilla y solo tendrás que rellenar.
+
+---
+
+Si quieres, puedo hacerte **un PDF imprimible con esta plantilla + lista de frases técnicas listas para usar**, así la puedes tener siempre a mano cuando trabajes en tu proyecto.

@@ -57,7 +57,7 @@
 :root /* fuentes */ {
 
     --font-size-grande: clamp(2rem, 4vw, 5em);
-    --font-size-normal: clamp(1rem, 2.5vw, 3rem);
+    --font-size-normal: clamp(1rem, 1.5vw, 2rem);
     --font-size-subtitulo: clamp(1rem, 2vw, 2rem);
     --font-size-base: clamp(0.875rem, 1.5vw, 1.5rem);
     --font-size-pequena: clamp(0.75rem, 1vw, 1.2rem);
@@ -233,8 +233,11 @@
 }
 
 :root /* sombras */ {
-    --shadow-light: 2px 2px 10px rgb(165, 162, 162),
-    -2px -2px 10px rgb(165, 162, 162);
+    --shadow-dark: 2px 2px 10px var(--color-shadow-principal),
+    -2px -2px 10px var(--color-shadow-principal);
+
+    --shadow-light: 2px 2px 10px var(--color-shadow-secundario),
+    -2px -2px 10px var(--color-shadow-secundario);
     
     --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
     --shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.3);

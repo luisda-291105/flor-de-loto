@@ -1,0 +1,172 @@
+/* ===============================
+    ESTILOS PARA PANTALLAS PEQUEÑAS
+    (Móviles y tablets pequeñas)
+    =============================== */
+@media screen and (max-width: 746px) {
+    .product-item {
+        border: var(--border-principal);
+        background-color: var(--color-fondo-secundario);
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        box-shadow: var(--shadow-light);
+
+        position: relative;
+        margin-bottom: var(--m-25);
+
+    }
+
+    .product-item:hover {
+        transform: scale(1.05);
+    }
+
+    .link_a {
+        color: var(--color-texto-secundario);
+    }
+
+}
+
+/* ===============================
+    ESTILOS PARA PANTALLAS GRANDES
+    (Desktop y tablets grandes)
+    =============================== */
+@media screen and (min-width: 746px) {
+
+    /* ===== FONDOS PRINCIPALES ===== */
+    .fondo-primario {
+        background: var(--img-fondo-primario) center / cover no-repeat;
+    }
+
+    .fondo-secundario {
+        background-color: var(--color-fondo-principal);
+        color: var(--color-texto-principal);
+    }
+
+    .fondo-tercero {
+        background-color: var(--color-fondo-tercero);
+        color: var(--color-texto-principal);
+    }
+
+    /* ===== ESTRUCTURA GENERAL ===== */
+    main {
+        padding: 0; 
+    }
+
+    .espacio {
+        padding: var(--p-90);
+        max-width: var(--w-full);
+        max-height: var(--max-w-h);
+    }
+
+    footer {
+        margin: auto; 
+    }
+
+
+
+    /* ===== CONTENIDO DE BIENVENIDA ===== */
+    .content-text {
+        margin: auto;
+        max-height: var(--h-w-auto);
+        max-width: var(--max-w-h);
+    }
+
+    .content-text > img {
+        max-width: var(--min-w-h-10);
+    }
+
+
+
+    /* ===== PRODUCTOS ===== */
+    .contect-product {
+        padding: 3rem;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: start;
+        flex-direction: row;        
+    }
+
+    .product-item {
+        max-width: 28%;
+        max-height: 50%;
+        margin: 1rem;
+        flex: 1;
+        
+    }
+
+    .product-item:hover {
+        transform: scale(1.05);
+    }
+
+    .link_a {
+        color: var(--color-texto-principal);
+    }
+
+    
+
+    /* ===== TESTIMONIOS ===== */
+
+    .main_post {
+        flex: 1;
+    }
+
+    .article-post {
+        max-height: var(--min-w-h-10);
+        max-width: var(--max-w-h);
+        margin: auto;
+        box-shadow: var( --shadow-dark);
+        transition: var(--transition);
+    }
+    .article-post:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* =======================
+    ESTILOS PARA PANTALLAS GRANDES
+==========================*/
+@media screen and (min-width: 1024px) {
+    /* ===== header =====*/
+    .main_header {
+        font-size: var(--font-size-normal);
+    }
+
+    /* ===== productos =====*/
+    .product-item {
+        max-width: 21%;
+    }
+
+
+    /* ===== testimonio ===== */
+
+    .testimonio {
+        padding-top: 1rem;
+    }
+
+    .main_post > h1 {
+        font-size: var(--font-size-grande);
+    }
+    
+    .main_post > h5 {
+        margin-bottom: 2rem;
+        letter-spacing: var(--letter-spacing-1_5px);
+        font:var(--font-size-muy-pequena);
+    }
+
+    .main_post > p {
+        margin: auto;
+        padding-bottom: 2rem;
+        text-align: justify;
+        width: 40vw;
+        
+    }
+
+    .article-post {
+        max-width: var(--w-50);
+    }
+
+
+
+}

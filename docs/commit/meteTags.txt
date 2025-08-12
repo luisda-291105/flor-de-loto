@@ -1,0 +1,10 @@
+feat: agregar estilo general para imagen inicial y meta tags en varias páginas
+
+- css/main.css: agregado estilo general para imagen que aparecerá al inicio del sitio.
+- css/pages/service.css: eliminado estilo de imagen, trasladado a main.css para uso global.
+
+- html/auth/login.html: agregado meta tags para optimización y descripción de la página.
+- html/index.html: agregado meta tags para título, descripción y SEO básico.
+- html/products/productos.html: agregado meta tags de descripción y keywords.
+- html/subscribers/subscribe.html: agregado meta tags para mejorar indexación y accesibilidad.
+- html/testimials/post_testimonio.html: agregado meta tags con información relevante para SEO.

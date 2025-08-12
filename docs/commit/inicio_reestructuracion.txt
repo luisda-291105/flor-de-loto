@@ -13,3 +13,7 @@ Detalles del commit:
 - index.html parcialmente adaptado a la nueva estructur
 Este commit marca el inicio de la nueva arquitectura del sitio web.
 En próximas etapas se completará la conexión de estilos y se implementará JS funcional
+
+
+
+
