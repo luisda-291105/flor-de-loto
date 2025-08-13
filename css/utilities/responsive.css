@@ -3,6 +3,7 @@
     (Móviles y tablets pequeñas)
     =============================== */
 @media screen and (max-width: 746px) {
+    /*======= productos =======*/
     .product-item {
         border: var(--border-principal);
         background-color: var(--color-fondo-secundario);
@@ -98,11 +99,27 @@
 
     .product-item:hover {
         transform: scale(1.05);
+        transition: var(--transition);
     }
 
     .link_a {
         color: var(--color-texto-principal);
     }
+
+    /*====== servicios ======*/
+    .services-section {
+        flex: 1;
+    }
+    
+    .service-card:hover {
+        transition: var(--transition);
+        transform: scale(1.05);
+    } 
+
+    .service-info > button:hover {
+        color: var(--color-texto-principal);
+    }
+
 
     /* ===== nosotros ===== */
     .fondo-cuarto{

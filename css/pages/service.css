@@ -48,3 +48,41 @@
     text-decoration: none;                           
 }
 
+/* ======= servicios ====== */
+
+.services-section > h2 {
+    font-size: var(--font-size-grande);
+    padding: var(--p-10);
+}
+
+.service-card {
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: var(--w-70);
+    height: var(--h-20);
+    border: var(--border-principal);
+    gap: var(--g-5);
+    margin: var(--m-20) auto;
+    box-shadow: var(--shadow-light);
+    
+}
+
+.service-card > img {
+    width: var(--w-half);
+    object-fit: cover;
+    width: 35rem;
+
+}
+
+.service-info {
+    padding: var(--p-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 35rem;
+}
+
+
+
