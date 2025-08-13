@@ -10,7 +10,7 @@
 
 .footer_title {
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto auto;
     
 }
 

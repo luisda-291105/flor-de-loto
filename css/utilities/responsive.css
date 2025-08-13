@@ -65,8 +65,6 @@
         margin: auto; 
     }
 
-
-
     /* ===== CONTENIDO DE BIENVENIDA ===== */
     .content-text {
         margin: auto;
@@ -77,8 +75,6 @@
     .content-text > img {
         max-width: var(--min-w-h-10);
     }
-
-
 
     /* ===== PRODUCTOS ===== */
     .contect-product {
@@ -109,6 +105,12 @@
     /*====== servicios ======*/
     .services-section {
         flex: 1;
+        
+    }
+
+    .service-card {
+        max-height: var(--min-w-h-10);
+        max-width: var(--max-w-h);
     }
     
     .service-card:hover {
@@ -119,7 +121,6 @@
     .service-info > button:hover {
         color: var(--color-texto-principal);
     }
-
 
     /* ===== nosotros ===== */
     .fondo-cuarto{
@@ -144,11 +145,48 @@
     .article-post:hover {
         transform: scale(1.05);
     }
+
+    /*===== footer =====*/
+    .footer_section {
+        width: 80vw;
+        font-size: var(--font-size-normal);
+        text-align: justify;
+    }
+
+    .div_txt_footer > h5 {
+        width: 100%;
+        
+        padding-right: 3rem;
+    
+    }
+
+    .div_txt_footer > h4 {
+        width: 100%;
+        
+        padding-right: 3rem;
+    }
+
+    .contact_address > h4 {
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .contact_info {
+        width: 50%;
+        
+        padding-left: 3rem;
+    }
+
+    .suscribirse {
+        font-size: var(--font-size-normal);
+    }
 }
 
-/* =======================
-    ESTILOS PARA PANTALLAS GRANDES
-==========================*/
+/*  =======================
+    ESTILOS PARA PANTALLAS 
+    GRANDES
+    =======================*/
 @media screen and (min-width: 1024px) {
     /* ===== header =====*/
     .main_header {
@@ -160,9 +198,12 @@
         max-width: 21%;
     }
 
+    /*===== servicios =====*/
+    .service-card {
+        max-width: var(--w-50);
+    }
 
     /* ===== testimonio ===== */
-
     .testimonio {
         padding-top: 1rem;
     }
@@ -189,6 +230,7 @@
         max-width: var(--w-50);
     }
 
+    
 
 
 }
