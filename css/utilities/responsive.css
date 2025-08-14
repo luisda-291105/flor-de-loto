@@ -16,11 +16,25 @@
 
         position: relative;
         margin-bottom: var(--m-25);
+        
+        max-width: 28%;
+        max-height: 50%;
+        
+        flex: 1;
+        
+    }
 
+    .contect-product {
+        display: flex;
+        align-items: start;
+        flex-direction: row;        
+        flex-wrap: wrap;
+        gap: var(--g-10);
     }
 
     .product-item:hover {
         transform: scale(1.05);
+        transition: var(--transition);
     }
 
     .link_a {
@@ -79,8 +93,9 @@
     /* ===== PRODUCTOS ===== */
     .contect-product {
         padding: 3rem;
-        display: flex;
         flex-wrap: nowrap;
+
+        display: flex;
         align-items: start;
         flex-direction: row;        
     }
@@ -90,8 +105,8 @@
         max-height: 50%;
         margin: 1rem;
         flex: 1;
-        
     }
+
 
     .product-item:hover {
         transform: scale(1.05);
