@@ -1,4 +1,0 @@
-refactor: reestructurar estilos y organizar contenido en testimonios
-
-- css/pages/we.css: eliminado contenido anterior y recreados los estilos desde cero.
-- html/testimials/post_testimonio.html: reorganizadas etiquetas HTML para mejor estructura y legibilidad; añadidos artículos adicionales en la sección de testimonios.
