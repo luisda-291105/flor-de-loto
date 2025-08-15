@@ -1,0 +1,303 @@
+/* =========== reset =========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========== variables =========== */
+
+:root /* colores */{
+    /* fondo */
+    --color-fondo-principal: #29291f;      
+    --color-fondo-secundario: #f3f1c4;
+    --color-fondo-tercero: #4D4B36;
+
+    /* texto */
+    --color-texto-principal: #f3f1c4;
+    --color-texto-secundario: #29291f;
+
+    /* color zombra */
+    --color-shadow-principal: #29291fa6;
+    --color-shadow-secundario: #f3f1c4a6;
+
+    /* color de input */
+    --color-input-claro: #fffaef ;
+
+
+/*     esto era un carrucel infinito
+    --color-marquee: #2e2e1e; */
+    
+    /* color en efectos */
+    --color-overlay-oscuro: #13130c;
+    --color-overlay-claro: #fffaef;
+
+    /* color trasparente */
+    --color-transpatente: rgba(0, 0, 0, 0);
+
+}
+
+:root /* fotos */ {
+
+    /* fondos */
+    --img-fondo-primario: url(../../img/chared/imagen_de_yoga_2.jpg);
+    --img-fondo-secundario: url(../../img/chared/images_de_yoga.jpg);
+
+    /* servicios */
+    --img-services-cuarto: url(../../img/chared/cuarto_yoga.jpg);
+    --img-services-clases: url(../../img/gallery/clases_yoga.jpg);
+
+    /* productos */
+    --img-productos-bloque: url(../../img/products/bloque_yoga.jpg);
+    --img-productos-rodillo: url(../../img/products/rodillo_yoga.webp);
+    --img-productos-colchoneta: url(../../img/products/colchoneta_yoga.jpg);
+
+    /* logos */
+    --img-logos-gris: url(../../img/logos/logo1florLotoGris.png);
+    --img-logos-sinFondo: url(../../img/logos/logo_sin_fondo.png);
+    --img-logos-claro: url(../../img/logos/logo_claro-removebg-preview.png);
+    --icon-logos-sinFondo: url(../../img/favicons/logo2_sin_fondo.ico);
+
+
+    /* opacidad de fotos */
+    --foto-oscura: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); 
+}
+
+:root /* fuentes */ {
+
+    --font-size-grande: clamp(2rem, 4vw, 5em);
+    --font-size-normal: clamp(1rem, 1.5vw, 2rem);
+    --font-size-subtitulo: clamp(1rem, 2vw, 2rem);
+    --font-size-base: clamp(0.875rem, 1.5vw, 1.5rem);
+    --font-size-pequena: clamp(0.75rem, 1vw, 1.2rem);
+    --font-size-muy-pequena: clamp(0.5rem, 0.8vw, 0.8rem);
+
+
+
+    /* espacio de letra */
+    --letter-spacing-1px: 0.0625rem; 
+    --letter-spacing-1_5px: 0.09375rem;
+    --letter-spacing-2px: 0.125rem;
+
+    /* altura de filas */
+    --line-height-1: 1;                  /* 16px */
+    --line-heigth-1_5: 1.5;
+}
+
+
+:root  /* espacios*/ {
+    --spacing-0: clamp(0rem, 0vw, 0rem);
+    --spacing-5: clamp(0.25rem, 0.5vw, 0.3125rem);
+    --spacing-10: clamp(0.5rem, 1vw, 0.625rem);
+    --spacing-15: clamp(0.625rem, 1.5vw, 0.9375rem);
+    --spacing-20: clamp(0.75rem, 2vw, 1.25rem);
+    --spacing-25: clamp(1rem, 2.5vw, 1.5625rem);
+    --spacing-30: clamp(1.25rem, 3vw, 1.875rem);
+    --spacing-35: clamp(1.5rem, 3.5vw, 2.1875rem);
+    --spacing-40: clamp(1.75rem, 4vw, 2.5rem);
+    --spacing-45: clamp(2rem, 4.5vw, 2.8125rem);
+    --spacing-50: clamp(2.25rem, 5vw, 3.125rem);
+    --spacing-55: clamp(2.375rem, 5.5vw, 3.4375rem);
+    --spacing-60: clamp(2.5rem, 6vw, 3.75rem);
+    --spacing-65: clamp(2.625rem, 6.5vw, 4rem);
+    --spacing-70: clamp(2.75rem, 7vw, 4.375rem);
+    --spacing-75: clamp(2.875rem, 7.5vw, 4.6875rem);
+    --spacing-80: clamp(3rem, 8vw, 5rem);
+    --spacing-85: clamp(3.125rem, 8.5vw, 5.3125rem);
+    --spacing-90: clamp(3.5rem, 9vw, 5.625rem);
+    --spacing-95: clamp(3.75rem, 9.5vw, 5.9375rem);
+    --spacing-100: clamp(4rem, 10vw, 6.25rem);
+    --spacing-auto: auto;
+
+} 
+
+
+:root /* bordes */{
+
+    --border-principal: 1px solid var(--color-overlay-oscuro);
+    --border-secundario: 1px solid var(--color-overlay-claro);
+    --border-hover: 1px solid var(--color-fondo-secundario);
+    --border-trasparente: 1px solid var(--color-transpatente);
+    
+    /* border-radius */
+
+    --border-radius: clamp(0.3125rem, 1vw, 0.625rem);
+
+}
+
+:root /* paddding*/  {
+    --p-0: var(--spacing-0);
+    --p-5: var(--spacing-5);
+    --p-10: var(--spacing-10) ;
+    --p-15: var(--spacing-15) ;
+    --p-20: var(--spacing-20) ;
+    --p-25: var(--spacing-25) ;
+    --p-30: var(--spacing-30) ;
+    --p-35: var(--spacing-35) ;
+    --p-40: var(--spacing-40) ;
+    --p-45: var(--spacing-45) ;
+    --p-50: var(--spacing-50) ;
+    --p-55: var(--spacing-55) ;
+    --p-60: var(--spacing-60) ;
+    --p-65: var(--spacing-65) ;
+    --p-70: var(--spacing-70) ;
+    --p-75: var(--spacing-75) ;
+    --p-80: var(--spacing-80) ;
+    --p-85: var(--spacing-85) ;
+    --p-90: var(--spacing-90) ;
+    --p-95: var(--spacing-95) ;
+    --p-100: var(--spacing-100);
+}
+
+:root  /* Margin  */{
+    --m-0:  var(--spacing-0) ;
+    --m-5:  var(--spacing-5) ;
+    --m-10: var(--spacing-10) ;
+    --m-15: var(--spacing-15) ;
+    --m-20: var(--spacing-20) ;
+    --m-25: var(--spacing-25) ;
+    --m-30: var(--spacing-30) ;
+    --m-35: var(--spacing-35) ;
+    --m-40: var(--spacing-40) ;
+    --m-45: var(--spacing-45) ;
+    --m-50: var(--spacing-50) ;
+    --m-55: var(--spacing-55) ;
+    --m-60: var(--spacing-60) ;
+    --m-65: var(--spacing-65) ;
+    --m-70: var(--spacing-70) ;
+    --m-75: var(--spacing-75) ;
+    --m-80: var(--spacing-80) ;
+    --m-85: var(--spacing-85) ;
+    --m-90: var(--spacing-90) ;
+    --m-95: var(--spacing-95) ;
+    --m-100:var(--spacing-100) ;
+}
+
+:root /* width and heihgt */ {
+    --w-full: 100%;
+    --w-screen: 100vw;
+    --w-half: 50%;
+    --h-screen: 100vh;
+    --h-w-auto: auto;
+    --max-w-h: 75rem;
+    --max-w-h: 60rem;
+    --min-w-h-20: 20rem;
+    --min-w-h-15: 15rem;
+    --min-w-h-10: 10rem;
+
+    /* Width (valores fluidos no necesitan clamp) */
+    --w-90: 90vw;
+    --w-80: 80vw;
+    --w-70: 70vw;
+    --w-50: 50vw;
+    --w-40: 40vw;
+    --w-30: 30vw;
+    --w-20: 20vw;
+    --w-10: 10vw;
+
+    /* Height (valores fluidos no necesitan clamp) */
+    --h-90: 90vh;
+    --h-80: 80vh;
+    --h-70: 70vh;
+    --h-60: 60vh;
+    --h-50: 50vh;
+    --h-40: 40vh;
+    --h-30: 30vh;
+    --h-20: 20vh;
+    --h-10: 10vh;
+}
+
+:root /* posiciones */ {
+    
+    --position-0: var(--spacing-0);
+    --position-5: var(--spacing-5); 
+    --position-10: var(--spacing-10);
+    --position-15: var(--spacing-15);
+    --position-20: var(--spacing-20);
+    --position-25: var(--spacing-25);
+    --position-30: var(--spacing-30);
+    --position-35: var(--spacing-35);
+    --position-40: var(--spacing-40);
+    --position-45: var(--spacing-45);
+    --position-50: var(--spacing-50);
+    --position-55: var(--spacing-55);
+    --pocicion-60: var(--spacing-60);
+
+    --position-center: 50%;
+    --pocicion-absolute: absolute;
+    --pocicion-relative: relative;
+
+    /* z-index */
+    --z-base: 1;
+    --z-modal: 10;
+}
+
+:root /*gap*/{
+    --g-0:  var(--spacing-0);
+    --g-5:  var(--spacing-5); 
+    --g-10: var(--spacing-10);
+    --g-15: var(--spacing-15);
+    --g-20: var(--spacing-20);
+    --g-25: var(--spacing-25);
+    --g-30: var(--spacing-30);
+    --g-35: var(--spacing-35);
+    --g-40: var(--spacing-40);
+    --g-45: var(--spacing-45);
+    --g-50: var(--spacing-50);
+}
+
+
+
+:root /* animaciones */ {
+    --transition: all 0.5s ease-in;
+    --transition-fast: all 0.3s ease-in;
+    --transition-slow: all 0.7s ease-in;
+    --transition-hover: all 0.2s ease-in-out;
+}
+
+:root /* sombras */ {
+    --shadow-dark: 2px 2px 10px var(--color-shadow-principal),
+    -2px -2px 10px var(--color-shadow-principal);
+
+    --shadow-light: 2px 2px 10px var(--color-shadow-secundario),
+    -2px -2px 10px var(--color-shadow-secundario);
+    
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* ============== contenido compartido ================ */
+
+body {
+    margin: 0 1vw ;
+    background-color: #000;
+}
+
+main {
+    background-color: var(--color-fondo-secundario);
+    transition: var(--transition);
+
+    height: var(--w-full);
+    width: var(--w-full);
+
+    padding: var(--p-100);
+    text-align: center;
+}
+
+
+.img-head {
+    width: var(--w-30);
+    padding: var(--p-10);
+    margin: auto;
+}
+
+.content-text {
+    white-space: pre-line;
+}
+
+
