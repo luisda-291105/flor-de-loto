@@ -1,0 +1,600 @@
+
+
+
+
+
+
+/* ==============  formulario ============= */
+
+/* Imagen del encabezado del formulario */
+.resgistro > img {
+    width: var(--w-30);
+    padding: var(--p-10);
+    margin: auto;
+}
+
+/* Contenedor principal del formulario */
+.resgistro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--g-10);
+}
+
+/* Título principal del formulario */
+.resgistro > h1 {
+    font-size: var(--font-size-grande);
+    margin-bottom: var(--m-30);
+}
+
+/* Contenedor <form> */
+.form_login {
+    height: var(--h-w-auto);
+}
+
+/* Grupo de campos (<fieldset>) */
+.form_fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: var(--p-10);
+    gap: var(--g-5);
+    border-radius: var(--border-radius);
+    margin: var(--m-20);
+}
+
+/* Título de cada grupo (<legend>) */
+.form_fieldset > legend {
+    text-align: left;
+    font-size: var(--font-size-normal);
+}
+
+/* Etiquetas de los campos (<label>) */
+.form_fieldset > label {
+    margin: var(--m-10);
+}
+
+/* Campos de entrada (<input>) */
+.form_fieldset > input {
+    padding: var(--p-5);
+    padding-left: var(--p-10);
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    background-color: var(--color-input-claro);
+    transition: var(--transition);
+}
+
+/* ================== Botones ================== */
+
+/* Estilo base para cualquier botón */
+.btn {
+    margin: var(--m-20);
+    padding: var(--p-5);
+    color: var(--color-texto-secundario);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    border: none;
+}
+
+/* Botón de envío */
+.btn-envia {
+    background-color: var(--color-input-claro);
+}
+
+/* Botón/enlace tipo link con hover subrayado */
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================== parrafos ==================== */
+
+.resgistro > p {
+    text-align: justify;
+    
+    margin: var(--m-10);
+}
+
+.form_fieldset > div > p {
+    text-align: justify;
+    margin: var(--m-10);
+    padding: var(--p-5);
+}
+
+
+/* ==================== productos ======================= */
+.main-section > h1 {
+    margin-bottom: var(--m-50);             
+    font-size: var(--font-size-grande);     
+    font-size: var(--font-size-grande);    
+}
+
+/* Estilo para cada producto dentro de la lista */
+.product-item {
+    border: var(--border-trasparente);             
+    background-color: var(--color-fondo-secundario); 
+
+    display: flex;                                   
+    flex-direction: column;                          
+    text-align: left;                               
+
+    box-shadow: var(--shadow-light);                
+
+    position: relative;                             
+}
+
+/* Títulos <h2> dentro de cada */
+.product-item > h2  {
+    margin: var(--m-10);                            
+}
+
+/* Imágenes dentro de cada */
+.product-item > img {
+    min-width: 100%;                                 
+    min-height: 100%;                               
+}
+
+/* Enlaces con clase  */
+.link_a {
+    text-align: left;                                
+    width: 100%;                                    
+    border: none;                                    
+    outline: none;                                   
+}
+
+/* Icono o enlace con clase */
+.flechita {
+    position: absolute;                              
+    right: var(--position-10);                       
+    bottom: var(--position-5);                       
+
+    color: var(--color-texto-principal);             
+    text-decoration: none;                           
+}
+
+/* ===================== servicios ====================== */
+
+.services-section > h2 {
+    font-size: var(--font-size-grande);
+    padding: var(--p-10);
+}
+
+.service-card {
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: var(--w-70);
+    height: var(--h-20);
+    border: var(--border-principal);
+    gap: var(--g-5);
+    margin: var(--m-20) auto;
+    box-shadow: var(--shadow-light);
+    
+}
+
+.service-card > img {
+    width: var(--w-half);
+    object-fit: cover;
+    width: 35rem;
+
+}
+
+.service-info {
+    padding: var(--p-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 35rem;
+}
+
+/* ======================== testimonio post ========================= */
+
+/* Contenedor principal de una publicación */
+.main_post {
+    display: flex;
+    flex-direction: column;
+    gap: var(--g-10);
+}
+
+/* Contenedor del post */
+.article-post {
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: var(--w-70);
+    height: var(--h-20);
+    border: var(--border-principal);
+    gap: var(--g-5);
+    margin: var(--m-20);
+    box-shadow: var(--shadow-light);
+}
+
+/* Imagen dentro de post */
+.article-post > img {
+    width: var(--w-half);
+    object-fit: cover;
+}
+
+.div-post {
+    width: var(--w-half);
+}
+
+/* Párrafos dentro de un contenedor de texto post */
+.div-post > p {
+    padding: var(--p-5);
+    text-align: left;
+}
+
+
+/*======================= esta es la parte del inicio debajo del header =============================*/
+
+.content-text  {
+    background-color: var(--color-shadow-principal);
+    color: var(--color-texto-principal);
+    border-radius: var(--border-radius);
+
+    padding: var(--p-30);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--g-50);
+    
+    text-align: center;
+}
+
+
+/* ================== footer ============================= */
+
+.main_footer {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-principal);
+
+    width: var(--w-full);
+    height: var(--h-w-auto);
+    padding: var(--p-30);
+
+}
+
+.footer_title {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.div_txt_footer {
+    padding: var(--p-10);
+    
+}
+
+
+.hr-footer {
+    margin: var(--m-0) var(--m-30);
+}
+
+.contact_address {
+    display: flex;
+    gap: var(--g-10);
+    padding: var(--g-10);
+    align-items: center;
+    
+}
+
+.contact_info {
+    margin: auto;
+}
+
+.suscribirse {
+    outline: none;
+    padding: var(--p-5);
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+}
+
+.suscribirse:hover {
+    color: var(--color-texto-principal);
+    background-color: var(--color-transpatente);
+    border: var(--border-secundario);
+    
+    
+}
+
+/* ============== header ============== */
+.main_header {
+    min-width: var(--w-full);
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-principal);
+    position: relative;
+    letter-spacing: var(--letter-spacing-1_5px);
+    transition: var(--transition);
+}
+
+.main_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heiderIten {
+    display: flex;
+    padding: var(--p-10);
+}
+
+/* =============== menu del header ============ */
+
+.mainMenu {
+    flex-direction: row-reverse;
+    gap: var(--g-30);
+    position: absolute;
+    right: var(--position-0);
+    z-index: var(--z-base);
+    margin: var(--m-0) var(--m-10);
+    line-height: var(--line-heigth-1_5);
+
+}
+
+.menu {
+    background-color: var(--color-shadow-principal);
+    
+}
+
+.menu > ul  {
+    list-style: none;
+    text-align: center;
+}
+.menu > ul > li > a {
+    color: var(--color-texto-principal);
+    padding: var(--p-10);
+    text-decoration: none;
+}
+
+/* =================================== diseño responsivo ==================================== */
+/* ===============================
+    ESTILOS PARA PANTALLAS PEQUEÑAS
+    (Móviles y tablets pequeñas)
+    =============================== */
+@media screen and (max-width: 746px) {
+    /*======= productos =======*/
+    .product-item {
+        border: var(--border-principal);
+        background-color: var(--color-fondo-secundario);
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        box-shadow: var(--shadow-light);
+
+        position: relative;
+        margin-bottom: var(--m-25);
+        
+        max-width: 28%;
+        max-height: 50%;
+        
+        flex: 1;
+        
+    }
+
+    .contect-product {
+        display: flex;
+        align-items: start;
+        flex-direction: row;        
+        flex-wrap: wrap;
+        gap: var(--g-10);
+    }
+
+    .product-item:hover {
+        transform: scale(1.05);
+        transition: var(--transition);
+    }
+
+    .link_a {
+        color: var(--color-texto-secundario);
+    }
+
+}
+
+/* ===============================
+    ESTILOS PARA PANTALLAS GRANDES
+    (Desktop y tablets grandes)
+    =============================== */
+@media screen and (min-width: 746px) {
+
+    /* ===== FONDOS PRINCIPALES ===== */
+    .fondo-primario {
+        background: var(--img-fondo-primario) center / cover no-repeat;
+    }
+
+    .fondo-secundario {
+        background-color: var(--color-fondo-principal);
+        color: var(--color-texto-principal);
+    }
+
+    .fondo-tercero {
+        background-color: var(--color-fondo-tercero);
+        color: var(--color-texto-principal);
+    }
+
+    /* ===== ESTRUCTURA GENERAL ===== */
+    main {
+        padding: 0; 
+    }
+
+    .espacio {
+        padding: var(--p-90);
+        max-width: var(--w-full);
+        max-height: var(--max-w-h);
+    }
+
+    footer {
+        margin: auto; 
+    }
+
+    /* ===== CONTENIDO DE BIENVENIDA ===== */
+    .content-text {
+        margin: auto;
+        max-height: var(--h-w-auto);
+        max-width: var(--max-w-h);
+    }
+
+    .content-text > img {
+        max-width: var(--min-w-h-10);
+    }
+
+    /* ===== PRODUCTOS ===== */
+    .contect-product {
+        padding: 3rem;
+        flex-wrap: nowrap;
+
+        display: flex;
+        align-items: start;
+        flex-direction: row;        
+    }
+
+    .product-item {
+        max-width: 28%;
+        max-height: 50%;
+        margin: 1rem;
+        flex: 1;
+    }
+
+
+    .product-item:hover {
+        transform: scale(1.05);
+        transition: var(--transition);
+    }
+
+    .link_a {
+        color: var(--color-texto-principal);
+    }
+
+    /*====== servicios ======*/
+    .services-section {
+        flex: 1;
+        
+    }
+
+    .service-card {
+        max-height: var(--min-w-h-10);
+        max-width: var(--max-w-h);
+    }
+    
+    .service-card:hover {
+        transition: var(--transition);
+        transform: scale(1.05);
+    } 
+
+    .service-info > button:hover {
+        color: var(--color-texto-principal);
+    }
+
+    /* ===== nosotros ===== */
+    .fondo-cuarto{
+        background: url(https://cdn.yogajournal.com/wp-content/uploads/2018/04/Best-Yin-Yoga-Stretches-Sleep-Reclining-Twist-scaled.jpg)
+        no-repeat center ;
+        background-size: cover;
+    }
+
+    /* ===== TESTIMONIOS ===== */
+
+    .main_post {
+        flex: 1;
+    }
+
+    .article-post {
+        max-height: var(--min-w-h-10);
+        max-width: var(--max-w-h);
+        margin: auto;
+        box-shadow: var( --shadow-dark);
+        transition: var(--transition);
+    }
+    .article-post:hover {
+        transform: scale(1.05);
+    }
+
+    /*===== footer =====*/
+    .footer_section {
+        width: 80vw;
+        font-size: var(--font-size-normal);
+        text-align: justify;
+    }
+
+    .div_txt_footer > h5 {
+        width: 100%;
+        
+        padding-right: 3rem;
+    
+    }
+
+    .div_txt_footer > h4 {
+        width: 100%;
+        
+        padding-right: 3rem;
+    }
+
+    .contact_address > h4 {
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .contact_info {
+        width: 50%;
+        
+        padding-left: 3rem;
+    }
+
+    .suscribirse {
+        font-size: var(--font-size-normal);
+    }
+}
+
+/*  =======================
+    ESTILOS PARA PANTALLAS 
+    GRANDES
+    =======================*/
+@media screen and (min-width: 1024px) {
+    /* ===== header =====*/
+    .main_header {
+        font-size: var(--font-size-normal);
+    }
+
+    /* ===== productos =====*/
+    .product-item {
+        max-width: 21%;
+    }
+
+    /*===== servicios =====*/
+    .service-card {
+        max-width: var(--w-50);
+    }
+
+    /* ===== testimonio ===== */
+    .testimonio {
+        padding-top: 1rem;
+    }
+
+    .main_post > h1 {
+        font-size: var(--font-size-grande);
+    }
+    
+    .main_post > h5 {
+        margin-bottom: 2rem;
+        letter-spacing: var(--letter-spacing-1_5px);
+        font:var(--font-size-muy-pequena);
+    }
+
+    .main_post > p {
+        margin: auto;
+        padding-bottom: 2rem;
+        text-align: justify;
+        width: 40vw;
+        
+    }
+
+    .article-post {
+        max-width: var(--w-50);
+    }
+
+    
+
+
+}
