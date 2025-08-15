@@ -27,8 +27,7 @@ más adelante se le van a agregar más herramientas y mejores prácticas de trab
 
 ## Instalación 
 - **clonar el repositorio** :
-`git clone https://github.com/luisda-291105/flor-de-loto.git`
-
+`git clone https://github.com/luisda-291105/flor-de-loto.git` 
 
 ---
 
