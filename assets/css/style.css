@@ -5,5 +5,24 @@
     box-sizing: border-box;
 }
 
+/* ===== estilos generales ===== */
+body {
+    margin: auto 0.5em;
+}
 
+/* todas las seccion */
+.section {
+    margin: 3rem;
+}
+
+/* todos los contenidos */
+.content {
+    display: flex;
+}
+
+/* contenido principal */
+.contentMain {
+    display: flex;
+    flex-direction: column;
+}
 
