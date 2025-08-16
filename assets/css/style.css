@@ -12,17 +12,25 @@ body {
 
 /* todas las seccion */
 .section {
-    margin: 3rem;
+    margin: 1rem;
 }
 
 /* todos los contenidos */
 .content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* contenido principal */
 .contentMain {
     display: flex;
     flex-direction: column;
+}
+
+.contentText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
 }
 
