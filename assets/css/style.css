@@ -22,7 +22,7 @@ body {
 
 /* todas las seccion */
 .section {
-    margin: 1rem;
+    margin: auto;
     width: 100%;
     height: auto;
 }
