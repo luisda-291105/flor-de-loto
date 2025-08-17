@@ -18,122 +18,119 @@ body {
 }
 /* == contenedores == */
 
-/* contenido principal (main)*/
+/* Contenido principal (main) */
 .contentMain {
-    display: flex;
-    flex-direction: column;
+    display: flex;              /* Flexbox para organizar hijos */
+    flex-direction: column;     /* Los hijos se apilan en columna */
 }
 
-
-/* todas las seccion */
+/* Todas las secciones generales */
 .section {
-    margin: 2em auto;
-    width: 100%;
-    height: auto;
-    
+    margin: 2em auto;           /* Margen arriba/abajo de 2em y centrado horizontal */
+    width: 100%;                /* Ocupar todo el ancho disponible */
+    height: auto;               /* La altura se ajusta al contenido */
 }
 
-/* cartas como la del inicio y nosotros */
+/* Cartas (ejemplo: inicio y nosotros) */
 .card {
-    width: 90%;
-    background-color: #29291fa8;
-    color: #f3f1c4;
-    padding: 2em;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
+    width: 90%;                 /* Ocupan el 90% del contenedor */
+    background-color: #29291fa8;/* Fondo semitransparente */
+    color: #f3f1c4;             /* Texto color claro */
+    padding: 2em;               /* Espacio interno */
+    margin: auto;               /* Centrado horizontal */
+    border-radius: 10px;        /* Bordes redondeados */
+    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ; /* Sombras exteriores */
 }
 
-/* el contenedor que tiene a los item */
+/* Contenedor de los items */
 .content {
-    display: flex;
-    gap: 1em;
-    overflow: scroll;
-    padding: 1em;
+    display: flex;              /* Flexbox en fila */
+    gap: 1em;                   /* Espacio entre items */
+    overflow: scroll;           /* Agrega scroll si hay más contenido del ancho */
+    padding: 1em;               /* Espacio interno */
 }
 
-/* para todos los contenedores de texto */
+/* Contenedores de texto */
 .contentText {
-    display: flex;
-    flex-direction: column;
-    
-    text-align: center;
-    align-items: center;
-    white-space: pre-line;
-    padding: 0.3em;
+    display: flex;              /* Flexbox */
+    flex-direction: column;     /* Orden vertical */
+    text-align: center;         /* Texto centrado */
+    align-items: center;        /* Centra también los elementos hijos */
+    white-space: pre-line;      /* Respeta saltos de línea (\n) */
+    padding: 0.3em;             /* Pequeño espacio interno */
 }
 
-/* son todos los div que estan dentro de un item */
+/* Subcontenedores de texto dentro de un item */
 .subContentText {
-    height: 50%;
+    height: 50%;                /* Mitad de la altura del contenedor padre */
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
-    margin: auto;
+    gap: 1rem;                  /* Espacio vertical entre hijos */
+    margin: auto;               /* Centrado automático */
 }
 
-/* todos los item */
+/* Todos los items */
 .item {
-    min-width: 80%;
-    height: 16em;
-
-    display: flex;                                   
-    flex-direction: column;                          
-    text-align: left; 
+    min-width: 80%;             /* Cada item ocupa al menos 80% del ancho */
+    height: 16em;               /* Alto fijo de 16em */
     
-    border-radius: 0.3em;
-    border: none;
-    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
+    display: flex;
+    flex-direction: column;     /* Contenido en columna */
+    text-align: left;           /* Texto alineado a la izquierda */
+    
+    border-radius: 0.3em;       /* Bordes redondeados */
+    border: none;               /* Sin borde */
+    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ; /* Sombras como en .card */
 }
 
+/* Div del header */
 .divHeader {
-    padding-bottom: 3em;
+    padding-bottom: 3em;        /* Espacio extra debajo del header */
 }
 
-        /* == elemtos == */
+/* == elementos == */
 
-/* todas las imagenes */
+/* Todas las imágenes */
 .img {
-    object-fit: cover;
-    overflow: hidden;
-    align-items: center;
-    height: 50%;
-    transform: scale(0.96);/* → 96% (se reduce un poco). */ 
-    border-radius: 0.2em;
+    object-fit: cover;          /* Hace que la imagen se recorte para cubrir su contenedor sin deformarse */
+    overflow: hidden;           /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+    align-items: center;        /* ❌ Esta propiedad NO funciona en imágenes, solo en contenedores flex/grid */
+    height: 50%;                /* La altura será 50% del contenedor padre */
+    transform: scale(0.96);     /* Reduce la imagen al 96% de su tamaño (como un "zoom out") */
+    border-radius: 0.2em;       /* Bordes ligeramente redondeados */
 }
 
-/* es la imagen del inicio */
+/* Imagen del inicio (principal) */
 .imgStart {
-    width: 50%;
+    width: 50%;                 /* Ocupa la mitad del ancho del contenedor */
 }
 
-/* todos los parrafos */
+/* Todos los párrafos */
 .text {
-    text-align: justify;
-    padding: 0.5em;
-
+    text-align: justify;        /* Justifica el texto (alineación completa a izquierda y derecha) */
+    padding: 0.5em;             /* Espaciado interno alrededor del párrafo */
 }
 
-/* todas las imagenes que estan en un item */
+/* Imágenes dentro de un "item" */
 .imgItem {
-    width: 100%;
-
-    
-
+    width: 100%;                /* Ocupan todo el ancho del contenedor */
 }
 
-/* todos los titulos */
+/* Todos los títulos */
 .title {
-    margin: 1em;
+    margin: 1em;                /* Margen externo alrededor de los títulos */
 }
 
-/* solo los h3 */
+/* Solo los h3 */
 .titleThree {
-    text-align: center;
+    text-align: center;         /* Centra el texto del título h3 */
 }
 
-/* == header == */
+}
+
+    /* == header == */
+
 .header {
     position: fixed;              /* El header queda fijo en la parte superior aunque hagas scroll */
     width: 100%;                  /* Ocupa todo el ancho de la pantalla */
