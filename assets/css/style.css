@@ -9,8 +9,13 @@
 
 body {
     margin: auto 0.1em;
+    color: #333;
 }
 
+.link {
+    text-decoration: none;
+    color: #333;
+}
 /* == contenedores == */
 
 /* contenido principal (main)*/
@@ -174,8 +179,11 @@ body {
         /* == footer == */
 .footer {
     min-width: 100%;
-
+    background-color: #29291fb2;
+    color:#f3f1c4;
 }
+
+
 
 .contentFooter {
     display: flex;
@@ -242,6 +250,10 @@ body {
     align-items: center;
 }
 
+.linkFooter {
+    list-style: none;
+    color: #f3f1c4;
+}
 
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
