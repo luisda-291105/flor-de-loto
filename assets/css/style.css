@@ -11,9 +11,18 @@ img {
 }
 
 /* ===== estilos generales ===== */
+
 body {
     margin: auto 0.5em;
 }
+
+/* contenido principal (main)*/
+.contentMain {
+    display: flex;
+    flex-direction: column;
+}
+
+        /* == contenedores == */
 
 /* todas las seccion */
 .section {
@@ -22,6 +31,7 @@ body {
     height: auto;
 }
 
+/* cartas como la del inicio y nosotros */
 .card {
     width: 90%;
     background-color: #29291fa8;
@@ -32,16 +42,10 @@ body {
     box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
 }
 
-/* todos los contenedores */
+/* el contenedor que tiene a los item */
 .content {
     display: flex;
     flex-wrap: wrap;
-}
-
-/* contenido principal */
-.contentMain {
-    display: flex;
-    flex-direction: column;
 }
 
 /* para todos los contenedores de texto */
@@ -55,21 +59,7 @@ body {
     
 }
 
-/* todas las imagenes */
-.img {
-    object-fit: cover;
-    overflow: hidden;
-    width: 25%;
-    height: 50%;
-}
-
-/* todos los parrafos */
-.text {
-    text-align: justify;
-    padding: 0.5em;
-    margin-bottom: 1em;
-}
-
+/* son todos los div que estan dentro de un item */
 .subContentText {
     height: 50%;
     
@@ -89,6 +79,27 @@ body {
     border: none;
     box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
 }
+
+        /* == elemtos == */
+
+/* todas las imagenes */
+.img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 25%;
+    height: 50%;
+}
+
+/* todos los parrafos */
+.text {
+    text-align: justify;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+
+
+
 
 /* todas las imagenes que estan en un item */
 .imgItem {
