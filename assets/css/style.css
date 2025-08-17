@@ -5,15 +5,10 @@
     box-sizing: border-box;
 }
 
-/* logo */
-img {
-    width: 2em;
-}
-
 /* ===== estilos generales ===== */
 
 body {
-    margin: auto 0.5em;
+    margin: auto 0.1em;
 }
 
 /* contenido principal (main)*/
@@ -94,6 +89,11 @@ body {
     border-radius: 0.2em;
 }
 
+/* es la imagen del inicio */
+.imgStart {
+    width: 50%;
+}
+
 /* todos los parrafos */
 .text {
     text-align: justify;
@@ -119,6 +119,36 @@ body {
 
         /* == heider == */
 
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* contenedor de los que contienen a elementos */
+.section_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #29291f13;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+/* es el que contiene los elementos */
+.content_header {
+    display: flex;
+}
+
+/* logo */
+.imgLogo {
+    width: 2em;
+}
+
+/* menu es el que tiene la lista de rutas (inicio , login , etc */
+.menu {
+    flex-direction: row-reverse;
+}
+
 /* boton invisible*/
 .menu-toggle {
     display: none; /* Oculto por defecto */
@@ -127,22 +157,6 @@ body {
     border: none;
     cursor: pointer;
     color: #333;
-}
-
-/* contenedor de los que contienen a elementos */
-.section_header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/* es el que contiene los elementos */
-.content_header {
-    display: flex;
-}
-
-/* menu es el que tiene la lista de rutas (inicio , login , etc */
-.menu {
-    flex-direction: row-reverse;
 }
 
 /* Modo móvil (pantallas menores a 768px) */
