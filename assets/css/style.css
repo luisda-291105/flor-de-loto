@@ -1,3 +1,14 @@
+:root {
+    --color-gris_oscuro: #333;
+    --color-claro: #f3f1c4;
+    --color-transparente_vidrio: #29291f21;
+    --color-semiTransparente : #29291fa8;
+
+    --sombra-clara: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
+
+    
+}
+
 /* ===== reset and global */
 * {
     margin: 0;                /* Elimina márgenes predeterminados de TODOS los elementos */
@@ -9,12 +20,12 @@
 
 body {
     margin: auto 0.1em;       /* Margen automático arriba/abajo y 0.1em a los lados (casi nulo) */
-    color: #333;              /* Color de texto general (gris oscuro) */
+    color: var(--color-gris_oscuro);/* Color de texto general (gris oscuro) */
 }
 
 .link {
     text-decoration: none;    /* Quita el subrayado de los enlaces */
-    color: #333;              /* Define el color del texto de los enlaces */
+    color: var(--color-gris_oscuro);              /* Define el color del texto de los enlaces */
 }
 
 /* == contenedores == */
@@ -35,12 +46,12 @@ body {
 /* Cartas (ejemplo: inicio y nosotros) */
 .card {
     width: 90%;                 /* Ocupan el 90% del contenedor */
-    background-color: #29291fa8;/* Fondo semitransparente */
-    color: #f3f1c4;             /* Texto color claro */
+    background-color: var(--color-semiTransparente);/* Fondo semitransparente */
+    color: var(--color-claro);  /* Texto color claro */
     padding: 2em;               /* Espacio interno */
     margin: auto;               /* Centrado horizontal */
     border-radius: 10px;        /* Bordes redondeados */
-    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ; /* Sombras exteriores */
+    box-shadow: var(--sombra-clara) ; /* Sombras exteriores */
 }
 
 /* Contenedor de los items */
@@ -82,7 +93,7 @@ body {
     
     border-radius: 0.3em;       /* Bordes redondeados */
     border: none;               /* Sin borde */
-    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ; /* Sombras como en .card */
+    box-shadow: var(--sombra-clara) ; 
 }
 
 /* Div del header */
@@ -136,7 +147,7 @@ body {
     position: fixed;              /* El header queda fijo en la parte superior aunque hagas scroll */
     width: 100%;                  /* Ocupa todo el ancho de la pantalla */
     z-index: 100;                 /* Se asegura de que esté por encima de otros elementos */
-    background-color: #29291f21;  /* Fondo oscuro muy transparente (21 en hex es ≈13% opacidad) */
+    background-color: var(--color-transparente_vidrio);  /* Fondo oscuro muy transparente (21 en hex es ≈13% opacidad) */
     backdrop-filter: blur(0.5px); /* Aplica un ligero efecto de desenfoque (como "vidrio") */
 }
 
@@ -170,7 +181,7 @@ body {
     background: none;             /* Fondo transparente */
     border: none;                 /* Sin borde */
     cursor: pointer;              /* Cambia el cursor a "mano" cuando se pasa encima */
-    color: #333;                  /* Color gris oscuro */
+    color: var(--color-gris_oscuro); /* Color gris oscuro */
 }
 
 
@@ -178,8 +189,8 @@ body {
 
 .footer {
     min-width: 100%;            /* El ancho mínimo del footer será 100% del contenedor (ocupa toda la pantalla) */
-    background-color: #29291fb2;/* Fondo oscuro semitransparente (color RGBA en notación hex con alfa b2 ≈ 70% opacidad) */
-    color:#f3f1c4;              /* Color del texto en un tono claro */
+    background-color: var(--color-semiTransparente);/* Fondo oscuro semitransparente (color RGBA en notación hex con alfa b2 ≈ 70% opacidad) */
+    color:var(--color-claro);              /* Color del texto en un tono claro */
 }
 
 .contentFooter {
@@ -245,7 +256,7 @@ body {
 
 .linkFooter {
     list-style: none;           /* Quita viñetas si se usa <ul>/<ol> */
-    color: #f3f1c4;             /* Texto con el mismo color claro */
+    color: var(--color-claro);             /* Texto con el mismo color claro */
 }
 
 
@@ -254,7 +265,7 @@ body {
 .nav-header {
     display: none; /* Oculta la barra */
     flex-direction: column;
-    background: #fff;
+    background: var(--color-semiTransparente);
     position: absolute;
     top: 60px; /* debajo del header */
     right: 0;
