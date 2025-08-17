@@ -67,6 +67,12 @@ body {
 .text {
     text-align: justify;
     padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.subContentText {
+    height: 50%;
+    
 }
 
 /* todos los item */
