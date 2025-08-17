@@ -114,6 +114,8 @@ body {
 .imgItem {
     width: 100%;
 
+    
+
 }
 
 /* todos los titulos */
@@ -184,17 +186,53 @@ body {
 .listFooterImg {
     display: flex;
     list-style: none;
-    gap: 1em;
+    
+
 }
 
 .listFooterImg > li {
     width: 10%;
+    margin: auto;
+    
 }
 
 .listFooterImg > li > img{
     width: 100%;
-    
+    padding: 0;
 
+}
+
+
+.inputFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; 
+
+}
+
+.contentFooter{
+    border-top: 1px solid ;
+}
+
+.inputEmail  {
+    overflow: none;
+    border: none;
+    border-bottom:  1px solid;
+    
+    padding: 5px;
+}
+
+.inputEmail:focus {
+    overflow: none;
+    border: none;
+}
+.labelEmail::after {
+    content: "*";
+}
+
+.contentFooterTwo {
+    text-align: center;
+    align-items: center;
 }
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
