@@ -14,9 +14,9 @@ fetch("footer.html")
 .then(data => {
     
     document.getElementById("footer-container").innerHTML = data;
-});
+    
+            // boton para movil
 
-        // boton para movil
 
 const menuToggle = document.getElementById("menu-toggle");
 const navHeader = document.getElementById("nav-header");
@@ -24,3 +24,6 @@ const navHeader = document.getElementById("nav-header");
 menuToggle.addEventListener("click", () =>{
     navHeader.classList.toggle("active");
 } )
+});
+
+
