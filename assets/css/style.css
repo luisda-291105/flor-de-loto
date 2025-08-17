@@ -22,9 +22,10 @@ body {
 
 /* todas las seccion */
 .section {
-    margin: auto;
+    margin: 2em auto;
     width: 100%;
     height: auto;
+    
 }
 
 /* cartas como la del inicio y nosotros */
@@ -40,9 +41,10 @@ body {
 
 /* el contenedor que tiene a los item */
 .content {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    display: flex;
+    gap: 1em;
+    overflow: scroll;
+    padding: 1em;
 }
 
 /* para todos los contenedores de texto */
@@ -64,14 +66,14 @@ body {
 
 /* todos los item */
 .item {
-    width: 10em;
+    width: 80vw;
     max-height: 16em;
-    margin: 0.2em;
+    
     
     display: flex;                                   
     flex-direction: column;                          
     text-align: left; 
-    flex: 1;
+    
     
     border-radius: 0.3em;
     border: none;
@@ -186,3 +188,4 @@ body {
     display: flex; /* Se muestra cuando se activa con JS */
 }
 }
+
