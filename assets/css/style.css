@@ -18,6 +18,18 @@ body {
 /* todas las seccion */
 .section {
     margin: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 50%;
+    background-color: #29291fa8;
+    color: #f3f1c4;
+    padding: 2em;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
 }
 
 /* todos los contenedores */
@@ -48,22 +60,37 @@ body {
     object-fit: cover;
     overflow: hidden;
     width: 20%;
-    height: auto;
+    height: 50%;
 }
 
 /* todos los parrafos */
 .text {
     text-align: justify;
+    padding: 0.5em;
 }
 
+/* todos los item */
 .item {
     width: 10em;
-    height: auto;
-    margin: 1em;
-    border: 1px solid ;
+    height: 15em;
+    margin: 0.2em;
+    
+    display: flex;                                   
+    flex-direction: column;                          
+    text-align: left; 
+    
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
 }
 
+/* todas las imagenes que estan en un item */
 .imgItem {
     width: 100%;
-    
+
+}
+
+/* todos los titulos */
+.title {
+    margin: 1em;
 }
