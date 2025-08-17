@@ -225,7 +225,7 @@ body {
     overflow: none;
     border: none;
     border-bottom:  1px solid;
-    
+    border-radius: 0.5em;
     padding: 5px;
 }
 
