@@ -171,11 +171,26 @@ body {
 
 }
 
-.sectionFooter {
+.contentFooter {
     display: flex;
     flex-direction: column;
 }
 
+.listFooterImg {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+.listFooterImg > li {
+    width: 10%;
+}
+
+.listFooterImg > li > img{
+    width: 100%;
+    
+
+}
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
 .nav-header {
