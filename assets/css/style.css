@@ -138,6 +138,9 @@ body {
     display: flex;
 }
 
+.menu {
+    flex-direction: row-reverse;
+}
 
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
