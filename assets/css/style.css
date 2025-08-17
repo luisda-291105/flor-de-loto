@@ -42,7 +42,7 @@ body {
 .content {
     display: grid;
     grid-template-columns: auto auto;
-
+    justify-content: space-evenly;
 }
 
 /* para todos los contenedores de texto */
