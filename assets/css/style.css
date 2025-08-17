@@ -101,10 +101,6 @@ body {
 
 }
 
-
-
-
-
 /* todas las imagenes que estan en un item */
 .imgItem {
     width: 100%;
@@ -119,4 +115,39 @@ body {
 /* solo los h3 */
 .titleThree {
     margin: 0.1rem;
+}
+
+        /* == heider == */
+
+/* boton invisible*/
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+
+/* Modo móvil (pantallas menores a 768px) */
+@media (max-width: 768px) {
+.navContent {
+    display: none; /* Oculta la barra */
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px; /* debajo del header */
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.menu-toggle {
+    display: block; /* Muestra el botón */
+}
+
+.navContent.active {
+    display: flex; /* Se muestra cuando se activa con JS */
+}
 }
