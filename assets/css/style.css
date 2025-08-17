@@ -44,15 +44,16 @@ body {
 
 /* el contenedor que tiene a los item */
 .content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 /* para todos los contenedores de texto */
 .contentText {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    
     text-align: center;
     align-items: center;
     white-space: pre-line;
@@ -62,7 +63,7 @@ body {
 /* son todos los div que estan dentro de un item */
 .subContentText {
     height: 50%;
-    
+
 }
 
 /* todos los item */
@@ -86,7 +87,7 @@ body {
 .img {
     object-fit: cover;
     overflow: hidden;
-    width: 25%;
+    
     height: 50%;
 }
 
