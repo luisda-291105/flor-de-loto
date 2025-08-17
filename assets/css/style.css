@@ -183,9 +183,15 @@ body {
     padding: 1em;
 }
 
+.listFooter {
+    margin: 1em;
+    list-style: none;
+    text-align: left;
+}
+
 .listFooterImg {
     display: flex;
-    list-style: none;
+    
     
 
 }
@@ -201,6 +207,7 @@ body {
     padding: 0;
 
 }
+
 
 
 .inputFooter {
@@ -234,6 +241,8 @@ body {
     text-align: center;
     align-items: center;
 }
+
+
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
 .nav-header {
