@@ -90,6 +90,7 @@ body {
     overflow: hidden;
     align-items: center;
     height: 45%;
+    transform: scale(0.9);/* → 90% (se reduce un poco). */ 
 }
 
 /* todos los parrafos */
