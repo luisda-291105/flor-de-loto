@@ -11,13 +11,14 @@ body {
     margin: auto 0.1em;
 }
 
+/* == contenedores == */
+
 /* contenido principal (main)*/
 .contentMain {
     display: flex;
     flex-direction: column;
 }
 
-        /* == contenedores == */
 
 /* todas las seccion */
 .section {
@@ -77,6 +78,10 @@ body {
     box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
 }
 
+.divHeader {
+    padding-bottom: 3em;
+}
+
         /* == elemtos == */
 
 /* todas las imagenes */
@@ -130,8 +135,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #29291f13;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    padding: 0.2em;
 }
 
 /* es el que contiene los elementos */
