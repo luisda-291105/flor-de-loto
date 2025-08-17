@@ -6,6 +6,15 @@ fetch("heider.html") // busca el archivo heider.html
 .then(data => {
     // lo inserta dentro del div con id header-container
     document.getElementById("header-container").innerHTML = data;
+                // boton para movil
+
+
+const menuToggle = document.getElementById("menu-toggle");
+const navHeader = document.getElementById("nav-header");
+
+menuToggle.addEventListener("click", () =>{
+    navHeader.classList.toggle("active");
+} )
 });
 
 // busca al footer
@@ -15,15 +24,7 @@ fetch("footer.html")
     
     document.getElementById("footer-container").innerHTML = data;
     
-            // boton para movil
 
-
-const menuToggle = document.getElementById("menu-toggle");
-const navHeader = document.getElementById("nav-header");
-
-menuToggle.addEventListener("click", () =>{
-    navHeader.classList.toggle("active");
-} )
 });
 
 
