@@ -165,6 +165,17 @@ body {
     color: #333;
 }
 
+        /* == footer == */
+.footer {
+    min-width: 100%;
+
+}
+
+.sectionFooter {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
 .nav-header {
