@@ -66,14 +66,13 @@ body {
 
 /* todos los item */
 .item {
-    min-width: 80vw;
-    max-height: 16em;
-    
-    
+    min-width: 80%;
+    max-height: 25em;
+    margin: auto;
+
     display: flex;                                   
     flex-direction: column;                          
     text-align: left; 
-    
     
     border-radius: 0.3em;
     border: none;
@@ -91,7 +90,7 @@ body {
     object-fit: cover;
     overflow: hidden;
     align-items: center;
-    height: 45%;
+    height: 50%;
     transform: scale(0.96);/* → 96% (se reduce un poco). */ 
     border-radius: 0.2em;
 }
