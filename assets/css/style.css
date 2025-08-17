@@ -5,6 +5,7 @@
     --color-semiTransparente : #29291fa8;
 
     --sombra-clara: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
+    --sombra-oscura: 2px 2px 15px #333 , -2px -2px 15px #333 ;
 
     
 }
@@ -27,6 +28,7 @@ body {
     text-decoration: none;    /* Quita el subrayado de los enlaces */
     color: var(--color-gris_oscuro);              /* Define el color del texto de los enlaces */
 }
+
 
 /* == contenedores == */
 
@@ -140,7 +142,6 @@ body {
 }
 
 
-
     /* == header == */
 
 .header {
@@ -149,6 +150,7 @@ body {
     z-index: 100;                 /* Se asegura de que esté por encima de otros elementos */
     background-color: var(--color-transparente_vidrio);  /* Fondo oscuro muy transparente (21 en hex es ≈13% opacidad) */
     backdrop-filter: blur(0.5px); /* Aplica un ligero efecto de desenfoque (como "vidrio") */
+    box-shadow: var(--sombra-oscura);
 }
 
 /* Contenedor que agrupa los elementos principales del header */
@@ -172,6 +174,17 @@ body {
 /* Menú de navegación con las rutas (ej: inicio, login, etc.) */
 .menu {
     flex-direction: row-reverse;  /* Invierte el orden de los elementos dentro del menú */
+}
+
+
+.listItem {
+    list-style: none;
+    text-align: center;
+
+}
+
+.listItem > a{
+    color: #250a41;
 }
 
 /* Botón de menú (generalmente para responsive, hamburguesa) */
@@ -265,12 +278,13 @@ body {
 .nav-header {
     display: none; /* Oculta la barra */
     flex-direction: column;
-    background: var(--color-semiTransparente);
+    background: var(--color-transparente_vidrio);
     position: absolute;
-    top: 60px; /* debajo del header */
-    right: 0;
-    width: 200px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    top: 4em; /* debajo del header */
+    right: 1em;
+    width: auto;
+    box-shadow: var(--sombra-oscura);
+    padding: 2em;
 }
 
 .menu-toggle {
