@@ -1,21 +1,22 @@
 /* ===== reset and global */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;                /* Elimina márgenes predeterminados de TODOS los elementos */
+    padding: 0;               /* Elimina paddings predeterminados de TODOS los elementos */
+    box-sizing: border-box;   /* Hace que el ancho/alto incluya padding y borde (más fácil de calcular tamaños) */
 }
 
 /* ===== estilos generales ===== */
 
 body {
-    margin: auto 0.1em;
-    color: #333;
+    margin: auto 0.1em;       /* Margen automático arriba/abajo y 0.1em a los lados (casi nulo) */
+    color: #333;              /* Color de texto general (gris oscuro) */
 }
 
 .link {
-    text-decoration: none;
-    color: #333;
+    text-decoration: none;    /* Quita el subrayado de los enlaces */
+    color: #333;              /* Define el color del texto de los enlaces */
 }
+
 /* == contenedores == */
 
 /* Contenido principal (main) */
