@@ -133,48 +133,48 @@ body {
     text-align: center;
 }
 
-        /* == heider == */
-
+/* == header == */
 .header {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background-color: #29291f21;
-    backdrop-filter: blur(0.5px);
+    position: fixed;              /* El header queda fijo en la parte superior aunque hagas scroll */
+    width: 100%;                  /* Ocupa todo el ancho de la pantalla */
+    z-index: 100;                 /* Se asegura de que esté por encima de otros elementos */
+    background-color: #29291f21;  /* Fondo oscuro muy transparente (21 en hex es ≈13% opacidad) */
+    backdrop-filter: blur(0.5px); /* Aplica un ligero efecto de desenfoque (como "vidrio") */
 }
 
-/* contenedor de los que contienen a elementos */
+/* Contenedor que agrupa los elementos principales del header */
 .section_header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #29291f13;
-    padding: 0.2em;
+    display: grid;                /* Usa grid para organizar columnas */
+    grid-template-columns: 1fr 1fr; /* Divide en 2 columnas iguales */
+    background-color: #29291f13;  /* Fondo más claro y transparente que el del header */
+    padding: 0.2em;               /* Espacio interno pequeño */
 }
 
-/* es el que contiene los elementos */
+/* Contenedor interno que alinea sus elementos */
 .content_header {
-    display: flex;
+    display: flex;                /* Flexbox para organizar los hijos en fila */
 }
 
-/* logo */
+/* Logo */
 .imgLogo {
-    width: 2em;
+    width: 2em;                   /* Tamaño fijo de 2em (se adapta al tamaño de la fuente base) */
 }
 
-/* menu es el que tiene la lista de rutas (inicio , login , etc */
+/* Menú de navegación con las rutas (ej: inicio, login, etc.) */
 .menu {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;  /* Invierte el orden de los elementos dentro del menú */
 }
 
-/* boton invisible*/
+/* Botón de menú (generalmente para responsive, hamburguesa) */
 .menu-toggle {
-    display: none; /* Oculto por defecto */
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
+    display: none;                /* Oculto en pantallas grandes */
+    font-size: 2rem;              /* Tamaño grande del icono/texto */
+    background: none;             /* Fondo transparente */
+    border: none;                 /* Sin borde */
+    cursor: pointer;              /* Cambia el cursor a "mano" cuando se pasa encima */
+    color: #333;                  /* Color gris oscuro */
 }
+
 
     /* == footer == */
 
