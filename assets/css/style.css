@@ -90,7 +90,8 @@ body {
     overflow: hidden;
     align-items: center;
     height: 45%;
-    transform: scale(0.9);/* → 90% (se reduce un poco). */ 
+    transform: scale(0.96);/* → 96% (se reduce un poco). */ 
+    border-radius: 0.2em;
 }
 
 /* todos los parrafos */
