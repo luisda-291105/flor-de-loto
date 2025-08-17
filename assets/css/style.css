@@ -90,13 +90,13 @@ body {
     padding-bottom: 3em;        /* Espacio extra debajo del header */
 }
 
-/* == elementos == */
+    /* == elementos == */
 
 /* Todas las imágenes */
 .img {
     object-fit: cover;          /* Hace que la imagen se recorte para cubrir su contenedor sin deformarse */
     overflow: hidden;           /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
-    align-items: center;        /* ❌ Esta propiedad NO funciona en imágenes, solo en contenedores flex/grid */
+    
     height: 50%;                /* La altura será 50% del contenedor padre */
     transform: scale(0.96);     /* Reduce la imagen al 96% de su tamaño (como un "zoom out") */
     border-radius: 0.2em;       /* Bordes ligeramente redondeados */
@@ -128,7 +128,7 @@ body {
     text-align: center;         /* Centra el texto del título h3 */
 }
 
-}
+
 
     /* == header == */
 
@@ -221,7 +221,7 @@ body {
 }
 
 .inputEmail  {
-    overflow: none;             /* ❌ Esto no existe, en CSS 'none' no es válido para overflow */
+    
     border: none;               /* Elimina el borde por defecto */
     border-bottom:  1px solid;  /* Agrega solo una línea inferior como borde */
     border-radius: 0.5em;       /* Esquinas ligeramente redondeadas */
@@ -229,7 +229,6 @@ body {
 }
 
 .inputEmail:focus {
-    overflow: none;             /* ❌ nuevamente, propiedad inválida */
     border: none;               /* Quita bordes al enfocar */
 }
 
