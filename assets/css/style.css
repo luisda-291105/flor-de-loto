@@ -55,3 +55,15 @@ body {
 .text {
     text-align: justify;
 }
+
+.item {
+    width: 10em;
+    height: auto;
+    margin: 1em;
+    border: 1px solid ;
+}
+
+.imgItem {
+    width: 100%;
+    
+}
