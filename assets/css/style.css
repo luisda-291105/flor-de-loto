@@ -69,7 +69,7 @@ body {
 /* todos los item */
 .item {
     width: 10em;
-    height: 16em;
+    height: 18em;
     margin: 0.2em;
     
     display: flex;                                   
