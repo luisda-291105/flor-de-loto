@@ -129,10 +129,19 @@ body {
     color: #333;
 }
 
+.section_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content_header {
+    display: flex;
+}
+
 
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
-.navContent {
+.nav-header {
     display: none; /* Oculta la barra */
     flex-direction: column;
     background: #fff;
@@ -147,7 +156,7 @@ body {
     display: block; /* Muestra el botón */
 }
 
-.navContent.active {
+.nav-header.active {
     display: flex; /* Se muestra cuando se activa con JS */
 }
 }
