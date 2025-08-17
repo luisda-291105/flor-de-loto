@@ -176,84 +176,81 @@ body {
     color: #333;
 }
 
-        /* == footer == */
+    /* == footer == */
+
 .footer {
-    min-width: 100%;
-    background-color: #29291fb2;
-    color:#f3f1c4;
+    min-width: 100%;            /* El ancho mínimo del footer será 100% del contenedor (ocupa toda la pantalla) */
+    background-color: #29291fb2;/* Fondo oscuro semitransparente (color RGBA en notación hex con alfa b2 ≈ 70% opacidad) */
+    color:#f3f1c4;              /* Color del texto en un tono claro */
 }
-
-
 
 .contentFooter {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+    display: flex;              /* Convierte el contenedor en un flexbox */
+    flex-direction: column;     /* Alinea los hijos uno debajo del otro (en columna) */
+    padding: 1em;               /* Espaciado interno de 1em (≈ al tamaño de la letra) */
 }
 
+/* == listas del footer == */
 .listFooter {
-    margin: 1em;
-    list-style: none;
-    text-align: left;
+    margin: 1em;                /* Separación externa alrededor de la lista */
+    list-style: none;           /* Quita las viñetas o numeración de la lista */
+    text-align: left;           /* Alinea el contenido de la lista a la izquierda */
 }
 
 .listFooterImg {
-    display: flex;
-    
-    
-
+    display: flex;              /* Los ítems de la lista se mostrarán en fila (flexbox) */
 }
 
 .listFooterImg > li {
-    width: 10%;
-    margin: auto;
-    
+    width: 10%;                 /* Cada elemento de la lista ocupará el 10% del ancho de su contenedor */
+    margin: auto;               /* Centra los elementos en el espacio disponible */
 }
 
 .listFooterImg > li > img{
-    width: 100%;
-    padding: 0;
-
+    width: 100%;                /* La imagen ocupará el 100% del ancho de su <li> */
+    padding: 0;                 /* Sin espacio interno extra */
 }
 
-
-
+/* == input del footer == */
 .inputFooter {
-    display: flex;
-    flex-direction: column;
-    gap: 1em; 
-
+    display: flex;              /* Se organizan en flexbox */
+    flex-direction: column;     /* Los elementos van uno debajo del otro */
+    gap: 1em;                   /* Espacio de 1em entre los elementos */
 }
 
 .contentFooter{
-    border-top: 1px solid ;
+    border-top: 1px solid;      /* Línea de separación arriba del footer */
 }
 
 .inputEmail  {
-    overflow: none;
-    border: none;
-    border-bottom:  1px solid;
-    border-radius: 0.5em;
-    padding: 5px;
+    overflow: none;             /* ❌ Esto no existe, en CSS 'none' no es válido para overflow */
+    border: none;               /* Elimina el borde por defecto */
+    border-bottom:  1px solid;  /* Agrega solo una línea inferior como borde */
+    border-radius: 0.5em;       /* Esquinas ligeramente redondeadas */
+    padding: 5px;               /* Espaciado interno para que el texto no quede pegado al borde */
 }
 
 .inputEmail:focus {
-    overflow: none;
-    border: none;
-}
-.labelEmail::after {
-    content: "*";
+    overflow: none;             /* ❌ nuevamente, propiedad inválida */
+    border: none;               /* Quita bordes al enfocar */
 }
 
+/* Añade un asterisco después del texto de la etiqueta */
+.labelEmail::after {
+    content: "*";               /* Inserta un asterisco (útil para indicar campo obligatorio) */
+}
+
+/* == segunda sección del footer == */
 .contentFooterTwo {
-    text-align: center;
-    align-items: center;
+    text-align: center;         /* Centra el texto */
+    align-items: center;        /* Centra verticalmente si es flexbox */
 }
 
 .linkFooter {
-    list-style: none;
-    color: #f3f1c4;
+    list-style: none;           /* Quita viñetas si se usa <ul>/<ol> */
+    color: #f3f1c4;             /* Texto con el mismo color claro */
 }
+
 
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
