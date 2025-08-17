@@ -268,45 +268,6 @@
     --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
     --shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-
-
-
-/* ============== contenido compartido ================ */
-
-body {
-    margin: 0 1vw ;
-    background-color: #000;
-}
-
-main {
-    background-color: var(--color-fondo-secundario);
-    transition: var(--transition);
-
-    height: var(--w-full);
-    width: var(--w-full);
-
-    padding: var(--p-100);
-    text-align: center;
-}
-
-
-.img-head {
-    width: var(--w-30);
-    padding: var(--p-10);
-    margin: auto;
-}
-
-.content-text {
-    white-space: pre-line;
-}
-
-
-
-
-
-
-
 /* ==============  formulario ============= */
 
 /* Imagen del encabezado del formulario */
