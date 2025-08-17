@@ -69,14 +69,15 @@ body {
 /* todos los item */
 .item {
     width: 10em;
-    height: 18em;
+    max-height: 20em;
     margin: 0.2em;
     
     display: flex;                                   
     flex-direction: column;                          
     text-align: left; 
+    flex: 1;
     
-    border-radius: 5px;
+    border-radius: calc(5px , 10px , 15px);
     border: none;
     box-shadow: 2px 2px 15px #c4c4c4 , -2px -2px 15px #c4c4c4 ;
 }
@@ -87,8 +88,8 @@ body {
 .img {
     object-fit: cover;
     overflow: hidden;
-    
-    height: 50%;
+    align-items: center;
+    height: 45%;
 }
 
 /* todos los parrafos */
