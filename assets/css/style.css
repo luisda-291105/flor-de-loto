@@ -67,8 +67,7 @@ body {
 /* todos los item */
 .item {
     min-width: 80%;
-    min-height: 16em;
-    max-height: 20em;
+    height: 16em;
 
     display: flex;                                   
     flex-direction: column;                          
