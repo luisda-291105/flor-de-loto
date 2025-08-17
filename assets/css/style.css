@@ -129,15 +129,18 @@ body {
     color: #333;
 }
 
+/* contenedor de los que contienen a elementos */
 .section_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+/* es el que contiene los elementos */
 .content_header {
     display: flex;
 }
 
+/* menu es el que tiene la lista de rutas (inicio , login , etc */
 .menu {
     flex-direction: row-reverse;
 }
