@@ -79,13 +79,14 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;                               
+    gap: 1rem;         
+    position: relative;
 }
 
 /* Todos los items */
 .item {
     min-width: 70%;            
-    height: auto;               
+    height: 50%;               
     
     display: flex;
     flex-direction: column;     
@@ -104,12 +105,13 @@ body {
     /* == elementos == */
     .link-ver-mas {
         justify-items: end;
+
     }
 
 /* Todas las imágenes */
 .img {
     overflow: hidden;           
-    height: 60%;             
+            
     transform: scale(0.96);    
     border-radius: 0.2em;      
 }
