@@ -75,7 +75,7 @@ body {
 
 /* Subcontenedores de texto dentro de un item */
 .subContentText {
-    height: 10%;               
+    height: 40%;               
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -84,7 +84,7 @@ body {
 
 /* Todos los items */
 .item {
-    min-width: 80%;            
+    min-width: 95%;            
     height: auto;               
     
     display: flex;
@@ -106,7 +106,7 @@ body {
 /* Todas las imágenes */
 .img {
     overflow: hidden;           
-    height: 50%;             
+    height: 60%;             
     transform: scale(0.96);    
     border-radius: 0.2em;      
 }
