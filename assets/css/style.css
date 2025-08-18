@@ -1,3 +1,5 @@
+                /* == variables == */
+
 :root {
     --color-gris_oscuro: #333;
     --color-claro: #f3f1c4;
@@ -10,14 +12,14 @@
     
 }
 
-/* ===== reset and global */
+                /* ===== reset and global */
 * {
     margin: 0;                
     padding: 0;              
     box-sizing: border-box;  
 }
 
-/* ===== estilos generales ===== */
+                /* ===== estilos generales ===== */
 
 body {
     margin: auto 0.1em;       
@@ -30,7 +32,7 @@ body {
 }
 
 
-/* == contenedores == */
+                /* == contenedores == */
 
 /* Contenido principal (main) */
 .contentMain {
@@ -69,7 +71,7 @@ body {
     flex-direction: column;     
     text-align: center;        
     align-items: center;        
-    white-space: pre-line;      /* Respeta saltos de línea (\n) */
+    white-space: pre-line;      
     padding: 0.3em;             
 }
 
@@ -79,14 +81,13 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;         
     position: relative;
+    bottom: 0;
 }
 
 /* Todos los items */
 .item {
-    min-width: 70%;            
-    height: 50%;               
+    min-width: 10em;
     
     display: flex;
     flex-direction: column;     
@@ -102,18 +103,18 @@ body {
     padding-bottom: 3em;        
 }
 
-    /* == elementos == */
-    .link-ver-mas {
-        justify-items: end;
+                /* == elementos == */
+.link-ver-mas {
+    justify-items: end;
 
-    }
+}
 
 /* Todas las imágenes */
 .img {
-    overflow: hidden;           
-            
+    height: 50%;
     transform: scale(0.96);    
-    border-radius: 0.2em;      
+    border-radius: 0.2em;  
+    width: 100%;     
 }
 
 /* Imagen del inicio (principal) */
@@ -127,11 +128,6 @@ body {
     padding: 0.5em;            
 }
 
-/* Imágenes dentro de un "item" */
-.imgItem {
-    width: 100%;            
-}
-
 /* Todos los títulos */
 .title {
     margin: 1em;               
@@ -143,7 +139,7 @@ body {
 }
 
 
-    /* == header == */
+                /* == header == */
 
 .header {
     position: fixed;              
@@ -203,7 +199,7 @@ body {
     padding-top: 1em;
 }
 
-    /* == footer == */
+                /* == footer == */
 
 .footer {
     min-width: 100%;        
@@ -279,6 +275,7 @@ body {
     color: var(--color-claro);           
 }
 
+                /* == media == */
 
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
