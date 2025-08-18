@@ -87,7 +87,7 @@ body {
 /* Todos los items */
 .item {
     min-width: 80%;             /* Cada item ocupa al menos 80% del ancho */
-    height: 16em;               /* Alto fijo de 16em */
+    height: auto;               /* Alto fijo de 16em */
     
     display: flex;
     flex-direction: column;     /* Contenido en columna */
