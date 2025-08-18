@@ -12,21 +12,21 @@
 
 /* ===== reset and global */
 * {
-    margin: 0;                /* Elimina márgenes predeterminados de TODOS los elementos */
-    padding: 0;               /* Elimina paddings predeterminados de TODOS los elementos */
-    box-sizing: border-box;   /* Hace que el ancho/alto incluya padding y borde (más fácil de calcular tamaños) */
+    margin: 0;                
+    padding: 0;              
+    box-sizing: border-box;  
 }
 
 /* ===== estilos generales ===== */
 
 body {
-    margin: auto 0.1em;       /* Margen automático arriba/abajo y 0.1em a los lados (casi nulo) */
-    color: var(--color-gris_oscuro);/* Color de texto general (gris oscuro) */
+    margin: auto 0.1em;       
+    color: var(--color-gris_oscuro);
 }
 
 .link {
-    text-decoration: none;    /* Quita el subrayado de los enlaces */
-    color: var(--color-gris_oscuro);              /* Define el color del texto de los enlaces */
+    text-decoration: none;   
+    color: var(--color-gris_oscuro);              
 }
 
 
@@ -34,44 +34,43 @@ body {
 
 /* Contenido principal (main) */
 .contentMain {
-    display: flex;              /* Flexbox para organizar hijos */
-    flex-direction: column;     /* Los hijos se apilan en columna */
+    display: flex;              
+    flex-direction: column;     
 }
 
 /* Todas las secciones generales */
 .section {
-    margin: 2em auto;           /* Margen arriba/abajo de 2em y centrado horizontal */
-    width: 100%;                /* Ocupar todo el ancho disponible */
-    height: auto;               /* La altura se ajusta al contenido */
+    margin: 2em auto;          
+    width: 100%;               
+    height: auto;              
 }
 
 /* Cartas (ejemplo: inicio y nosotros) */
 .card {
-    width: 90%;                 /* Ocupan el 90% del contenedor */
-    background-color: var(--color-semiTransparente);/* Fondo semitransparente */
-    color: var(--color-claro);  /* Texto color claro */
-    padding: 2em;               /* Espacio interno */
-    margin: auto;               /* Centrado horizontal */
-    border-radius: 10px;        /* Bordes redondeados */
-    box-shadow: var(--sombra-clara) ; /* Sombras exteriores */
+    width: 90%;                
+    background-color: var(--color-semiTransparente);
+    color: var(--color-claro);  
+    padding: 2em;              
+    margin: auto;              
+    border-radius: 10px;        
+    box-shadow: var(--sombra-clara) ;
 }
-
 /* Contenedor de los items */
 .content {
-    display: flex;              /* Flexbox en fila */
-    gap: 1em;                   /* Espacio entre items */
-    overflow: scroll;           /* Agrega scroll si hay más contenido del ancho */
-    padding: 1em;               /* Espacio interno */
+    display: flex;              
+    gap: 1em;                   
+    overflow: scroll;           
+    padding: 1em;               
 }
 
 /* Contenedores de texto */
 .contentText {
-    display: flex;              /* Flexbox */
-    flex-direction: column;     /* Orden vertical */
-    text-align: center;         /* Texto centrado */
-    align-items: center;        /* Centra también los elementos hijos */
+    display: flex;              
+    flex-direction: column;     
+    text-align: center;        
+    align-items: center;        
     white-space: pre-line;      /* Respeta saltos de línea (\n) */
-    padding: 0.3em;             /* Pequeño espacio interno */
+    padding: 0.3em;             
 }
 
 /* Subcontenedores de texto dentro de un item */
@@ -99,7 +98,7 @@ body {
 
 /* Div del header */
 .divHeader {
-    padding-bottom: 3em;        /* Espacio extra debajo del header */
+    padding-bottom: 3em;        
 }
 
     /* == elementos == */
@@ -107,60 +106,60 @@ body {
 /* Todas las imágenes */
 .img {
     overflow: hidden;           
-    height: 50%;                /* La altura será 50% del contenedor padre */
-    transform: scale(0.96);     /* Reduce la imagen al 96% de su tamaño (como un "zoom out") */
-    border-radius: 0.2em;       /* Bordes ligeramente redondeados */
+    height: 50%;             
+    transform: scale(0.96);    
+    border-radius: 0.2em;      
 }
 
 /* Imagen del inicio (principal) */
 .imgStart {
-    width: 50%;                 /* Ocupa la mitad del ancho del contenedor */
+    width: 50%;                
 }
 
 /* Todos los párrafos */
 .text {
-    text-align: justify;        /* Justifica el texto (alineación completa a izquierda y derecha) */
-    padding: 0.5em;             /* Espaciado interno alrededor del párrafo */
+    text-align: justify;      
+    padding: 0.5em;            
 }
 
 /* Imágenes dentro de un "item" */
 .imgItem {
-    width: 100%;                /* Ocupan todo el ancho del contenedor */
+    width: 100%;            
 }
 
 /* Todos los títulos */
 .title {
-    margin: 1em;                /* Margen externo alrededor de los títulos */
+    margin: 1em;               
 }
 
 /* Solo los h3 */
 .titleThree {
-    text-align: center;         /* Centra el texto del título h3 */
+    text-align: center;         
 }
 
 
     /* == header == */
 
 .header {
-    position: fixed;              /* El header queda fijo en la parte superior aunque hagas scroll */
-    width: 100%;                  /* Ocupa todo el ancho de la pantalla */
-    z-index: 100;                 /* Se asegura de que esté por encima de otros elementos */
-    background-color: var(--color-transparente_vidrio);  /* Fondo oscuro muy transparente (21 en hex es ≈13% opacidad) */
-    backdrop-filter: blur(0.5px); /* Aplica un ligero efecto de desenfoque (como "vidrio") */
+    position: fixed;              
+    width: 100%;                 
+    z-index: 100;                 
+    background-color: var(--color-transparente_vidrio); 
+    backdrop-filter: blur(0.5px);
     box-shadow: var(--sombra-oscura);
 }
 
 /* Contenedor que agrupa los elementos principales del header */
 .section_header {
-    display: grid;                /* Usa grid para organizar columnas */
-    grid-template-columns: 1fr 1fr; /* Divide en 2 columnas iguales */
-    background-color: #29291f13;  /* Fondo más claro y transparente que el del header */
-    padding: 0.2em;               /* Espacio interno pequeño */
+    display: grid;               
+    grid-template-columns: 1fr 1fr; 
+    background-color: #29291f13; 
+    padding: 0.2em;              
 }
 
 /* Contenedor interno que alinea sus elementos */
 .content_header {
-    display: flex;                /* Flexbox para organizar los hijos en fila */
+    display: flex;                
 }
 
 /* Logo */
@@ -171,7 +170,7 @@ body {
 
 /* Menú de navegación con las rutas (ej: inicio, login, etc.) */
 .menu {
-    flex-direction: row-reverse;  /* Invierte el orden de los elementos dentro del menú */
+    flex-direction: row-reverse;  
 }
 
 
@@ -187,12 +186,12 @@ body {
 
 /* Botón de menú (generalmente para responsive, hamburguesa) */
 .menu-toggle {
-    display: none;                /* Oculto en pantallas grandes */
-    font-size: 2rem;              /* Tamaño grande del icono/texto */
-    background: none;             /* Fondo transparente */
-    border: none;                 /* Sin borde */
-    cursor: pointer;              /* Cambia el cursor a "mano" cuando se pasa encima */
-    color: var(--color-gris_oscuro); /* Color gris oscuro */
+    display: none;               
+    font-size: 2rem;            
+    background: none;            
+    border: none;             
+    cursor: pointer;            
+    color: var(--color-gris_oscuro); 
 }
 
 .textHeader {
@@ -202,88 +201,88 @@ body {
     /* == footer == */
 
 .footer {
-    min-width: 100%;            /* El ancho mínimo del footer será 100% del contenedor (ocupa toda la pantalla) */
-    background-color: var(--color-semiTransparente);/* Fondo oscuro semitransparente (color RGBA en notación hex con alfa b2 ≈ 70% opacidad) */
-    color:var(--color-claro);              /* Color del texto en un tono claro */
+    min-width: 100%;        
+    background-color: var(--color-semiTransparente);
+    color:var(--color-claro);           
 }
 
 .contentFooter {
-    display: flex;              /* Convierte el contenedor en un flexbox */
-    flex-direction: column;     /* Alinea los hijos uno debajo del otro (en columna) */
-    padding: 1em;               /* Espaciado interno de 1em (≈ al tamaño de la letra) */
+    display: flex;             
+    flex-direction: column;     
+    padding: 1em;              
 }
 
 /* == listas del footer == */
 .listFooter {
-    margin: 1em;                /* Separación externa alrededor de la lista */
-    list-style: none;           /* Quita las viñetas o numeración de la lista */
-    text-align: left;           /* Alinea el contenido de la lista a la izquierda */
+    margin: 1em;                
+    list-style: none;          
+    text-align: left;          
 }
 
 .listFooterImg {
-    display: flex;              /* Los ítems de la lista se mostrarán en fila (flexbox) */
+    display: flex;             
 }
 
 .listFooterImg > li {
-    width: 10%;                 /* Cada elemento de la lista ocupará el 10% del ancho de su contenedor */
-    margin: auto;               /* Centra los elementos en el espacio disponible */
+    width: 10%;               
+    margin: auto;             
 }
 
 .listFooterImg > li > img{
-    width: 100%;                /* La imagen ocupará el 100% del ancho de su <li> */
-    padding: 0;                 /* Sin espacio interno extra */
+    width: 100%;               
+    padding: 0;               
 }
 
 /* == input del footer == */
 .inputFooter {
-    display: flex;              /* Se organizan en flexbox */
-    flex-direction: column;     /* Los elementos van uno debajo del otro */
-    gap: 1em;                   /* Espacio de 1em entre los elementos */
+    display: flex;             
+    flex-direction: column;   
+    gap: 1em;                 
     
 }
 
 .contentFooter{
-    border-top: 1px solid;      /* Línea de separación arriba del footer */
+    border-top: 1px solid;      
 }
 
 .inputEmail  {
     background-color: var(--color-transparente_vidrio);
-    border: none;               /* Elimina el borde por defecto */
-    border-bottom:  1px solid;  /* Agrega solo una línea inferior como borde */
-    border-radius: 0.5em;       /* Esquinas ligeramente redondeadas */
-    padding: 5px;               /* Espaciado interno para que el texto no quede pegado al borde */
+    border: none;               
+    border-bottom:  1px solid; 
+    border-radius: 0.5em;       
+    padding: 5px;               
     
 }
 
 .inputEmail:focus {
-    border: none;               /* Quita bordes al enfocar */
+    border: none;               
 }
 
 /* Añade un asterisco después del texto de la etiqueta */
 .labelEmail::after {
-    content: "*";               /* Inserta un asterisco (útil para indicar campo obligatorio) */
+    content: "*";              
 }
 
 /* == segunda sección del footer == */
 .contentFooterTwo {
-    text-align: center;         /* Centra el texto */
-    align-items: center;        /* Centra verticalmente si es flexbox */
+    text-align: center;         
+    align-items: center;       
 }
 
 .linkFooter {
-    list-style: none;           /* Quita viñetas si se usa <ul>/<ol> */
-    color: var(--color-claro);             /* Texto con el mismo color claro */
+    list-style: none;           
+    color: var(--color-claro);           
 }
 
 
 /* Modo móvil (pantallas menores a 768px) */
 @media (max-width: 768px) {
 .nav-header {
-    display: none; /* Oculta la barra */
+    display: none; 
     flex-direction: column;
     background: var(--color-transparente_vidrio);
     position: absolute;
-    top: 4em; /* debajo del header */
+    top: 4em; 
     right: 1em;
     width: auto;
     box-shadow: var(--sombra-oscura);
@@ -291,11 +290,11 @@ body {
 }
 
 .menu-toggle {
-    display: block; /* Muestra el botón */
+    display: block; 
 }
 
 .nav-header.active {
-    display: flex; /* Se muestra cuando se activa con JS */
+    display: flex; 
 }
 }
 
