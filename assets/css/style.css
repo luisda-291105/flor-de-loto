@@ -238,6 +238,7 @@ body {
     display: flex;              /* Se organizan en flexbox */
     flex-direction: column;     /* Los elementos van uno debajo del otro */
     gap: 1em;                   /* Espacio de 1em entre los elementos */
+    
 }
 
 .contentFooter{
@@ -245,11 +246,12 @@ body {
 }
 
 .inputEmail  {
-    
+    background-color: var(--color-transparente_vidrio);
     border: none;               /* Elimina el borde por defecto */
     border-bottom:  1px solid;  /* Agrega solo una línea inferior como borde */
     border-radius: 0.5em;       /* Esquinas ligeramente redondeadas */
     padding: 5px;               /* Espaciado interno para que el texto no quede pegado al borde */
+    
 }
 
 .inputEmail:focus {
