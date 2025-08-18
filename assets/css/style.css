@@ -76,25 +76,24 @@ body {
 
 /* Subcontenedores de texto dentro de un item */
 .subContentText {
-    height: 50%;                /* Mitad de la altura del contenedor padre */
+    height: auto;               
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;                  /* Espacio vertical entre hijos */
-    margin: auto;               /* Centrado automático */
+    gap: 1rem;                               
 }
 
 /* Todos los items */
 .item {
-    min-width: 80%;             /* Cada item ocupa al menos 80% del ancho */
-    height: auto;               /* Alto fijo de 16em */
+    min-width: 80%;            
+    height: auto;               
     
     display: flex;
-    flex-direction: column;     /* Contenido en columna */
-    text-align: left;           /* Texto alineado a la izquierda */
+    flex-direction: column;     
+    text-align: left;          
     
-    border-radius: 0.3em;       /* Bordes redondeados */
-    border: none;               /* Sin borde */
+    border-radius: 0.3em;       
+    border: none;               
     box-shadow: var(--sombra-clara) ; 
 }
 
@@ -107,9 +106,7 @@ body {
 
 /* Todas las imágenes */
 .img {
-    object-fit: cover;          /* Hace que la imagen se recorte para cubrir su contenedor sin deformarse */
-    overflow: hidden;           /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
-    
+    overflow: hidden;           
     height: 50%;                /* La altura será 50% del contenedor padre */
     transform: scale(0.96);     /* Reduce la imagen al 96% de su tamaño (como un "zoom out") */
     border-radius: 0.2em;       /* Bordes ligeramente redondeados */
@@ -168,7 +165,8 @@ body {
 
 /* Logo */
 .imgLogo {
-    width: 2em;                   /* Tamaño fijo de 2em (se adapta al tamaño de la fuente base) */
+    width: 2.5em; 
+    height: auto;                  
 }
 
 /* Menú de navegación con las rutas (ej: inicio, login, etc.) */
@@ -197,6 +195,9 @@ body {
     color: var(--color-gris_oscuro); /* Color gris oscuro */
 }
 
+.textHeader {
+    padding-top: 1em;
+}
 
     /* == footer == */
 
@@ -298,3 +299,35 @@ body {
 }
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+        background-color: #333333bd;
+        color: var(--color-claro);
+        box-shadow: none;
+    }
+
+    .section {
+        margin: 0;
+        padding: 10%;
+    }
+    .card {
+        width: 70%;   
+        height: 60%;
+        box-shadow: none;
+        padding: 5%;
+    }
+
+    .item {
+        width: 30%;   
+        height: auto;
+
+    }
+}
+
+
+
+/* 
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhl5JTATYyczutau1D99kGA-4pYt1Q14IZEQ&s 
+
+https://thumbs.dreamstime.com/b/un-tranquilo-estudio-de-yoga-con-iluminaci%C3%B3n-suave-y-decoraci%C3%B3n-zen-310122432.jpg
+*/
