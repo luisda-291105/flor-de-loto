@@ -84,7 +84,7 @@ body {
 
 /* Todos los items */
 .item {
-    min-width: 95%;            
+    min-width: 70%;            
     height: auto;               
     
     display: flex;
