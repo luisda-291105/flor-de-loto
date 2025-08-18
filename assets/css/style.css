@@ -102,6 +102,9 @@ body {
 }
 
     /* == elementos == */
+    .link-ver-mas {
+        justify-items: end;
+    }
 
 /* Todas las imágenes */
 .img {
