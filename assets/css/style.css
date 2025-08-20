@@ -19,7 +19,7 @@
     box-sizing: border-box;  
 }
 
-                /* ===== estilos generales ===== */
+                /* ===== estilos generales (todos los que tengan esa clase) ===== */
 
 body {
     margin: 0 0.1em;       
@@ -97,10 +97,6 @@ body {
     bottom: 0;
 }
 
-.subContent {
-    height: 50%;
-}
-
 /* Todos los items */
 .item {
     min-width: 10em;
@@ -120,6 +116,7 @@ body {
 }
 
                 /* == elementos == */
+
 .link-ver-mas {
     justify-items: end;
 
@@ -291,6 +288,9 @@ body {
     color: var(--color-claro);           
 }
 
+.bottomFooter {
+    width: 50%;
+}
                 /* == media == */
 
 /* Modo móvil (pantallas menores a 768px) */
