@@ -307,9 +307,6 @@ body {
     color: var(--color-claro);           
 }
 
-.list:hover :not() {
-
-}
 
 .bottomFooter {
     width: 50%;
