@@ -75,7 +75,8 @@ body {
     display: flex;              
     gap: 1em;                   
     overflow: scroll;           
-    padding: 1em;               
+    padding: 1em;
+
 }
 
 /* Contenedores de texto */
@@ -103,12 +104,18 @@ body {
     
     display: flex;
     flex-direction: column;     
-    text-align: left;          
+    text-align: left;   
     
+    transition: all 0.5s ease-in;  
     border-radius: 0.3em;       
     border: none;               
     box-shadow: var(--sombra-clara) ; 
 }
+
+.item:hover {
+    transform: scale(1.1); 
+    z-index: 10;
+} 
 
 /* Div del header */
 .divHeader {
