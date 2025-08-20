@@ -230,11 +230,20 @@ body {
 .listFooter {
     margin: 1em;                
     list-style: none;          
-    text-align: left;          
+    text-align: left;  
+
+}
+
+.listItem { 
+    padding-bottom: 1em;
+}
+
+.linkFooter:hover {
+    color: var(--color-claro);
 }
 
 .listFooterImg {
-    display: flex;             
+    display: flex;  
 }
 
 .listFooterImg > li {
@@ -244,9 +253,19 @@ body {
 
 .listFooterImg > li > img{
     width: 100%;               
-    padding: 0;               
+    padding: 0; 
+    cursor: pointer;
+    opacity: 1;              
 }
 
+/* con los dos hago el efecto de resalto de color */
+.listFooterImg img:hover {
+    opacity: 1;
+}
+
+.listFooterImg img:not(:hover) {
+    opacity: 0.5;
+}
 /* == input del footer == */
 .inputFooter {
     display: flex;             
