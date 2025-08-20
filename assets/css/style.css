@@ -70,6 +70,7 @@ body {
     box-shadow: var(--sombra-clara) ;
     margin-top: 1em; 
 }
+
 /* Contenedor de los items */
 .content {
     display: flex;              
@@ -78,6 +79,7 @@ body {
     padding: 3em 1em;
 
 }
+
 
 /* Contenedores de texto */
 .contentText {
@@ -131,7 +133,7 @@ body {
 
 /* Todas las imágenes */
 .img {
-    height: 50%;
+    height: auto;
     transform: scale(0.96);    
     border-radius: 0.2em;  
     width: 100%;     
