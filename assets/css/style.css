@@ -31,7 +31,6 @@ body {
     color: var(--color-gris_oscuro);              
 }
 
-
                 /* == contenedores == */
 
 /* Contenido principal (main) */
@@ -44,7 +43,7 @@ body {
 .section {
     margin: 2em 0;          
     width: 100%;               
-    height: auto;              
+    height: auto;
 }
 
 /* Cartas (ejemplo: inicio y nosotros) */
@@ -56,6 +55,7 @@ body {
     margin: auto;              
     border-radius: 10px;        
     box-shadow: var(--sombra-clara) ;
+    margin-top: 1em; 
 }
 /* Contenedor de los items */
 .content {
@@ -312,13 +312,11 @@ body {
 
     .section {
         margin: 0;
-        padding: 10%;
     }
     .card {
         width: 70%;   
         height: 60%;
         box-shadow: none;
-        padding: 5%;
     }
 
     .item {
