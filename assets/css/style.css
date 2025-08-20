@@ -31,6 +31,19 @@ body {
     color: var(--color-gris_oscuro);              
 }
 
+.bottom {
+    margin: auto;
+    border-radius: 1em;
+    padding: 0.45em;
+    border: none;
+}
+
+.bottom:hover {
+    border: 1px solid var(--color-claro);
+    color: var(--color-claro);
+    background-color: var(--color-semiTransparente);
+} 
+
                 /* == contenedores == */
 
 /* Contenido principal (main) */
