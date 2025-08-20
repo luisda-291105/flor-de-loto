@@ -124,6 +124,27 @@ body {
     padding-bottom: 3em;        
 }
 
+.item-product {
+    min-width: 50%;
+    min-height: auto;
+    border: 1px solid;
+}
+
+.contect-product-img {
+    min-height: 6em;
+    min-width: 100%;
+
+}
+
+.contect-product-text {
+    min-height: 5em;
+    min-width: 100%;
+}
+
+.contect-product-link {
+    height: 2em;
+}
+
                 /* == elementos == */
 
 .link-ver-mas {
@@ -160,7 +181,9 @@ body {
     text-align: center;         
 }
 
-
+.img-product {
+    max-width: 90%;
+}
                 /* == header == */
 
 .header {
