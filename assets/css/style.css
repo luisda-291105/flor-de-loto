@@ -152,7 +152,7 @@ body {
 .content {
     display: flex;              
     gap: 1em;                   
-    overflow: scroll;           
+    overflow-x: scroll;           
     padding: 3em 1em;
 
 }
@@ -380,9 +380,15 @@ body {
 
 @media (max-width: 768px) {
 
-    .textHeaderlogo {
+    /* header */
+
+    .menu-toggle {
         color: #f3f1c4;
     }
+
+.content-header-ancla {
+    color: #f3f1c4;
+}
 
 .nav-header {
     display: none; 
@@ -398,6 +404,20 @@ body {
 
 .nav-header.active {
     display: flex; 
+}
+
+.textHeaderlogo {
+    display: none;
+}
+
+/* footer */
+
+.link {
+    color: var(--color-claro);
+}
+
+.link:hover {
+    color: aqua;
 }
 
 .bottomFooter {
