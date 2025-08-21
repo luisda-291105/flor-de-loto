@@ -494,5 +494,26 @@ body {
         color: #f3f1c4;
     }
 
+    /* footer */
+
+    .sectionFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2em auto;
+        max-width: 70%;
+
+    }
+
+    .contentFooterOne {
+        grid-column: 1;
+        border-bottom: 1px solid #f3f1c4;
+
+    }
+
+    .contentFooterTwo {
+        grid-column: 2;
+        border-bottom: 1px solid #f3f1c4;
+    }
+
 
 }
