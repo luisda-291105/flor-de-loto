@@ -87,7 +87,7 @@ body {
 
 .section-header {
     display: grid;               
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 0.5fr 1fr; 
     background-color: #29291f13; 
     padding: 0.2em;              
 }
@@ -115,6 +115,19 @@ body {
 
 .list-header {
     list-style: none;
+}
+
+.list-header-two {
+    display: none;
+    list-style: none;
+    justify-content: end;
+    margin-top: 1em;
+}
+
+.listItem-two > a {
+    color: #f3f1c4;
+    text-decoration: none;
+    font-size: 1.1em;
 }
 
 .menu {
@@ -382,9 +395,9 @@ body {
 
     /* header */
 
-    .menu-toggle {
-        color: #f3f1c4;
-    }
+.menu-toggle {
+    color: #f3f1c4;
+}
 
 .content-header-ancla {
     color: #f3f1c4;
@@ -440,7 +453,7 @@ body {
 }
 
 /*  ======================================
-    Modo móvil (pantallas menores a 768px) 
+    Modo tablect (pantallas minimo a 768px) 
     ======================================*/
 @media screen and (min-width: 768px) {
     .contentBody {
@@ -556,5 +569,50 @@ body {
         border-bottom: 1px solid #f3f1c4;
     }
 
+
+}
+
+/*  ======================================
+    pantallas grandes (pantallas minimo a 1024px) 
+    ======================================*/
+@media screen and (min-width: 1024px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-header {
+        display: none;
+        
+    }
+
+    .nav-header-two {
+        width: 100%;
+
+    }
+
+    .list-header-two {
+        display: flex;
+        gap: 1em;
+        
+    }
+
+    .start {
+        background: url(/assets/images/cuarto_yoga.jpg)
+        no-repeat center;
+        background-size: cover;
+    }
+
+    .card {
+        height: auto;
+        width: 40%;
+    }
+
+    /* productos */
+
+    .item-content {
+        min-width: 1em;
+        max-width: 15em;
+    }
 
 }
