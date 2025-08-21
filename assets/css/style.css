@@ -410,6 +410,12 @@ body {
     display: none;
 }
 
+/* inicio */
+
+.text-start {
+    width: 100%;
+}
+
 /* footer */
 
 .link {
