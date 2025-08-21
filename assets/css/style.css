@@ -380,6 +380,10 @@ body {
 
 @media (max-width: 768px) {
 
+    .textHeaderlogo {
+        color: #f3f1c4;
+    }
+
 .nav-header {
     display: none; 
     flex-direction: column;
