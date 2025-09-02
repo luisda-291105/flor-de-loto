@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flor de loto || Tu logar de paz</title>
 
+    <!-- lo que haces es darle instrucciones al navegador  -->
+    <meta name="robots" content="index , follow ">
+
+    <!-- proporciona un resumen del contenido de la pagina -->
+    <meta name="description" content="¡Respira profundo y vive ligero!">
+
+    <!-- open graph (para  facebook , linkedln , etc...) -->
+
+    <meta property="og:title" content="Flor de loto tu sitio en donde encuentras paz y tranquilidad">
+
+    <meta property="og:image"
+        content="https://st2.depositphotos.com/1768926/7271/v/450/depositphotos_72716095-stock-illustration-lotus-logo.jpg">
+
+    <meta property="og:url" content="https://florloto.com/pagina">
+
+
+    <title>Flor de Loto | Escuela de Yoga y Bienestar</title>
+
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+
+    <!-- css costom -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="mx-2">
-    <!-- barra de navegacion y logo -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Flor de loto</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<body class="mx-1 claro">
+
+    <header class="oscuro border-bottom">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid ">
+                <a class="navbar-brand claro col" href="#">Flor de loto</a>
+                <button class="navbar-toggler claro " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Inicio</a>
+                            <a class="nav-link  claro" target="_blank" href="#start">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link  claro" target="_blank" href="#product">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link  claro" target="_blank" href="#clases">Clases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Nosotros</a>
+                            <a class="nav-link  claro" target="_blank" href="#we">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#contact">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -43,236 +67,351 @@
         </nav>
     </header>
 
-    <!-- hero -->
-    <section class="contener">
-        <div class="row">
-            <div class="col-ms-11 col-md-6 text-center my-5 ">
-                <p class="lead">Bienvenidos a Nuestro Espacio de Yoga.</p>
-                <h1 class="display-4 fw-bold my-2">Descubre Nuestro Mundo</h1>
-                <a href="" class="btn btn-primary btn-lg ">Eplorar Ahora</a>
-            </div>
-            <div class="col-ms-11 col-md-6 my-5">
-                <img src="https://cdn.static.aptavs.com/imagenes/el-yoga-que-beneficios-nos-puede-aportar.jpg"
-                    alt="es una imagen que inspira paz" class="rounded img-fluid">
-            </div>
+    <!-- ====== inicio ====== -->
+
+    <section class=" text-center contener-flout carta py-5" id="start">
+        <section class="row justify-content-center">
+            <section class=" oscuro p-3 col-10 col-md-6 col-lg-4 rounded-5">
+
+                <img class="w-25" src="assets/images/logo_sin_fondo.png" alt="flor de loto logo">
+                <h1 class="display-4 fw-bold">¡Conoce todo sobre nuestra</h1>
+                <h1 class="display-4 fw-bold">escuela de yoga!</h1>
+                <p class="lead">Explora nuestras secciones para conocer productos, testimonios y más.</p>
+                <a class="btn btn_claro  btn-lg" href="#">Servicios</a>
+
+            </section>
+        </section>
     </section>
 
-    <!-- productos -->
-    <section class="contener my-5">
-        <h2 class=" h1 fw-bold text-center">Productos</h2>
-        <div class="row my-5">
-            <div class="card col-ms-10 mx-auto my-2 col-md-6 col-lg-3" style="width: 18rem;">
-                <img src="https://acdn-us.mitiendanube.com/stores/117/494/products/unnamed-201-81355069d2fb9826d215855360308649-640-0.jpg"
-                    class="card-img-top" alt="...">
+    <!-- ===== productos ===== -->
+
+    <section class="contener-flout text-center oscuro py-5" id="product">
+        <h2 class="h1 low-line">Productos</h2>
+        <section class="row justify-content-center py-5 gap-4">
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <h3 class="h6 text-start p-2">Oferta del dia</h3>
+                <img class="card-img-top"
+                    src="https://deportesregol.com/cdn/shop/files/2221-Bloque-Yoca-SportFitness-Eco.jpg"
+                    alt="Muestra del producto">
                 <div class="card-body">
-                    <h5 class="card-title">Colchonetas</h5>
-                    <p class="card-text">Es una colchoneta buena y eclogica</p>
-                    <p class="card-text">$50.000 cop</p>
-                    <a href="#" class="btn btn-primary">Ver mas</a>
+                    <h2 class="card-title">bloque de yoga ecologico.</h2>
+                    <p class="card-text">50.000 cop</p>
+                    <a href="#" class="btn btn_claro ">Ver mas <i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card col-ms-10 mx-auto my-2 col-md-6 col-lg-3" style="width: 18rem;">
-                <img src="https://acdn-us.mitiendanube.com/stores/117/494/products/unnamed-201-81355069d2fb9826d215855360308649-640-0.jpg"
-                    class="card-img-top" alt="...">
+            </article>
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <h3 class="h6 text-start p-2">Oferta del dia</h3>
+                <img class="card-img-top"
+                    src="https://deportesregol.com/cdn/shop/files/2221-Bloque-Yoca-SportFitness-Eco.jpg"
+                    alt="Muestra del producto">
                 <div class="card-body">
-                    <h5 class="card-title">Colchonetas</h5>
-                    <p class="card-text">Es una colchoneta buena y eclogica</p>
-                    <p class="card-text">$50.000 cop</p>
-                    <a href="#" class="btn btn-primary">Ver mas</a>
+                    <h2 class="card-title">bloque de yoga ecologico.</h2>
+                    <p class="card-text">50.000 cop</p>
+                    <a href="#" class="btn btn_claro ">Ver mas <i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card col-ms-10 mx-auto my-2 col-md-6 col-lg-3" style="width: 18rem;">
-                <img src="https://acdn-us.mitiendanube.com/stores/117/494/products/unnamed-201-81355069d2fb9826d215855360308649-640-0.jpg"
-                    class="card-img-top" alt="...">
+            </article>
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <h3 class="h6 text-start p-2">Oferta del dia</h3>
+                <img class="card-img-top"
+                    src="https://deportesregol.com/cdn/shop/files/2221-Bloque-Yoca-SportFitness-Eco.jpg"
+                    alt="Muestra del producto">
                 <div class="card-body">
-                    <h5 class="card-title">Colchonetas</h5>
-                    <p class="card-text">Es una colchoneta buena y eclogica</p>
-                    <p class="card-text">$50.000 cop</p>
-                    <a href="#" class="btn btn-primary">Ver mas</a>
+                    <h2 class="card-title">bloque de yoga ecologico.</h2>
+                    <p class="card-text">50.000 cop</p>
+                    <a href="#" class="btn btn_claro ">Ver mas <i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-        </div>
+            </article>
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <h3 class="h6 text-start p-2">Oferta del dia</h3>
+                <img class="card-img-top"
+                    src="https://deportesregol.com/cdn/shop/files/2221-Bloque-Yoca-SportFitness-Eco.jpg"
+                    alt="Muestra del producto">
+                <div class="card-body">
+                    <h2 class="card-title">bloque de yoga ecologico.</h2>
+                    <p class="card-text">50.000 cop</p>
+                    <a href="#" class="btn btn_claro ">Ver mas <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <h3 class="h6 text-start p-2">Oferta del dia</h3>
+                <img class="card-img-top"
+                    src="https://deportesregol.com/cdn/shop/files/2221-Bloque-Yoca-SportFitness-Eco.jpg"
+                    alt="Muestra del producto">
+                <div class="card-body">
+                    <h2 class="card-title">bloque de yoga ecologico.</h2>
+                    <p class="card-text">50.000 cop</p>
+                    <a href="#" class="btn btn_claro ">Ver mas <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <h3 class="h6 text-start p-2">Oferta del dia</h3>
+                <img class="card-img-top"
+                    src="https://deportesregol.com/cdn/shop/files/2221-Bloque-Yoca-SportFitness-Eco.jpg"
+                    alt="Muestra del producto">
+                <div class="card-body">
+                    <h2 class="card-title">bloque de yoga ecologico.</h2>
+                    <p class="card-text">50.000 cop</p>
+                    <a href="#" class="btn btn_claro ">Ver mas <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+        </section>
+        <a href="#" class="btn btn_claro  btn-lg">ver todos nuestros servicios</a>
     </section>
 
-    <!-- servicios -->
-    <section class="contener my-5">
-        <h2 class="h1 fw-bold text-center ">Servicios</h2>
-        <div class="row my-5">
-            <div class="card col-ms-10 mx-auto my-2 col-md-6 col-lg-3" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZp2QP4tS36LvOfteVGRV_oAMd9kTKFwfvcw&s"
-                    class="card-img-top" alt="...">
+    <!-- ===== Servicios ===== -->
+
+    <section class="contener-flout intermedio text-center py-5" id="clases">
+        <h2 class="h1 low-line">Clases</h2>
+        <section class="row justify-content-center py-5 gap-4">
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top mt-2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHBTkazfILQ4_hKkWPh5JLIJ039FlHlMFRA&s"
+                    alt="Clase de Yoga Nidra">
                 <div class="card-body">
-                    <h5 class="card-title">yoga class</h5>
-                    <p class="card-text">esta es una clase de yoga.</p>
-                    <a href="#" class="btn btn-primary">Tomar clase</a>
+                    <h2 class="card-title">Clase de Yoga Nidra</h2>
+                    <p class="card-text">160 000 cop</p>
+                    <a href="#" class="btn btn_claro ">Reservar ahora <i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card col-ms-10 mx-auto my-2 col-md-6 col-lg-3" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZp2QP4tS36LvOfteVGRV_oAMd9kTKFwfvcw&s"
-                    class="card-img-top" alt="...">
+            </article>
+
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2 trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top mt-2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHBTkazfILQ4_hKkWPh5JLIJ039FlHlMFRA&s"
+                    alt="Clase de Yoga Nidra">
                 <div class="card-body">
-                    <h5 class="card-title">yoga class</h5>
-                    <p class="card-text">esta es una clase de yoga.</p>
-                    <a href="#" class="btn btn-primary">Tomar clase</a>
+                    <h2 class="card-title">Clase de Yoga Nidra</h2>
+                    <p class="card-text">160 000 cop</p>
+                    <a href="#" class="btn btn_claro ">Reservar ahora <i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card col-ms-10 mx-auto my-2 col-md-6 col-lg-3" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZp2QP4tS36LvOfteVGRV_oAMd9kTKFwfvcw&s"
-                    class="card-img-top" alt="...">
+            </article>
+
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2 trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top mt-2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHBTkazfILQ4_hKkWPh5JLIJ039FlHlMFRA&s"
+                    alt="Clase de Yoga Nidra">
                 <div class="card-body">
-                    <h5 class="card-title">yoga class</h5>
-                    <p class="card-text">esta es una clase de yoga.</p>
-                    <a href="#" class="btn btn-primary">Tomar clase</a>
+                    <h2 class="card-title">Clase de Yoga Nidra</h2>
+                    <p class="card-text">160 000 cop</p>
+                    <a href="#" class="btn btn_claro ">Reservar ahora <i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-        </div>
+            </article>
+
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2 trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top mt-2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHBTkazfILQ4_hKkWPh5JLIJ039FlHlMFRA&s"
+                    alt="Clase de Yoga Nidra">
+                <div class="card-body">
+                    <h2 class="card-title">Clase de Yoga Nidra</h2>
+                    <p class="card-text">160 000 cop</p>
+                    <a href="#" class="btn btn_claro ">Reservar ahora <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2 trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top mt-2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHBTkazfILQ4_hKkWPh5JLIJ039FlHlMFRA&s"
+                    alt="Clase de Yoga Nidra">
+                <div class="card-body">
+                    <h2 class="card-title">Clase de Yoga Nidra</h2>
+                    <p class="card-text">160 000 cop</p>
+                    <a href="#" class="btn btn_claro ">Reservar ahora <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+        </section>
     </section>
 
-    <!-- nosotros -->
-    <section class="contener">
-        <div class="text-center m-5">
-            <h1 class="display-4 fw-bold my-2">Acerca de Nosotros</h1>
-            <p class="lead">Flor de Loto es un estudio de yoga comprometido con
-                brindar bienestar integral a través de clases de yoga enriquecedoras, productos especializados y un
-                ambiente acogedor que fomenta el equilibrio y la armonía. Nuestro objetivo es acompañarte en tu
-                viaje de crecimiento personal y conexión con tu ser interior, en un espacio que promueve la paz y la
-                serenidad..</p>
-        </div>
-    </section>
-    <!-- testimonios -->
-    <section class="contener">
-        <h2 class="h2">Testimonios</h2>
-        <p class="h6 py-2">Lo Que Nuestros Alumnos Dicen</p>
-        <p>Nuestros alumnos comparten sus experiencias en Flor de Loto y cómo el yoga ha transformado sus vidas,
-            brindándoles equilibrio, bienestar y paz interior.</p>
-        <div class="row">
-            <div class="card m-auto rounded-3 border-0 " style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Maria perez</h5>
-                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía positiva
-                        y calma interior.</p>
-                    <hr>
-                </div>
-            </div>
-            <div class="card m-auto rounded-3 border-0 " style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Maria perez</h5>
-                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía positiva
-                        y calma interior.</p>
-                    <hr>
-                </div>
-            </div>
-            <div class="card m-auto rounded-3 border-0 " style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Maria perez</h5>
-                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía positiva
-                        y calma interior.</p>
-                    <hr>
-                </div>
-            </div>
-            <div class="card m-auto rounded-3 border-0 " style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Maria perez</h5>
-                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía positiva
-                        y calma interior.</p>
-                    <hr>
-                </div>
-            </div>
-        </div>
+    <!-- ===== Nosotros ===== -->
+
+    <section class="py-5 text-center contener-flout carta " id="we">
+        <section class="row justify-content-center">
+            <section class="intermedio  col-10 col-md-6 col-lg-4 rounded-5 ">
+
+                <h2 class="display-4 fw-bold">Acerca de</h2>
+                <h2 class="display-4 fw-bold low-line mb-3">Nosotros</h2>
+                <p class="lead">Flor de Loto es un estudio de yoga comprometido con brindar bienestar integral a través
+                    de
+                    clases de yoga enriquecedoras, productos especializados y un ambiente acogedor que fomenta el
+                    equilibrio
+                    y la armonía.</p>
+
+                <p class="lead">Nuestro objetivo es acompañarte en tu viaje de crecimiento personal y conexión con tu
+                    ser
+                    interior, en un espacio que promueva la paz y la serenidad.</p>
+
+            </section>
+        </section>
     </section>
 
-    <!-- visitanos -->
-    <section class="contener">
-        <div class="row text-center">
-            <h2>visitanos</h2>
-            <p>ven a visitar nuestro lugar especial</p>
-            <div class="col-ms-12 col-md-5 m-5">
-                <div class="d-flex">
-                    <div>
-                        <i class="bi bi-envelope"></i>
-                    </div>
-                    <div >
-                        <h3>Ubicacion</h3>
-                        <p>direccion del local</p>
-                    </div>
+    <!-- ===== testimonio ====== -->
+
+    <section class="contener-flout intermedio py-5" id="clases">
+        <section class="mx-5">
+            <h2 class="h1 text-center low-line">Testimonios</h2>
+            <h4 class="h6">Lo que a nuestros alumnos dicen</h4>
+            <p class="lead">Nuestros alumnos comparten sus experiencias en Flor de Loto y cómo el yoga ha</p>
+            <p class="lead">transformado sus vidas, brindándoles equilibrio, bienestar y paz interior.</p>
+
+        </section>
+        <section class="row justify-content-center py-5 gap-4">
+
+            <article class="card section col-sm-12 col-md-6 col-lg-2  trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top rounded mt-2"
+                    src="https://media.istockphoto.com/id/1389348844/es/foto/foto-de-estudio-de-una-hermosa-joven-sonriendo-mientras-est%C3%A1-de-pie-sobre-un-fondo-gris.jpg?s=612x612&w=0&k=20&c=kUufmNoTnDcRbyeHhU1wRiip-fNjTWP9owjHf75frFQ="
+                    alt="foto de Ana Pérez">
+                <div class="card-body">
+                    <h2 class="card-title">Ana Pérez</h2>
+                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía
+                        positiva y calma interior.</p>
                 </div>
-            </div>
-            <form action="" class="col-ms-12 col-md-5 m-5">
-                <fieldset class="d-flex flex-column text-start gap-3 rounded border p-3">
-                    <legend>Escribenos</legend>
+            </article>
 
-                    <label for="userName">Nombre</label>
-                    <input type="text" name="userName" id="userName" 
-                        placeholder="ej: luis" class="ps-3 py-2 rounded-3">
+            <article class="card section col-sm-12 col-md-6 col-lg-2 trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top rounded mt-2"
+                    src="https://media.istockphoto.com/id/1389348844/es/foto/foto-de-estudio-de-una-hermosa-joven-sonriendo-mientras-est%C3%A1-de-pie-sobre-un-fondo-gris.jpg?s=612x612&w=0&k=20&c=kUufmNoTnDcRbyeHhU1wRiip-fNjTWP9owjHf75frFQ="
+                    alt="foto de Ana Pérez">
+                <div class="card-body">
+                    <h2 class="card-title">Ana Pérez</h2>
+                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía
+                        positiva y calma interior.</p>
+                </div>
+            </article>
 
-                    <label for="userEmail">Email</label>
-                    <input type="email" name="userEmail" id="userEmail" 
-                        placeholder="ej: luis@fiel.com" class="ps-3 py-2 rounded-3">
+            <article class="card section col-sm-12 col-md-6 col-lg-2 trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top rounded mt-2"
+                    src="https://media.istockphoto.com/id/1389348844/es/foto/foto-de-estudio-de-una-hermosa-joven-sonriendo-mientras-est%C3%A1-de-pie-sobre-un-fondo-gris.jpg?s=612x612&w=0&k=20&c=kUufmNoTnDcRbyeHhU1wRiip-fNjTWP9owjHf75frFQ="
+                    alt="foto de Ana Pérez">
+                <div class="card-body">
+                    <h2 class="card-title">Ana Pérez</h2>
+                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía
+                        positiva y calma interior.</p>
+                </div>
+            </article>
 
-                    <label for="userPhone">Telefono</label>
-                    <input type="tel" name="userPhone" id="userPhone" 
-                        placeholder="ej: 3930297" class="ps-3 py-2 rounded-3">
+            <article class="card section col-sm-12 col-md-6 col-lg-2 trasparente claro border_claro"
+                style="width: 18rem;">
+                <img class="card-img-top rounded mt-2"
+                    src="https://media.istockphoto.com/id/1389348844/es/foto/foto-de-estudio-de-una-hermosa-joven-sonriendo-mientras-est%C3%A1-de-pie-sobre-un-fondo-gris.jpg?s=612x612&w=0&k=20&c=kUufmNoTnDcRbyeHhU1wRiip-fNjTWP9owjHf75frFQ="
+                    alt="foto de Ana Pérez">
+                <div class="card-body">
+                    <h2 class="card-title">Ana Pérez</h2>
+                    <p class="card-text">El ambiente en Flor de Loto es mágico. Cada clase me llena de energía
+                        positiva y calma interior.</p>
+                </div>
+            </article>
 
-                    <label for="message">Mensaje</label>
-                    <textarea name="message" id="message" cols="30" rows="5" 
-                        placeholder="escribe aqui un mensaje bien bonito para que seamos amigos..." 
-                        class="ps-3 py-2 rounded-3"></textarea>
-                </fieldset>
-            </form>
-        </div>
+        </section>
     </section>
 
-    <!-- footer -->
-    <footer>
-        <section class="row p-5">
-            <div class="col-sm-12 col-md-6 my-5">
-                <h2 class="h1 fw-bold">Flor de loto</h2>
-                <form action="" class="d-flex flex-column gap-2">
-                    <label for="Email">Email</label>
-                    <input type="email" name="Email" id="Email">
 
-                    <fieldset>
-                        <input type="checkbox" name="valida" id="valida">
-                        <label for="valida">Yes, subscribe me to your newsletter.*</label>
+
+    <footer class="contener-flout border-top pt-5 p-3 oscuro " id="footer">
+        <section class="row w-100">
+
+            <section class="col-sm-12 col-md-6 border-bottom pb-2 justify-content-start">
+
+                <div>
+                    <h2 class="h1">Flor de loto</h2>
+                    <p class="lead">contactate con nosotros</p>
+                </div>
+
+                <form action="" class="my-3">
+
+                    <label for="email">Email*</label>
+                    <p>gerenciaflordeloto@gmail.com</p>
+                    <input type="email" name="email" id="email" class="border-0 border-bottom oscuro"
+                        placeholder="email@aqui.co" required>
+
+                    <fieldset class="my-3">
+                        <input type="checkbox" name="si_me_suscribo" id="si_me_suscribo" required>
+                        <label for="si_me_suscribo">si, suscribeme a tu boletin.</label>
+                        <button type="submit" class="btn btn_claro ">Suscribete</button>
                     </fieldset>
-                    <p>gerencia@gmail.com
-                        info@gmail.com
-                    </p>
-                    <button type="submit" class="btn btn-primary">subscribe</button>
                 </form>
-            </div>
 
-            <div class="col-ms-12 col-md-6 my-5 gap-5">
-                <div class="col">
-                    <p>Telefono: <span>302 2367823</span></p>
-                    <p class="my-5">Medellin-Antioquia</p>
-                    <div class="mt-5">
-                        <ul class="d-flex gap-2 list-unstyled" >
-                            <li class="list-inline-item mx-2">
-                                <a href=""><i class="bi bi-facebook " aria-hidden="true"></i></a>
+            </section>
+
+            <section class="col-sm-12 col-md-6 d-flex border-bottom justify-content-end ">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-sm-12 col-md-6 d-flex flex-column  justify-content-between">
+
+                        <p class="lead mb-5">Telefono: <span>302 2367823</span></p>
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" class="link" target="_blank">
+                                    <i class="bi bi-facebook "></i>
+                                </a>
                             </li>
-                            <li class="list-inline-item mx-2">
-                                <a href=""><i class="bi bi-instagram " aria-hidden="true"></i></a>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/" class="link" target="_blank">
+                                    <i class="bi bi-instagram "></i>
+                                </a>
                             </li>
-                            <li class="list-inline-item mx-2">
-                                <a href=""><i class="bi bi-twitter-x text-dark" aria-hidden="true"></i></a>
+                            <li class="list-inline-item">
+                                <a href="https://www.tiktok.com/" class="link" target="_blank">
+                                    <i class="bi bi-tiktok "></i>
+                                </a>
                             </li>
-                            <li class="list-inline-item mx-2">
-                                <a href=""><i class="bi bi-tiktok " aria-hidden="true"></i></a>
+                            <li class="list-inline-item">
+                                <a href="https://x.com/" class="link" target="_blank">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
+
+                    <ul class="list-unstyled gap-2 d-flex flex-column  col-sm-12 col-md-5">
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politica de privacidad</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Declaración de accesibilidad</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politica de envio</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Terminos y condiciones</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politicas de reembolso</a>
+                        </li>
+                    </ul>
                 </div>
-                <div></div>
-            </div>
-        </section>
-        <section class="d-flex">
-            <p></p>
-
-                <a href="">Politica servicio</a>
-
+            </section>
         </section>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
