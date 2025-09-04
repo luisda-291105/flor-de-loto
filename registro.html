@@ -14,7 +14,42 @@
 
 <body class="d-flex justify-content-center align-items-center vh-100 intermedio">
 
-    <div class="card shadow-sm" style="width: 380px;">
+    <header class="oscuro border-bottom position-fixed z-3 w-100">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid ">
+                <a class="navbar-brand claro col" href="#">Flor de loto</a>
+                <button class="navbar-toggler claro " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#start">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#product">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#clases">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#we">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="card shadow-sm " style="width: 380px;">
         <div class="card-body">
 
             <!-- Icono -->
@@ -75,7 +110,87 @@
 
         </div>
     </div>
+    
+    <footer class="contener-flout border-top pt-5 p-3 oscuro " id="footer">
+        <section class="row w-100">
 
+            <section class="col-sm-12 col-md-6 border-bottom pb-2 justify-content-start">
+
+                <div>
+                    <h2 class="h1">Flor de loto</h2>
+                    <p class="lead">contactate con nosotros</p>
+                </div>
+
+                <form action="" class="my-3">
+
+                    <label for="email">Email*</label>
+                    <p>gerenciaflordeloto@gmail.com</p>
+                    <input type="email" name="email" id="email" class="border-0 border-bottom oscuro"
+                        placeholder="email@aqui.co" required>
+
+                    <fieldset class="my-3">
+                        <input type="checkbox" name="si_me_suscribo" id="si_me_suscribo" required>
+                        <label for="si_me_suscribo">si, suscribeme a tu boletin.</label>
+                        <button type="submit" class="btn btn_claro ">Suscribete</button>
+                    </fieldset>
+                </form>
+
+            </section>
+
+            <section class="col-sm-12 col-md-6 d-flex border-bottom justify-content-end ">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-sm-12 col-md-6 d-flex flex-column  justify-content-between">
+
+                        <p class="lead mb-5">Telefono: <span>302 2367823</span></p>
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" class="link" target="_blank">
+                                    <i class="bi bi-facebook "></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/" class="link" target="_blank">
+                                    <i class="bi bi-instagram "></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.tiktok.com/" class="link" target="_blank">
+                                    <i class="bi bi-tiktok "></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://x.com/" class="link" target="_blank">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="list-unstyled gap-2 d-flex flex-column  col-sm-12 col-md-5">
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politica de privacidad</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Declaración de accesibilidad</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politica de envio</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Terminos y condiciones</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politicas de reembolso</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </footer>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,82 +8,208 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="servi.css">
 </head>
+
 <body style="background-color: #628b2c;">
+    <header class="oscuro border-bottom position-fixed z-3 w-100">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid ">
+                <a class="navbar-brand claro col" href="#">Flor de loto</a>
+                <button class="navbar-toggler claro " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#start">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#product">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#clases">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#we">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  claro" target="_blank" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main class="container py-5">
-    <h1 class="text-center text-white mb-5">Productos de Relajación</h1>
+        <h1 class="text-center text-white mb-5 pt-5">Productos de Relajación</h1>
 
-    <div class="row g-4">
-    <div class="col-md-4">
-        <div class="card h-100">
-        <img src="https://www.supersmart.com/data/images/blog/huiles-essentielles-flacons.jpg" class="card-img-top" alt="Aceites Naturales">
-        <div class="card-body">
-            <h5 class="card-title">Aceites Naturales</h5>
-            <p class="card-text">Elaborados con extractos de plantas y flores para un masaje relajante.</p>
-            <a href="#precio-aceite" class="btn btn-success">Ver precio</a>
-        </div>
-        </div>
-    </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://www.supersmart.com/data/images/blog/huiles-essentielles-flacons.jpg"
+                        class="card-img-top" alt="Aceites Naturales">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceites Naturales</h5>
+                        <p class="card-text">Elaborados con extractos de plantas y flores para un masaje relajante.</p>
+                        <a href="#precio-aceite" class="btn btn-success">Ver precio</a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="col-md-4">
-        <div class="card h-100">
-        <img src="https://everlast.com.co/wp-content/uploads/2025/01/2ad0e6109d2518b13259de6fc6bc4e91.jpg" class="card-img-top" alt="Colchonetas Yoga">
-        <div class="card-body">
-            <h5 class="card-title">Colchonetas para Yoga y Pilates</h5>
-            <p class="card-text">Perfecta para tus sesiones de yoga o pilates, cómoda y fácil de limpiar.</p>
-            <a href="#precio-colchoneta" class="btn btn-success">Ver precio</a>
-        </div>
-        </div>
-    </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://everlast.com.co/wp-content/uploads/2025/01/2ad0e6109d2518b13259de6fc6bc4e91.jpg"
+                        class="card-img-top" alt="Colchonetas Yoga">
+                    <div class="card-body">
+                        <h5 class="card-title">Colchonetas para Yoga y Pilates</h5>
+                        <p class="card-text">Perfecta para tus sesiones de yoga o pilates, cómoda y fácil de limpiar.
+                        </p>
+                        <a href="#precio-colchoneta" class="btn btn-success">Ver precio</a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="col-md-4">
-        <div class="card h-100">
-        <img src="https://dmspamedellin.co/wp-content/uploads/2023/07/img-beneficios-de-las-piedras-volcanicas-3.jpg" class="card-img-top" alt="Piedras volcánicas">
-        <div class="card-body">
-            <h5 class="card-title">Piedras Volcánicas</h5>
-            <p class="card-text">Utilizadas para aliviar tensiones musculares y mejorar la circulación.</p>
-            <a href="#precio-piedras" class="btn btn-success">Ver precio</a>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://dmspamedellin.co/wp-content/uploads/2023/07/img-beneficios-de-las-piedras-volcanicas-3.jpg"
+                        class="card-img-top" alt="Piedras volcánicas">
+                    <div class="card-body">
+                        <h5 class="card-title">Piedras Volcánicas</h5>
+                        <p class="card-text">Utilizadas para aliviar tensiones musculares y mejorar la circulación.</p>
+                        <a href="#precio-piedras" class="btn btn-success">Ver precio</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-    </div>
 
-    <section class="mt-5 bg-light p-4 rounded">
-        <h2 class="text-center mb-4">Precios</h2>
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item" id="precio-aceite"><strong>Aceites naturales:</strong> $60.000</li>
-        <li class="list-group-item" id="precio-colchoneta"><strong>Colchoneta de yoga y pilates:</strong> $70.000</li>
-        <li class="list-group-item" id="precio-piedras"><strong>Piedras volcánicas de relajación:</strong> $30.000</li>
-<section class="mt-5 bg-white p-4 rounded shadow">
-    <h3 class="text-center mb-4">Formulario de Compra</h3>
-    <form>
-    <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre completo</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
-    </div>
+        <section class="mt-5 bg-light p-4 rounded">
+            <h2 class="text-center mb-4">Precios</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="precio-aceite"><strong>Aceites naturales:</strong> $60.000</li>
+                <li class="list-group-item" id="precio-colchoneta"><strong>Colchoneta de yoga y pilates:</strong>
+                    $70.000</li>
+                <li class="list-group-item" id="precio-piedras"><strong>Piedras volcánicas de relajación:</strong>
+                    $30.000</li>
+                <section class="mt-5 bg-white p-4 rounded shadow">
+                    <h3 class="text-center mb-4">Formulario de Compra</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                        </div>
 
-    <div class="mb-3">
-        <label for="email" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
-    </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com"
+                                required>
+                        </div>
 
-    <div class="mb-3">
-        <label for="producto" class="form-label">Selecciona el producto</label>
-        <select class="form-select" id="producto" required>
-        <option value="">Elige una opción...</option>
-        <option value="aceites">Aceites naturales</option>
-        <option value="colchoneta">Colchoneta de yoga y pilates</option>
-        <option value="piedras">Piedras volcánicas</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="comentarios" class="form-label">Comentarios adicionales</label>
-        <textarea class="form-control" id="comentarios" rows="3" placeholder="¿Deseas añadir algo más?"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar pedido</button>
-    </form>
-    </section>
-    </ul>
-    </section>
+                        <div class="mb-3">
+                            <label for="producto" class="form-label">Selecciona el producto</label>
+                            <select class="form-select" id="producto" required>
+                                <option value="">Elige una opción...</option>
+                                <option value="aceites">Aceites naturales</option>
+                                <option value="colchoneta">Colchoneta de yoga y pilates</option>
+                                <option value="piedras">Piedras volcánicas</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios adicionales</label>
+                            <textarea class="form-control" id="comentarios" rows="3"
+                                placeholder="¿Deseas añadir algo más?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                    </form>
+                </section>
+            </ul>
+        </section>
     </main>
+
+    <footer class="contener-flout border-top pt-5 p-3 oscuro " id="footer">
+        <section class="row w-100">
+
+            <section class="col-sm-12 col-md-6 border-bottom pb-2 justify-content-start">
+
+                <div>
+                    <h2 class="h1">Flor de loto</h2>
+                    <p class="lead">contactate con nosotros</p>
+                </div>
+
+                <form action="" class="my-3">
+
+                    <label for="email">Email*</label>
+                    <p>gerenciaflordeloto@gmail.com</p>
+                    <input type="email" name="email" id="email" class="border-0 border-bottom oscuro"
+                        placeholder="email@aqui.co" required>
+
+                    <fieldset class="my-3">
+                        <input type="checkbox" name="si_me_suscribo" id="si_me_suscribo" required>
+                        <label for="si_me_suscribo">si, suscribeme a tu boletin.</label>
+                        <button type="submit" class="btn btn_claro ">Suscribete</button>
+                    </fieldset>
+                </form>
+
+            </section>
+
+            <section class="col-sm-12 col-md-6 d-flex border-bottom justify-content-end ">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-sm-12 col-md-6 d-flex flex-column  justify-content-between">
+
+                        <p class="lead mb-5">Telefono: <span>302 2367823</span></p>
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" class="link" target="_blank">
+                                    <i class="bi bi-facebook "></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/" class="link" target="_blank">
+                                    <i class="bi bi-instagram "></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.tiktok.com/" class="link" target="_blank">
+                                    <i class="bi bi-tiktok "></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://x.com/" class="link" target="_blank">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="list-unstyled gap-2 d-flex flex-column  col-sm-12 col-md-5">
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politica de privacidad</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Declaración de accesibilidad</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politica de envio</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Terminos y condiciones</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="link" target="_blank">Politicas de reembolso</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
