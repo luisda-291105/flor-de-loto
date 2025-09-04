@@ -64,6 +64,10 @@
                 color: var(--color-clear) !important;
             }
 
+            .claro::placeholder {
+                color: #f3f1c46b !important;
+            }
+
             .intermedio {
                 background-color: var(--color-light) !important;
             }
